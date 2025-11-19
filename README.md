@@ -1,2 +1,10 @@
-# Axis_project
-Arduino Code for Daisy Seed
+# Axis Labs Implementation
+
+## Author
+
+Stuff
+
+## Description
+
+Simple guitar pedal controlled by BNO055
+
