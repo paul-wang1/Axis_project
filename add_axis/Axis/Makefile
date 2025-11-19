@@ -2,14 +2,14 @@
 TARGET = axis
 
 # Sources
-CPP_SOURCES = axis.cpp BNO055.cpp
+CPP_SOURCES = axis.cpp mpu6050.cpp
 
-# Library Locations
-LIBDAISY_DIR = $(HOME)/Desktop/DaisyExamples/libDaisy
-DAISYSP_DIR = $(HOME)/Desktop/DaisyExamples/DaisySP
+# Library Locations - UPDATE THESE!
+LIBDAISY_DIR = /Users/paulwang/Desktop/DaisyExamples/libDaisy
+DAISYSP_DIR = /Users/paulwang/Desktop/DaisyExamples/DaisySP
 
-
-# Core location, and generic makefile.
+# Core location
 SYSTEM_FILES_DIR = $(LIBDAISY_DIR)/core
-include $(SYSTEM_FILES_DIR)/Makefile
 
+# Include the libDaisy build system
+include $(SYSTEM_FILES_DIR)/Makefile

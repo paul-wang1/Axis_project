@@ -1,4 +1,4 @@
-build/axis.o: axis.cpp \
+build/mpu6050.o: mpu6050.cpp \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/CMSIS/Include/core_cm7.h \
@@ -93,7 +93,7 @@ build/axis.o: axis.cpp \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h \
- mpu6050.h \
+ MPU6050.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/src/daisy_seed.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/src/daisy.h \
  /Users/paulwang/Desktop/DaisyExamples/libDaisy/src/daisy_core.h \
@@ -329,7 +329,7 @@ build/axis.o: axis.cpp \
 /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h:
 /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
 /Users/paulwang/Desktop/DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h:
-mpu6050.h:
+MPU6050.h:
 /Users/paulwang/Desktop/DaisyExamples/libDaisy/src/daisy_seed.h:
 /Users/paulwang/Desktop/DaisyExamples/libDaisy/src/daisy.h:
 /Users/paulwang/Desktop/DaisyExamples/libDaisy/src/daisy_core.h:
