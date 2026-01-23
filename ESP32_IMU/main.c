@@ -6,6 +6,7 @@
 #include "driver/i2c_master.h"
 #include <math.h>
 #include "mpu6050.h"
+#include <stdbool.h>
 
 static const char *TAG = "example";
 
@@ -50,7 +51,7 @@ static esp_err_t mpu6050_register_write_byte(i2c_master_dev_handle_t dev_handle,
 /*
  * Initalize MPU-6050
  */
-static void initMPU6050(i2c_master_dev_handle_t dev_handle) {
+void InitMPU6050(i2c_master_dev_handle_t dev_handle) {
     mpu6050_register_write_byte(dev_handle, MPU6050_PWR_MGMT_1_REG_ADDR, 0x00);
     vTaskDelay(pdMS_TO_TICKS(100));
     mpu6050_register_write_byte(dev_handle, MPU6050_PWR_MGMT_1_REG_ADDR, 0x01);
@@ -140,7 +141,7 @@ void app_main(void)
     } else {
         ESP_LOGI(TAG, "WHO_AM_I data is correct");
 
-        initMPU6050(dev_handle);
+        InitMPU6050(dev_handle);
         SensorData MPU_data;
         while(1) {
             MPU_data = ReadSensorData(dev_handle);
@@ -152,6 +153,8 @@ void app_main(void)
             ESP_LOGI(TAG, "X gryo = %f", MPU_data.gyro_x_dps);
             ESP_LOGI(TAG, "Y gryo = %f", MPU_data.gyro_y_dps);
             ESP_LOGI(TAG, "Z gryo = %f", MPU_data.gyro_z_dps);
+
+            vTaskDelay(pdMS_TO_TICKS(100));
         }
     }
     
