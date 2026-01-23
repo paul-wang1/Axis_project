@@ -17,8 +17,8 @@
 static const char *TAG = "i2c_slave";
 
 /* I2C Configuration - Adjust these pins for your ESP32-C3 wiring */
-#define I2C_SLAVE_SCL_IO    6                   /* GPIO for I2C clock */
-#define I2C_SLAVE_SDA_IO    5                   /* GPIO for I2C data */
+#define I2C_SLAVE_SCL_IO    21                   /* GPIO for I2C clock */
+#define I2C_SLAVE_SDA_IO    20                   /* GPIO for I2C data */
 #define I2C_SLAVE_NUM       0
 #define ESP_SLAVE_ADDR      0x28                /* 7-bit I2C address */
 #define I2C_SLAVE_RAM_SIZE  128                 /* Size of slave RAM buffer */
