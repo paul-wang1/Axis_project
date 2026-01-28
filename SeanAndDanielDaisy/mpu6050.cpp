@@ -1,4 +1,4 @@
-#include "MPU6050.h"
+#include "mpu6050.h"
 #include "daisy_seed.h"
 #include "daisysp.h"
 #include <math.h>
