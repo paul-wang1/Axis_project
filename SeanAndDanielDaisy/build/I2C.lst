@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -57,12 +57,12 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   33              		@ args = 0, pretend = 0, frame = 0
   34              		@ frame_needed = 0, uses_anonymous_args = 0
   35              		@ link register save eliminated.
-  36              	.LBB81:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 2
+  36              	.LBB61:
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 2
 
 
-  37              	.LBB82:
-  38              	.LBI82:
+  37              	.LBB62:
+  38              	.LBI62:
   39              		.file 3 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h **** #ifndef DSY_SYSTEM_H
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h **** #define DSY_SYSTEM_H
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   52:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h ****             skip_clocks = false;
   53:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h ****         }
   54:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h **** 
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 3
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 3
 
 
   55:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h ****         SysClkFreq cpu_freq;
@@ -166,9 +166,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   97:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
   40              		.loc 3 97 5 view .LVU1
   41              		.loc 3 97 5 is_stmt 0 view .LVU2
-  42              	.LBE82:
-  43              	.LBB83:
-  44              	.LBI83:
+  42              	.LBE62:
+  43              	.LBB63:
+  44              	.LBI63:
   45              		.file 4 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** #pragma once
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** #ifndef DSY_HID_USB_H
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
    6:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** 
    7:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** namespace daisy
    8:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** /** @addtogroup human_interface
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 4
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 4
 
 
    9:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h ****     @{
@@ -217,9 +217,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   42:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h ****     ~UsbHandle() {}
   46              		.loc 4 42 5 is_stmt 1 view .LVU3
   47              		.loc 4 42 5 is_stmt 0 view .LVU4
-  48              	.LBE83:
-  49              	.LBB84:
-  50              	.LBI84:
+  48              	.LBE63:
+  49              	.LBB64:
+  50              	.LBI64:
   51              		.file 5 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h **** #pragma once
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h **** #ifndef DSY_ADC_H
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   15:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h **** */
   16:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h **** 
   17:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h **** /* While there may not be many configuration options here,
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 5
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 5
 
 
   18:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h **** using a struct like this allows us to add more configuration
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   72:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****     \param speed conversion speed for this pin defaults to 8.5 cycles
   73:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****     */
   74:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 6
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 6
 
 
   75:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****                  size_t          mux_channels,
@@ -339,9 +339,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
  110:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
   52              		.loc 5 110 5 is_stmt 1 view .LVU5
   53              		.loc 5 110 5 is_stmt 0 view .LVU6
-  54              	.LBE84:
-  55              	.LBB85:
-  56              	.LBI85:
+  54              	.LBE64:
+  55              	.LBB65:
+  56              	.LBI65:
   57              		.file 6 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h **** #ifndef DSY_AUDIO_H
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h **** #define DSY_AUDIO_H /**< & */
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   13:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****  *            is already taken  care of.
   14:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****  *           If you're setting up your own custom hardware, or need to make changes
   15:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****  *           you will have to take the following steps:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 7
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 7
 
 
   16:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****  *             1. Create and Initialize an SaiHandle or two depending on your requirements
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   70:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     /** Type for a Non-Interleaving audio callback 
   71:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****      * Non-Interleaving audio callbacks in daisy will be of this type
   72:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****      */
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 8
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 8
 
 
   73:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
@@ -447,1142 +447,64 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   96:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
   58              		.loc 6 96 5 is_stmt 1 view .LVU7
   59              		.loc 6 96 5 is_stmt 0 view .LVU8
-  60              	.LBE85:
-  61              	.LBE81:
+  60              	.LBE65:
+  61              	.LBE61:
   62              		.loc 2 22 19 view .LVU9
   63 0000 7047     		bx	lr
   64              		.cfi_endproc
   65              	.LFE2363:
   67              		.weak	_ZN5daisy9DaisySeedD1Ev
   68              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
-  69 0002 00BF     		.section	.text._ZN7daisysp10OscillatorD2Ev,"axG",%progbits,_ZN7daisysp10OscillatorD5Ev,comdat
+  69 0002 00BF     		.section	.text.startup.main,"ax",%progbits
   70              		.align	1
   71              		.p2align 2,,3
-  72              		.weak	_ZN7daisysp10OscillatorD2Ev
+  72              		.global	main
   73              		.syntax unified
   74              		.thumb
   75              		.thumb_func
-  77              	_ZN7daisysp10OscillatorD2Ev:
-  78              	.LVL1:
-  79              	.LFB4286:
-  80              		.file 7 "/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h"
-   1:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** /*
-   2:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** Copyright (c) 2020 Electrosmith, Corp
-   3:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-   4:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** Use of this source code is governed by an MIT-style
-   5:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** license that can be found in the LICENSE file or at
-   6:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** https://opensource.org/licenses/MIT.
-   7:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** */
-   8:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-   9:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** #pragma once
-  10:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** #ifndef DSY_OSCILLATOR_H
-  11:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** #define DSY_OSCILLATOR_H
-  12:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** #include <stdint.h>
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 9
-
-
-  13:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** #include "Utility/dsp.h"
-  14:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** #ifdef __cplusplus
-  15:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  16:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** namespace daisysp
-  17:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** {
-  18:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** /** Synthesis of several waveforms, including polyBLEP bandlimited waveforms.
-  19:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** */
-  20:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** class Oscillator
-  21:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** {
-  22:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****   public:
-  23:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     Oscillator() {}
-  24:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     ~Oscillator() {}
-  81              		.loc 7 24 5 is_stmt 1 view -0
-  82              		.cfi_startproc
-  83              		@ args = 0, pretend = 0, frame = 0
-  84              		@ frame_needed = 0, uses_anonymous_args = 0
-  85              		@ link register save eliminated.
-  86              		.loc 7 24 20 is_stmt 0 view .LVU11
-  87 0000 7047     		bx	lr
-  88              		.cfi_endproc
-  89              	.LFE4286:
-  91              		.weak	_ZN7daisysp10OscillatorD1Ev
-  92              		.thumb_set _ZN7daisysp10OscillatorD1Ev,_ZN7daisysp10OscillatorD2Ev
-  93 0002 00BF     		.section	.text._Z19WriteBNO055Registerhh,"ax",%progbits
-  94              		.align	1
-  95              		.p2align 2,,3
-  96              		.global	_Z19WriteBNO055Registerhh
-  97              		.syntax unified
-  98              		.thumb
-  99              		.thumb_func
- 101              	_Z19WriteBNO055Registerhh:
- 102              	.LVL2:
- 103              	.LFB4732:
+  77              	main:
+  78              	.LFB4732:
    1:I2C.cpp       **** #include "daisy_seed.h"
    2:I2C.cpp       **** #include "daisysp.h"
    3:I2C.cpp       **** 
    4:I2C.cpp       **** using namespace daisy;
    5:I2C.cpp       **** using namespace daisysp;
    6:I2C.cpp       **** 
-   7:I2C.cpp       **** DaisySeed  hardware;
-   8:I2C.cpp       **** Oscillator osc;
-   9:I2C.cpp       **** I2CHandle  i2c;
-  10:I2C.cpp       **** 
-  11:I2C.cpp       **** // BNO055 I2C Base Address
-  12:I2C.cpp       **** const uint8_t BNO055_ADDRESS = 0x28;
-  13:I2C.cpp       **** 
-  14:I2C.cpp       **** // BNO055 Register Addresses
-  15:I2C.cpp       **** const uint8_t BNO055_OPR_MODE_ADDR = 0x3D;
-  16:I2C.cpp       **** const uint8_t BNO055_PWR_MODE_ADDR = 0x3E;
-  17:I2C.cpp       **** const uint8_t BNO055_EULER_H_LSB_ADDR = 0x1A;
-  18:I2C.cpp       **** const uint8_t BNO055_PAGE_ID_ADDR = 0x07;
-  19:I2C.cpp       **** 
-  20:I2C.cpp       **** // Operation modes
-  21:I2C.cpp       **** const uint8_t OPERATION_MODE_NDOF = 0x0C;
-  22:I2C.cpp       **** const uint8_t POWER_MODE_NORMAL = 0x00;
-  23:I2C.cpp       **** 
-  24:I2C.cpp       **** // Orientation data
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 10
+   7:I2C.cpp       **** DaisySeed hardware;
+   8:I2C.cpp       **** I2CHandle i2c;
+   9:I2C.cpp       **** 
+  10:I2C.cpp       **** int main()
+  11:I2C.cpp       **** {
+  79              		.loc 1 11 1 is_stmt 1 view -0
+  80              		.cfi_startproc
+  81              		@ args = 0, pretend = 0, frame = 32
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 9
 
 
-  25:I2C.cpp       **** float euler_heading = 0.0f;
-  26:I2C.cpp       **** float euler_roll = 0.0f;
-  27:I2C.cpp       **** float euler_pitch = 0.0f;
-  28:I2C.cpp       **** 
-  29:I2C.cpp       **** void WriteBNO055Register(uint8_t reg, uint8_t value)
-  30:I2C.cpp       **** {
- 104              		.loc 1 30 1 is_stmt 1 view -0
- 105              		.cfi_startproc
- 106              		@ args = 0, pretend = 0, frame = 8
- 107              		@ frame_needed = 0, uses_anonymous_args = 0
-  31:I2C.cpp       ****     uint8_t buffer[2] = {reg, value};
- 108              		.loc 1 31 5 view .LVU13
-  30:I2C.cpp       ****     uint8_t buffer[2] = {reg, value};
- 109              		.loc 1 30 1 is_stmt 0 view .LVU14
- 110 0000 10B5     		push	{r4, lr}
- 111              		.cfi_def_cfa_offset 8
- 112              		.cfi_offset 4, -8
- 113              		.cfi_offset 14, -4
- 114 0002 84B0     		sub	sp, sp, #16
- 115              		.cfi_def_cfa_offset 24
-  32:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 116              		.loc 1 32 25 view .LVU15
- 117 0004 6424     		movs	r4, #100
- 118 0006 0223     		movs	r3, #2
-  31:I2C.cpp       ****     uint8_t buffer[2] = {reg, value};
- 119              		.loc 1 31 36 view .LVU16
- 120 0008 8DF80D10 		strb	r1, [sp, #13]
- 121              		.loc 1 32 5 is_stmt 1 view .LVU17
- 122              		.loc 1 32 25 is_stmt 0 view .LVU18
- 123 000c 03AA     		add	r2, sp, #12
- 124 000e 2821     		movs	r1, #40
- 125              	.LVL3:
-  31:I2C.cpp       ****     uint8_t buffer[2] = {reg, value};
- 126              		.loc 1 31 36 view .LVU19
- 127 0010 8DF80C00 		strb	r0, [sp, #12]
- 128              		.loc 1 32 25 view .LVU20
- 129 0014 0094     		str	r4, [sp]
- 130 0016 0248     		ldr	r0, .L6
- 131              	.LVL4:
- 132              		.loc 1 32 25 view .LVU21
- 133 0018 FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 134              	.LVL5:
-  33:I2C.cpp       **** }
- 135              		.loc 1 33 1 view .LVU22
- 136 001c 04B0     		add	sp, sp, #16
- 137              		.cfi_def_cfa_offset 8
- 138              		@ sp needed
- 139 001e 10BD     		pop	{r4, pc}
- 140              	.L7:
- 141              		.align	2
- 142              	.L6:
- 143 0020 00000000 		.word	i2c
- 144              		.cfi_endproc
- 145              	.LFE4732:
- 147              		.section	.text._Z18ReadBNO055RegisterhPhh,"ax",%progbits
- 148              		.align	1
- 149              		.p2align 2,,3
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 11
-
-
- 150              		.global	_Z18ReadBNO055RegisterhPhh
- 151              		.syntax unified
- 152              		.thumb
- 153              		.thumb_func
- 155              	_Z18ReadBNO055RegisterhPhh:
- 156              	.LVL6:
- 157              	.LFB4733:
-  34:I2C.cpp       **** 
-  35:I2C.cpp       **** void ReadBNO055Register(uint8_t reg, uint8_t arr[], uint8_t size)
-  36:I2C.cpp       **** {
- 158              		.loc 1 36 1 is_stmt 1 view -0
- 159              		.cfi_startproc
- 160              		@ args = 0, pretend = 0, frame = 8
- 161              		@ frame_needed = 0, uses_anonymous_args = 0
-  37:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, &reg, 1, 100);
- 162              		.loc 1 37 5 view .LVU24
-  36:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, &reg, 1, 100);
- 163              		.loc 1 36 1 is_stmt 0 view .LVU25
- 164 0000 70B5     		push	{r4, r5, r6, lr}
- 165              		.cfi_def_cfa_offset 16
- 166              		.cfi_offset 4, -16
- 167              		.cfi_offset 5, -12
- 168              		.cfi_offset 6, -8
- 169              		.cfi_offset 14, -4
- 170              		.loc 1 37 25 view .LVU26
- 171 0002 6426     		movs	r6, #100
-  36:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, &reg, 1, 100);
- 172              		.loc 1 36 1 view .LVU27
- 173 0004 84B0     		sub	sp, sp, #16
- 174              		.cfi_def_cfa_offset 32
-  36:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, &reg, 1, 100);
- 175              		.loc 1 36 1 view .LVU28
- 176 0006 0C46     		mov	r4, r1
- 177 0008 1546     		mov	r5, r2
- 178 000a 8DF80F00 		strb	r0, [sp, #15]
- 179              		.loc 1 37 25 view .LVU29
- 180 000e 0DF10F02 		add	r2, sp, #15
- 181              	.LVL7:
- 182              		.loc 1 37 25 view .LVU30
- 183 0012 0123     		movs	r3, #1
- 184 0014 2821     		movs	r1, #40
- 185              	.LVL8:
- 186              		.loc 1 37 25 view .LVU31
- 187 0016 0096     		str	r6, [sp]
- 188 0018 0548     		ldr	r0, .L10
- 189              	.LVL9:
- 190              		.loc 1 37 25 view .LVU32
- 191 001a FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 192              	.LVL10:
-  38:I2C.cpp       ****     i2c.ReceiveBlocking(BNO055_ADDRESS, arr, size, 100);
- 193              		.loc 1 38 5 is_stmt 1 view .LVU33
- 194              		.loc 1 38 24 is_stmt 0 view .LVU34
- 195 001e 2821     		movs	r1, #40
- 196 0020 2B46     		mov	r3, r5
- 197 0022 2246     		mov	r2, r4
- 198 0024 0096     		str	r6, [sp]
- 199 0026 0248     		ldr	r0, .L10
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 12
-
-
- 200 0028 FFF7FEFF 		bl	_ZN5daisy9I2CHandle15ReceiveBlockingEtPhtm
- 201              	.LVL11:
-  39:I2C.cpp       **** }
- 202              		.loc 1 39 1 view .LVU35
- 203 002c 04B0     		add	sp, sp, #16
- 204              		.cfi_def_cfa_offset 16
- 205              		@ sp needed
- 206 002e 70BD     		pop	{r4, r5, r6, pc}
- 207              	.LVL12:
- 208              	.L11:
- 209              		.loc 1 39 1 view .LVU36
- 210              		.align	2
- 211              	.L10:
- 212 0030 00000000 		.word	i2c
- 213              		.cfi_endproc
- 214              	.LFE4733:
- 216              		.section	.text._Z10InitBNO055v,"ax",%progbits
- 217              		.align	1
- 218              		.p2align 2,,3
- 219              		.global	_Z10InitBNO055v
- 220              		.syntax unified
- 221              		.thumb
- 222              		.thumb_func
- 224              	_Z10InitBNO055v:
- 225              	.LFB4734:
-  40:I2C.cpp       **** 
-  41:I2C.cpp       **** void InitBNO055()
-  42:I2C.cpp       **** {
- 226              		.loc 1 42 1 is_stmt 1 view -0
- 227              		.cfi_startproc
- 228              		@ args = 0, pretend = 0, frame = 8
- 229              		@ frame_needed = 0, uses_anonymous_args = 0
-  43:I2C.cpp       ****     // Set to config mode first
-  44:I2C.cpp       ****     WriteBNO055Register(BNO055_OPR_MODE_ADDR, 0x00);
- 230              		.loc 1 44 5 view .LVU38
- 231              	.LVL13:
- 232              	.LBB94:
- 233              	.LBI94:
-  29:I2C.cpp       **** {
- 234              		.loc 1 29 6 view .LVU39
- 235              	.LBB95:
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 236              		.loc 1 31 5 view .LVU40
- 237              	.LBE95:
- 238              	.LBE94:
-  42:I2C.cpp       ****     // Set to config mode first
- 239              		.loc 1 42 1 is_stmt 0 view .LVU41
- 240 0000 10B5     		push	{r4, lr}
- 241              		.cfi_def_cfa_offset 8
- 242              		.cfi_offset 4, -8
- 243              		.cfi_offset 14, -4
- 244              	.LBB98:
- 245              	.LBB96:
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 246              		.loc 1 31 36 view .LVU42
- 247 0002 3D22     		movs	r2, #61
- 248              	.LBE96:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 13
-
-
- 249              	.LBE98:
-  42:I2C.cpp       ****     // Set to config mode first
- 250              		.loc 1 42 1 view .LVU43
- 251 0004 84B0     		sub	sp, sp, #16
- 252              		.cfi_def_cfa_offset 24
- 253              	.LBB99:
- 254              	.LBB97:
-  32:I2C.cpp       **** }
- 255              		.loc 1 32 25 view .LVU44
- 256 0006 6424     		movs	r4, #100
- 257 0008 0223     		movs	r3, #2
- 258 000a 2821     		movs	r1, #40
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 259              		.loc 1 31 36 view .LVU45
- 260 000c ADF80C20 		strh	r2, [sp, #12]	@ movhi
-  32:I2C.cpp       **** }
- 261              		.loc 1 32 5 is_stmt 1 view .LVU46
-  32:I2C.cpp       **** }
- 262              		.loc 1 32 25 is_stmt 0 view .LVU47
- 263 0010 0094     		str	r4, [sp]
- 264 0012 03AA     		add	r2, sp, #12
- 265 0014 1848     		ldr	r0, .L14
- 266 0016 FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 267              	.LVL14:
-  32:I2C.cpp       **** }
- 268              		.loc 1 32 25 view .LVU48
- 269              	.LBE97:
- 270              	.LBE99:
-  45:I2C.cpp       ****     System::Delay(30);
- 271              		.loc 1 45 5 is_stmt 1 view .LVU49
- 272              		.loc 1 45 18 is_stmt 0 view .LVU50
- 273 001a 1E20     		movs	r0, #30
- 274 001c FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 275              	.LVL15:
-  46:I2C.cpp       ****     
-  47:I2C.cpp       ****     // Set to normal power mode
-  48:I2C.cpp       ****     WriteBNO055Register(BNO055_PWR_MODE_ADDR, POWER_MODE_NORMAL);
- 276              		.loc 1 48 5 is_stmt 1 view .LVU51
- 277              	.LBB100:
- 278              	.LBI100:
-  29:I2C.cpp       **** {
- 279              		.loc 1 29 6 view .LVU52
- 280              	.LBB101:
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 281              		.loc 1 31 5 view .LVU53
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 282              		.loc 1 31 36 is_stmt 0 view .LVU54
- 283 0020 3E22     		movs	r2, #62
-  32:I2C.cpp       **** }
- 284              		.loc 1 32 25 view .LVU55
- 285 0022 0223     		movs	r3, #2
- 286 0024 2821     		movs	r1, #40
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 287              		.loc 1 31 36 view .LVU56
- 288 0026 ADF80C20 		strh	r2, [sp, #12]	@ movhi
-  32:I2C.cpp       **** }
- 289              		.loc 1 32 5 is_stmt 1 view .LVU57
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 14
-
-
-  32:I2C.cpp       **** }
- 290              		.loc 1 32 25 is_stmt 0 view .LVU58
- 291 002a 03AA     		add	r2, sp, #12
- 292 002c 0094     		str	r4, [sp]
- 293 002e 1248     		ldr	r0, .L14
- 294 0030 FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 295              	.LVL16:
-  32:I2C.cpp       **** }
- 296              		.loc 1 32 25 view .LVU59
- 297              	.LBE101:
- 298              	.LBE100:
-  49:I2C.cpp       ****     System::Delay(10);
- 299              		.loc 1 49 5 is_stmt 1 view .LVU60
- 300              		.loc 1 49 18 is_stmt 0 view .LVU61
- 301 0034 0A20     		movs	r0, #10
- 302 0036 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 303              	.LVL17:
-  50:I2C.cpp       ****     
-  51:I2C.cpp       ****     // Select page 0
-  52:I2C.cpp       ****     WriteBNO055Register(BNO055_PAGE_ID_ADDR, 0x00);
- 304              		.loc 1 52 5 is_stmt 1 view .LVU62
- 305              	.LBB102:
- 306              	.LBI102:
-  29:I2C.cpp       **** {
- 307              		.loc 1 29 6 view .LVU63
- 308              	.LBB103:
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 309              		.loc 1 31 5 view .LVU64
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 310              		.loc 1 31 36 is_stmt 0 view .LVU65
- 311 003a 0722     		movs	r2, #7
-  32:I2C.cpp       **** }
- 312              		.loc 1 32 25 view .LVU66
- 313 003c 0223     		movs	r3, #2
- 314 003e 2821     		movs	r1, #40
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 315              		.loc 1 31 36 view .LVU67
- 316 0040 ADF80C20 		strh	r2, [sp, #12]	@ movhi
-  32:I2C.cpp       **** }
- 317              		.loc 1 32 5 is_stmt 1 view .LVU68
-  32:I2C.cpp       **** }
- 318              		.loc 1 32 25 is_stmt 0 view .LVU69
- 319 0044 03AA     		add	r2, sp, #12
- 320 0046 0094     		str	r4, [sp]
- 321 0048 0B48     		ldr	r0, .L14
- 322 004a FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 323              	.LVL18:
-  32:I2C.cpp       **** }
- 324              		.loc 1 32 25 view .LVU70
- 325              	.LBE103:
- 326              	.LBE102:
-  53:I2C.cpp       ****     System::Delay(10);
- 327              		.loc 1 53 5 is_stmt 1 view .LVU71
- 328              		.loc 1 53 18 is_stmt 0 view .LVU72
- 329 004e 0A20     		movs	r0, #10
- 330 0050 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 331              	.LVL19:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 15
-
-
-  54:I2C.cpp       ****     
-  55:I2C.cpp       ****     // Set to NDOF mode (fusion mode with magnetometer)
-  56:I2C.cpp       ****     WriteBNO055Register(BNO055_OPR_MODE_ADDR, OPERATION_MODE_NDOF);
- 332              		.loc 1 56 5 is_stmt 1 view .LVU73
- 333              	.LBB104:
- 334              	.LBI104:
-  29:I2C.cpp       **** {
- 335              		.loc 1 29 6 view .LVU74
- 336              	.LBB105:
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 337              		.loc 1 31 5 view .LVU75
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 338              		.loc 1 31 36 is_stmt 0 view .LVU76
- 339 0054 40F63D41 		movw	r1, #3133
-  32:I2C.cpp       **** }
- 340              		.loc 1 32 25 view .LVU77
- 341 0058 0223     		movs	r3, #2
- 342 005a 03AA     		add	r2, sp, #12
-  31:I2C.cpp       ****     i2c.TransmitBlocking(BNO055_ADDRESS, buffer, 2, 100);
- 343              		.loc 1 31 36 view .LVU78
- 344 005c ADF80C10 		strh	r1, [sp, #12]	@ movhi
-  32:I2C.cpp       **** }
- 345              		.loc 1 32 5 is_stmt 1 view .LVU79
-  32:I2C.cpp       **** }
- 346              		.loc 1 32 25 is_stmt 0 view .LVU80
- 347 0060 2821     		movs	r1, #40
- 348 0062 0094     		str	r4, [sp]
- 349 0064 0448     		ldr	r0, .L14
- 350 0066 FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 351              	.LVL20:
-  32:I2C.cpp       **** }
- 352              		.loc 1 32 25 view .LVU81
- 353              	.LBE105:
- 354              	.LBE104:
-  57:I2C.cpp       ****     System::Delay(20);
- 355              		.loc 1 57 5 is_stmt 1 view .LVU82
- 356              		.loc 1 57 18 is_stmt 0 view .LVU83
- 357 006a 1420     		movs	r0, #20
-  58:I2C.cpp       **** }
- 358              		.loc 1 58 1 view .LVU84
- 359 006c 04B0     		add	sp, sp, #16
- 360              		.cfi_def_cfa_offset 8
- 361              		@ sp needed
- 362 006e BDE81040 		pop	{r4, lr}
- 363              		.cfi_restore 14
- 364              		.cfi_restore 4
- 365              		.cfi_def_cfa_offset 0
-  57:I2C.cpp       ****     System::Delay(20);
- 366              		.loc 1 57 18 view .LVU85
- 367 0072 FFF7FEBF 		b	_ZN5daisy6System5DelayEm
- 368              	.LVL21:
- 369              	.L15:
- 370 0076 00BF     		.align	2
- 371              	.L14:
- 372 0078 00000000 		.word	i2c
- 373              		.cfi_endproc
- 374              	.LFE4734:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 16
-
-
- 376              		.section	.text._Z15ReadEulerAnglesv,"ax",%progbits
- 377              		.align	1
- 378              		.p2align 2,,3
- 379              		.global	_Z15ReadEulerAnglesv
- 380              		.syntax unified
- 381              		.thumb
- 382              		.thumb_func
- 384              	_Z15ReadEulerAnglesv:
- 385              	.LFB4735:
-  59:I2C.cpp       **** 
-  60:I2C.cpp       **** void ReadEulerAngles()
-  61:I2C.cpp       **** {
- 386              		.loc 1 61 1 is_stmt 1 view -0
- 387              		.cfi_startproc
- 388              		@ args = 0, pretend = 0, frame = 16
- 389              		@ frame_needed = 0, uses_anonymous_args = 0
-  62:I2C.cpp       ****     uint8_t buffer[6];
- 390              		.loc 1 62 5 view .LVU87
-  63:I2C.cpp       ****     uint8_t reg = BNO055_EULER_H_LSB_ADDR;
- 391              		.loc 1 63 5 view .LVU88
- 392              	.LVL22:
-  64:I2C.cpp       ****     
-  65:I2C.cpp       ****     // Read 6 bytes starting from Euler heading LSB
-  66:I2C.cpp       ****     ReadBNO055Register(reg, buffer, 6);
- 393              		.loc 1 66 5 view .LVU89
-  61:I2C.cpp       ****     uint8_t buffer[6];
- 394              		.loc 1 61 1 is_stmt 0 view .LVU90
- 395 0000 10B5     		push	{r4, lr}
- 396              		.cfi_def_cfa_offset 8
- 397              		.cfi_offset 4, -8
- 398              		.cfi_offset 14, -4
- 399 0002 1A21     		movs	r1, #26
- 400 0004 86B0     		sub	sp, sp, #24
- 401              		.cfi_def_cfa_offset 32
- 402              	.LBB108:
- 403              	.LBB109:
-  37:I2C.cpp       ****     i2c.ReceiveBlocking(BNO055_ADDRESS, arr, size, 100);
- 404              		.loc 1 37 25 view .LVU91
- 405 0006 6424     		movs	r4, #100
- 406 0008 0123     		movs	r3, #1
- 407 000a 0DF10F02 		add	r2, sp, #15
- 408 000e 8DF80F10 		strb	r1, [sp, #15]
- 409              	.LVL23:
-  37:I2C.cpp       ****     i2c.ReceiveBlocking(BNO055_ADDRESS, arr, size, 100);
- 410              		.loc 1 37 25 view .LVU92
- 411              	.LBE109:
- 412              	.LBI108:
-  35:I2C.cpp       **** {
- 413              		.loc 1 35 6 is_stmt 1 view .LVU93
- 414              	.LBB110:
-  37:I2C.cpp       ****     i2c.ReceiveBlocking(BNO055_ADDRESS, arr, size, 100);
- 415              		.loc 1 37 5 view .LVU94
-  37:I2C.cpp       ****     i2c.ReceiveBlocking(BNO055_ADDRESS, arr, size, 100);
- 416              		.loc 1 37 25 is_stmt 0 view .LVU95
- 417 0012 0094     		str	r4, [sp]
- 418 0014 2821     		movs	r1, #40
- 419              	.LVL24:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 17
-
-
-  37:I2C.cpp       ****     i2c.ReceiveBlocking(BNO055_ADDRESS, arr, size, 100);
- 420              		.loc 1 37 25 view .LVU96
- 421 0016 1748     		ldr	r0, .L18
- 422 0018 FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
- 423              	.LVL25:
-  38:I2C.cpp       **** }
- 424              		.loc 1 38 5 is_stmt 1 view .LVU97
-  38:I2C.cpp       **** }
- 425              		.loc 1 38 24 is_stmt 0 view .LVU98
- 426 001c 04AA     		add	r2, sp, #16
- 427              	.LVL26:
-  38:I2C.cpp       **** }
- 428              		.loc 1 38 24 view .LVU99
- 429 001e 0623     		movs	r3, #6
- 430 0020 2821     		movs	r1, #40
- 431 0022 0094     		str	r4, [sp]
- 432 0024 1348     		ldr	r0, .L18
- 433 0026 FFF7FEFF 		bl	_ZN5daisy9I2CHandle15ReceiveBlockingEtPhtm
- 434              	.LVL27:
-  38:I2C.cpp       **** }
- 435              		.loc 1 38 24 view .LVU100
- 436              	.LBE110:
- 437              	.LBE108:
-  67:I2C.cpp       ****     
-  68:I2C.cpp       ****     // Separate Angles
-  69:I2C.cpp       ****     int16_t heading_raw = (buffer[1] << 8) | buffer[0];
- 438              		.loc 1 69 5 is_stmt 1 view .LVU101
-  70:I2C.cpp       ****     int16_t roll_raw = (buffer[3] << 8) | buffer[2];
- 439              		.loc 1 70 5 view .LVU102
- 440              		.loc 1 70 13 is_stmt 0 view .LVU103
- 441 002a BDF91230 		ldrsh	r3, [sp, #18]
-  71:I2C.cpp       ****     int16_t pitch_raw = (buffer[5] << 8) | buffer[4];
-  72:I2C.cpp       ****     
-  73:I2C.cpp       ****     // Convert to degrees
-  74:I2C.cpp       ****     euler_heading = heading_raw / 16.0f;
- 442              		.loc 1 74 33 view .LVU104
- 443 002e 9FED126A 		vldr.32	s12, .L18+4
-  70:I2C.cpp       ****     int16_t roll_raw = (buffer[3] << 8) | buffer[2];
- 444              		.loc 1 70 13 view .LVU105
- 445 0032 06EE903A 		vmov	s13, r3	@ int
- 446              	.LVL28:
-  71:I2C.cpp       ****     int16_t pitch_raw = (buffer[5] << 8) | buffer[4];
- 447              		.loc 1 71 5 is_stmt 1 view .LVU106
-  71:I2C.cpp       ****     int16_t pitch_raw = (buffer[5] << 8) | buffer[4];
- 448              		.loc 1 71 13 is_stmt 0 view .LVU107
- 449 0036 BDF91430 		ldrsh	r3, [sp, #20]
- 450              		.loc 1 74 19 view .LVU108
- 451 003a 104A     		ldr	r2, .L18+8
-  71:I2C.cpp       ****     int16_t pitch_raw = (buffer[5] << 8) | buffer[4];
- 452              		.loc 1 71 13 view .LVU109
- 453 003c 07EE903A 		vmov	s15, r3	@ int
- 454              	.LVL29:
- 455              		.loc 1 74 5 is_stmt 1 view .LVU110
- 456              		.loc 1 74 33 is_stmt 0 view .LVU111
- 457 0040 BDF91030 		ldrsh	r3, [sp, #16]
-  75:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 458              		.loc 1 75 27 view .LVU112
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 18
-
-
- 459 0044 F8EEE66A 		vcvt.f32.s32	s13, s13
- 460              		.loc 1 75 16 view .LVU113
- 461 0048 0D49     		ldr	r1, .L18+12
-  74:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 462              		.loc 1 74 33 view .LVU114
- 463 004a 07EE103A 		vmov	s14, r3	@ int
-  76:I2C.cpp       ****     euler_pitch = pitch_raw / 16.0f;
- 464              		.loc 1 76 29 view .LVU115
- 465 004e F8EEE77A 		vcvt.f32.s32	s15, s15
- 466              		.loc 1 76 17 view .LVU116
- 467 0052 0C4B     		ldr	r3, .L18+16
-  74:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 468              		.loc 1 74 33 view .LVU117
- 469 0054 B8EEC77A 		vcvt.f32.s32	s14, s14
-  75:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 470              		.loc 1 75 27 view .LVU118
- 471 0058 66EE866A 		vmul.f32	s13, s13, s12
- 472              		.loc 1 76 29 view .LVU119
- 473 005c 67EE867A 		vmul.f32	s15, s15, s12
-  74:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 474              		.loc 1 74 33 view .LVU120
- 475 0060 27EE067A 		vmul.f32	s14, s14, s12
-  75:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 476              		.loc 1 75 16 view .LVU121
- 477 0064 C1ED006A 		vstr.32	s13, [r1]
- 478              		.loc 1 76 17 view .LVU122
- 479 0068 C3ED007A 		vstr.32	s15, [r3]
-  74:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 480              		.loc 1 74 19 view .LVU123
- 481 006c 82ED007A 		vstr.32	s14, [r2]
-  75:I2C.cpp       ****     euler_roll = roll_raw / 16.0f;
- 482              		.loc 1 75 5 is_stmt 1 view .LVU124
- 483              		.loc 1 76 5 view .LVU125
-  77:I2C.cpp       **** }
- 484              		.loc 1 77 1 is_stmt 0 view .LVU126
- 485 0070 06B0     		add	sp, sp, #24
- 486              		.cfi_def_cfa_offset 8
- 487              		@ sp needed
- 488 0072 10BD     		pop	{r4, pc}
- 489              	.LVL30:
- 490              	.L19:
- 491              		.loc 1 77 1 view .LVU127
- 492              		.align	2
- 493              	.L18:
- 494 0074 00000000 		.word	i2c
- 495 0078 0000803D 		.word	1031798784
- 496 007c 00000000 		.word	euler_heading
- 497 0080 00000000 		.word	euler_roll
- 498 0084 00000000 		.word	euler_pitch
- 499              		.cfi_endproc
- 500              	.LFE4735:
- 502              		.section	.text._Z13AudioCallbackPKfPfj,"ax",%progbits
- 503              		.align	1
- 504              		.p2align 2,,3
- 505              		.global	_Z13AudioCallbackPKfPfj
- 506              		.syntax unified
- 507              		.thumb
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 19
-
-
- 508              		.thumb_func
- 510              	_Z13AudioCallbackPKfPfj:
- 511              	.LVL31:
- 512              	.LFB4736:
-  78:I2C.cpp       **** 
-  79:I2C.cpp       **** void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
-  80:I2C.cpp       ****                    AudioHandle::InterleavingOutputBuffer out,
-  81:I2C.cpp       ****                    size_t                                size)
-  82:I2C.cpp       **** {
- 513              		.loc 1 82 1 is_stmt 1 view -0
- 514              		.cfi_startproc
- 515              		@ args = 0, pretend = 0, frame = 0
- 516              		@ frame_needed = 0, uses_anonymous_args = 0
-  83:I2C.cpp       ****     static uint32_t counter = 0;
- 517              		.loc 1 83 5 view .LVU129
-  84:I2C.cpp       ****     float osc_out;
- 518              		.loc 1 84 5 view .LVU130
-  85:I2C.cpp       ****     
-  86:I2C.cpp       ****     // Read orientation around every 100ms
-  87:I2C.cpp       ****     if (counter++ % 1200 == 0) {
- 519              		.loc 1 87 5 view .LVU131
- 520              	.LBB111:
- 521              		.loc 1 87 16 is_stmt 0 view .LVU132
- 522 0000 3948     		ldr	r0, .L34
- 523              	.LVL32:
- 524              		.loc 1 87 16 view .LVU133
- 525 0002 0368     		ldr	r3, [r0]
- 526              	.LBE111:
-  82:I2C.cpp       ****     static uint32_t counter = 0;
- 527              		.loc 1 82 1 view .LVU134
- 528 0004 70B5     		push	{r4, r5, r6, lr}
- 529              		.cfi_def_cfa_offset 16
- 530              		.cfi_offset 4, -16
- 531              		.cfi_offset 5, -12
- 532              		.cfi_offset 6, -8
- 533              		.cfi_offset 14, -4
- 534 0006 1646     		mov	r6, r2
- 535              	.LBB123:
- 536              		.loc 1 87 16 view .LVU135
- 537 0008 5A1C     		adds	r2, r3, #1
- 538              	.LVL33:
- 539              		.loc 1 87 16 view .LVU136
- 540              	.LBE123:
-  82:I2C.cpp       ****     static uint32_t counter = 0;
- 541              		.loc 1 82 1 view .LVU137
- 542 000a 0C46     		mov	r4, r1
- 543 000c 2DED028B 		vpush.64	{d8}
- 544              		.cfi_def_cfa_offset 24
- 545              		.cfi_offset 80, -24
- 546              		.cfi_offset 81, -20
- 547              	.LBB124:
- 548              		.loc 1 87 16 view .LVU138
- 549 0010 0260     		str	r2, [r0]
- 550 0012 3648     		ldr	r0, .L34+4
- 551              		.loc 1 87 5 view .LVU139
- 552 0014 364A     		ldr	r2, .L34+8
- 553              		.loc 1 87 16 view .LVU140
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 20
-
-
- 554 0016 00FB03F3 		mul	r3, r0, r3
- 555              		.loc 1 87 5 view .LVU141
- 556 001a B2EB331F 		cmp	r2, r3, ror #4
- 557 001e 12D2     		bcs	.L33
- 558              	.LVL34:
- 559              	.L21:
- 560              		.loc 1 87 5 view .LVU142
- 561              	.LBE124:
- 562              	.LBB125:
-  88:I2C.cpp       ****         ReadEulerAngles();
-  89:I2C.cpp       ****         
-  90:I2C.cpp       ****         // Continuously update sound parameters based on orientation
-  91:I2C.cpp       ****         // Map heading (0-360) to frequency range (200Hz - 2000Hz)
-  92:I2C.cpp       ****         float freq = 200.0f + (euler_heading / 360.0f) * 1800.0f;
-  93:I2C.cpp       ****         osc.SetFreq(freq);
-  94:I2C.cpp       ****         
-  95:I2C.cpp       ****         // Map roll (-180 to 180) to waveform selection
-  96:I2C.cpp       ****         float roll_normalized = (euler_roll + 180.0f) / 360.0f; // 0.0 to 1.0
-  97:I2C.cpp       **** 
-  98:I2C.cpp       ****         if(roll_normalized < 0.25f) {
-  99:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_SIN);
- 100:I2C.cpp       ****         } else if(roll_normalized < 0.5f) {
- 101:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_TRI);
- 102:I2C.cpp       ****         } else if(roll_normalized < 0.75f) {
- 103:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_SAW);
- 104:I2C.cpp       ****         } else {
- 105:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_SQUARE);
- 106:I2C.cpp       ****         }
- 107:I2C.cpp       **** 
- 108:I2C.cpp       ****         // Map pitch (-180 to 180) to amplitude (0.3 to 0.8)
- 109:I2C.cpp       ****         float pitch_normalized = (euler_pitch + 180.0f) / 360.0f;
- 110:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 111:I2C.cpp       ****         osc.SetAmp(amplitude);
- 112:I2C.cpp       ****     }
- 113:I2C.cpp       ****     
- 114:I2C.cpp       ****     // Fill the block with samples - continuous playback
- 115:I2C.cpp       ****     for(size_t i = 0; i < size; i += 2)
- 563              		.loc 1 115 25 is_stmt 1 discriminator 1 view .LVU143
- 564 0020 76B1     		cbz	r6, .L20
- 565 0022 013E     		subs	r6, r6, #1
- 566              	.LVL35:
- 567              		.loc 1 115 25 is_stmt 0 discriminator 1 view .LVU144
- 568 0024 0025     		movs	r5, #0
- 569 0026 7608     		lsrs	r6, r6, #1
- 570              	.LVL36:
- 571              	.L24:
- 116:I2C.cpp       ****     {
- 117:I2C.cpp       ****         osc_out = osc.Process();
- 572              		.loc 1 117 9 is_stmt 1 view .LVU145
- 573              		.loc 1 117 30 is_stmt 0 view .LVU146
- 574 0028 3248     		ldr	r0, .L34+12
- 115:I2C.cpp       ****     {
- 575              		.loc 1 115 25 discriminator 1 view .LVU147
- 576 002a 0834     		adds	r4, r4, #8
- 577              		.loc 1 117 30 view .LVU148
- 578 002c FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
- 579              	.LVL37:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 21
-
-
- 118:I2C.cpp       ****         
- 119:I2C.cpp       ****         out[i]     = osc_out;
- 580              		.loc 1 119 9 is_stmt 1 view .LVU149
- 115:I2C.cpp       ****     {
- 581              		.loc 1 115 25 is_stmt 0 discriminator 1 view .LVU150
- 582 0030 AE42     		cmp	r6, r5
- 583              		.loc 1 119 20 view .LVU151
- 584 0032 04ED020A 		vstr.32	s0, [r4, #-8]
- 120:I2C.cpp       ****         out[i + 1] = osc_out;
- 585              		.loc 1 120 9 is_stmt 1 view .LVU152
- 115:I2C.cpp       ****     {
- 586              		.loc 1 115 25 is_stmt 0 discriminator 1 view .LVU153
- 587 0036 05F10105 		add	r5, r5, #1
- 588              	.LVL38:
- 589              		.loc 1 120 20 view .LVU154
- 590 003a 04ED010A 		vstr.32	s0, [r4, #-4]
- 115:I2C.cpp       ****     {
- 591              		.loc 1 115 5 is_stmt 1 discriminator 3 view .LVU155
- 592              	.LVL39:
- 115:I2C.cpp       ****     {
- 593              		.loc 1 115 25 discriminator 1 view .LVU156
- 594 003e F3D1     		bne	.L24
- 595              	.LVL40:
- 596              	.L20:
- 115:I2C.cpp       ****     {
- 597              		.loc 1 115 25 is_stmt 0 discriminator 1 view .LVU157
- 598              	.LBE125:
- 121:I2C.cpp       ****     }
- 122:I2C.cpp       **** }
- 599              		.loc 1 122 1 view .LVU158
- 600 0040 BDEC028B 		vldm	sp!, {d8}
- 601              		.cfi_remember_state
- 602              		.cfi_restore 80
- 603              		.cfi_restore 81
- 604              		.cfi_def_cfa_offset 16
- 605 0044 70BD     		pop	{r4, r5, r6, pc}
- 606              	.LVL41:
- 607              	.L33:
- 608              		.cfi_restore_state
- 609              	.LBB126:
- 610              	.LBB112:
-  88:I2C.cpp       ****         
- 611              		.loc 1 88 9 is_stmt 1 view .LVU159
-  88:I2C.cpp       ****         
- 612              		.loc 1 88 24 is_stmt 0 view .LVU160
- 613 0046 FFF7FEFF 		bl	_Z15ReadEulerAnglesv
- 614              	.LVL42:
-  92:I2C.cpp       ****         osc.SetFreq(freq);
- 615              		.loc 1 92 9 is_stmt 1 view .LVU161
-  92:I2C.cpp       ****         osc.SetFreq(freq);
- 616              		.loc 1 92 46 is_stmt 0 view .LVU162
- 617 004a 2B4B     		ldr	r3, .L34+16
- 618 004c 9FED2B8A 		vldr.32	s16, .L34+20
- 619 0050 D3ED006A 		vldr.32	s13, [r3]
-  92:I2C.cpp       ****         osc.SetFreq(freq);
- 620              		.loc 1 92 15 view .LVU163
- 621 0054 DFED2A7A 		vldr.32	s15, .L34+24
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 22
-
-
-  92:I2C.cpp       ****         osc.SetFreq(freq);
- 622              		.loc 1 92 46 view .LVU164
- 623 0058 86EE887A 		vdiv.f32	s14, s13, s16
-  92:I2C.cpp       ****         osc.SetFreq(freq);
- 624              		.loc 1 92 15 view .LVU165
- 625 005c 9FED290A 		vldr.32	s0, .L34+28
- 626              	.LBB113:
- 627              	.LBB114:
-  25:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Choices for output waveforms, POLYBLEP are appropriately labeled. Others are naive forms.
-  26:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     */
-  27:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     enum
-  28:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
-  29:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_SIN,
-  30:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_TRI,
-  31:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_SAW,
-  32:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_RAMP,
-  33:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_SQUARE,
-  34:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_TRI,
-  35:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_SAW,
-  36:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_SQUARE,
-  37:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         WAVE_LAST,
-  38:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     };
-  39:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  40:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  41:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Initializes the Oscillator
-  42:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  43:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         \param sample_rate - sample rate of the audio engine being run, and the frequency that the 
-  44:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  45:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         Defaults:
-  46:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         - freq_ = 100 Hz
-  47:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         - amp_ = 0.5
-  48:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         - waveform_ = sine wave.
-  49:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     */
-  50:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     void Init(float sample_rate)
-  51:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
-  52:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         sr_        = sample_rate;
-  53:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
-  54:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
-  55:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
-  56:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
-  57:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
-  58:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
-  59:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
-  60:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         eoc_       = true;
-  61:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         eor_       = true;
-  62:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
-  63:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  64:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  65:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Changes the frequency of the Oscillator, and recalculates phase increment.
-  66:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     */
-  67:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     inline void SetFreq(const float f)
-  68:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
-  69:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         freq_      = f;
- 628              		.loc 7 69 20 view .LVU166
- 629 0060 244D     		ldr	r5, .L34+12
-  70:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 630              		.loc 7 70 34 view .LVU167
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 23
-
-
- 631 0062 2846     		mov	r0, r5
- 632              	.LBE114:
- 633              	.LBE113:
-  92:I2C.cpp       ****         osc.SetFreq(freq);
- 634              		.loc 1 92 15 view .LVU168
- 635 0064 A7EE270A 		vfma.f32	s0, s14, s15
- 636              	.LVL43:
-  93:I2C.cpp       ****         
- 637              		.loc 1 93 9 is_stmt 1 view .LVU169
- 638              	.LBB117:
- 639              	.LBI113:
-  67:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
- 640              		.loc 7 67 17 view .LVU170
- 641              	.LBB115:
-  69:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 642              		.loc 7 69 9 view .LVU171
-  69:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 643              		.loc 7 69 20 is_stmt 0 view .LVU172
- 644 0068 85ED020A 		vstr.32	s0, [r5, #8]
- 645              		.loc 7 70 9 is_stmt 1 view .LVU173
- 646              		.loc 7 70 34 is_stmt 0 view .LVU174
- 647 006c FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 648              	.LVL44:
- 649              		.loc 7 70 34 view .LVU175
- 650              	.LBE115:
- 651              	.LBE117:
-  96:I2C.cpp       **** 
- 652              		.loc 1 96 45 view .LVU176
- 653 0070 254B     		ldr	r3, .L34+32
-  98:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_SIN);
- 654              		.loc 1 98 9 view .LVU177
- 655 0072 F5EE006A 		vmov.f32	s13, #2.5e-1
-  96:I2C.cpp       **** 
- 656              		.loc 1 96 45 view .LVU178
- 657 0076 9FED257A 		vldr.32	s14, .L34+36
- 658 007a D3ED007A 		vldr.32	s15, [r3]
- 659              	.LBB118:
- 660              	.LBB116:
- 661              		.loc 7 70 20 discriminator 1 view .LVU179
- 662 007e 85ED070A 		vstr.32	s0, [r5, #28]
- 663              	.LVL45:
- 664              		.loc 7 70 20 discriminator 1 view .LVU180
- 665              	.LBE116:
- 666              	.LBE118:
-  96:I2C.cpp       **** 
- 667              		.loc 1 96 9 is_stmt 1 view .LVU181
-  96:I2C.cpp       **** 
- 668              		.loc 1 96 45 is_stmt 0 view .LVU182
- 669 0082 77EE877A 		vadd.f32	s15, s15, s14
-  96:I2C.cpp       **** 
- 670              		.loc 1 96 15 view .LVU183
- 671 0086 87EE887A 		vdiv.f32	s14, s15, s16
- 672              	.LVL46:
-  98:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_SIN);
- 673              		.loc 1 98 9 is_stmt 1 view .LVU184
- 674 008a B4EEE67A 		vcmpe.f32	s14, s13
- 675 008e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 24
-
-
- 676 0092 24D4     		bmi	.L25
- 100:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_TRI);
- 677              		.loc 1 100 16 view .LVU185
- 678 0094 F6EE007A 		vmov.f32	s15, #5.0e-1
- 679 0098 B4EEE77A 		vcmpe.f32	s14, s15
- 680 009c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 681 00a0 1FD4     		bmi	.L26
- 102:I2C.cpp       ****             osc.SetWaveform(Oscillator::WAVE_SAW);
- 682              		.loc 1 102 16 view .LVU186
- 683 00a2 F6EE087A 		vmov.f32	s15, #7.5e-1
- 684 00a6 B4EEE77A 		vcmpe.f32	s14, s15
- 685 00aa F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 686 00ae 4CBF     		ite	mi
- 687 00b0 0223     		movmi	r3, #2
- 688 00b2 0423     		movpl	r3, #4
- 689              	.L22:
- 109:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 690              		.loc 1 109 47 is_stmt 0 view .LVU187
- 691 00b4 164A     		ldr	r2, .L34+40
- 110:I2C.cpp       ****         osc.SetAmp(amplitude);
- 692              		.loc 1 110 15 view .LVU188
- 693 00b6 F6EE006A 		vmov.f32	s13, #5.0e-1
- 109:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 694              		.loc 1 109 47 view .LVU189
- 695 00ba 9FED146A 		vldr.32	s12, .L34+36
- 696 00be 92ED007A 		vldr.32	s14, [r2]
- 697              	.LVL47:
- 109:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 698              		.loc 1 109 15 view .LVU190
- 699 00c2 DFED0E5A 		vldr.32	s11, .L34+20
- 109:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 700              		.loc 1 109 47 view .LVU191
- 701 00c6 37EE067A 		vadd.f32	s14, s14, s12
- 110:I2C.cpp       ****         osc.SetAmp(amplitude);
- 702              		.loc 1 110 15 view .LVU192
- 703 00ca DFED127A 		vldr.32	s15, .L34+44
- 704              	.LBB119:
- 705              	.LBB120:
-  71:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
-  72:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  73:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h **** 
-  74:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the amplitude of the waveform.
-  75:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     */
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     inline void SetAmp(const float a) { amp_ = a; }
-  77:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
-  78:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     */
-  79:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     inline void SetWaveform(const uint8_t wf)
-  80:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
-  81:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         waveform_ = wf < WAVE_LAST ? wf : WAVE_SIN;
- 706              		.loc 7 81 19 discriminator 4 view .LVU193
- 707 00ce 2B70     		strb	r3, [r5]
- 708              	.LBE120:
- 709              	.LBE119:
- 109:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 710              		.loc 1 109 9 is_stmt 1 view .LVU194
- 711              	.LVL48:
- 110:I2C.cpp       ****         osc.SetAmp(amplitude);
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 25
-
-
- 712              		.loc 1 110 9 view .LVU195
- 109:I2C.cpp       ****         float amplitude = 0.3f + pitch_normalized * 0.5f;
- 713              		.loc 1 109 15 is_stmt 0 view .LVU196
- 714 00d0 87EE256A 		vdiv.f32	s12, s14, s11
- 715              	.LVL49:
- 110:I2C.cpp       ****         osc.SetAmp(amplitude);
- 716              		.loc 1 110 15 view .LVU197
- 717 00d4 E6EE267A 		vfma.f32	s15, s12, s13
- 718              	.LVL50:
- 111:I2C.cpp       ****     }
- 719              		.loc 1 111 9 is_stmt 1 view .LVU198
- 720              	.LBB121:
- 721              	.LBI121:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 722              		.loc 7 76 17 view .LVU199
- 723              	.LBB122:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 724              		.loc 7 76 41 view .LVU200
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 725              		.loc 7 76 46 is_stmt 0 view .LVU201
- 726 00d8 C5ED017A 		vstr.32	s15, [r5, #4]
- 727              	.LVL51:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 728              		.loc 7 76 51 view .LVU202
- 729 00dc A0E7     		b	.L21
- 730              	.LVL52:
- 731              	.L25:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 732              		.loc 7 76 51 view .LVU203
- 733              	.LBE122:
- 734              	.LBE121:
- 735 00de 0023     		movs	r3, #0
- 736 00e0 E8E7     		b	.L22
- 737              	.L26:
- 738 00e2 0123     		movs	r3, #1
- 739 00e4 E6E7     		b	.L22
- 740              	.L35:
- 741 00e6 00BF     		.align	2
- 742              	.L34:
- 743 00e8 00000000 		.word	_ZZ13AudioCallbackPKfPfjE7counter
- 744 00ec 63C92F96 		.word	-1775253149
- 745 00f0 039D3600 		.word	3579139
- 746 00f4 00000000 		.word	osc
- 747 00f8 00000000 		.word	euler_heading
- 748 00fc 0000B443 		.word	1135869952
- 749 0100 0000E144 		.word	1155596288
- 750 0104 00004843 		.word	1128792064
- 751 0108 00000000 		.word	euler_roll
- 752 010c 00003443 		.word	1127481344
- 753 0110 00000000 		.word	euler_pitch
- 754 0114 9A99993E 		.word	1050253722
- 755              	.LBE112:
- 756              	.LBE126:
- 757              		.cfi_endproc
- 758              	.LFE4736:
- 760              		.section	.text.startup.main,"ax",%progbits
- 761              		.align	1
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 26
-
-
- 762              		.p2align 2,,3
- 763              		.global	main
- 764              		.syntax unified
- 765              		.thumb
- 766              		.thumb_func
- 768              	main:
- 769              	.LFB4737:
- 123:I2C.cpp       **** 
- 124:I2C.cpp       **** int main(void)
- 125:I2C.cpp       **** {
- 770              		.loc 1 125 1 is_stmt 1 view -0
- 771              		.cfi_startproc
- 772              		@ args = 0, pretend = 0, frame = 24
- 773              		@ frame_needed = 0, uses_anonymous_args = 0
- 126:I2C.cpp       ****     hardware.Configure();
- 774              		.loc 1 126 5 view .LVU205
- 125:I2C.cpp       ****     hardware.Configure();
- 775              		.loc 1 125 1 is_stmt 0 view .LVU206
- 776 0000 70B5     		push	{r4, r5, r6, lr}
- 777              		.cfi_def_cfa_offset 16
- 778              		.cfi_offset 4, -16
- 779              		.cfi_offset 5, -12
- 780              		.cfi_offset 6, -8
- 781              		.cfi_offset 14, -4
- 782              		.loc 1 126 23 view .LVU207
- 783 0002 2D48     		ldr	r0, .L41
- 127:I2C.cpp       ****     hardware.Init();
- 128:I2C.cpp       ****     hardware.SetAudioBlockSize(4);
- 129:I2C.cpp       ****     
- 130:I2C.cpp       ****     float samplerate = hardware.AudioSampleRate();
- 131:I2C.cpp       ****     
- 132:I2C.cpp       ****     // Configure I2C for BNO055
- 133:I2C.cpp       ****     I2CHandle::Config i2c_conf;
- 134:I2C.cpp       ****     i2c_conf.periph = I2CHandle::Config::Peripheral::I2C_1;
- 135:I2C.cpp       ****     i2c_conf.mode   = I2CHandle::Config::Mode::I2C_MASTER;
- 136:I2C.cpp       ****     i2c_conf.speed  = I2CHandle::Config::Speed::I2C_400KHZ;
- 784              		.loc 1 136 21 view .LVU208
- 785 0004 0125     		movs	r5, #1
- 125:I2C.cpp       ****     hardware.Configure();
- 786              		.loc 1 125 1 view .LVU209
- 787 0006 2DED028B 		vpush.64	{d8}
- 788              		.cfi_def_cfa_offset 24
- 789              		.cfi_offset 80, -24
- 790              		.cfi_offset 81, -20
- 791 000a 86B0     		sub	sp, sp, #24
- 792              		.cfi_def_cfa_offset 48
- 126:I2C.cpp       ****     hardware.Init();
- 793              		.loc 1 126 23 view .LVU210
- 794 000c FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
- 795              	.LVL53:
- 127:I2C.cpp       ****     hardware.Init();
- 796              		.loc 1 127 5 is_stmt 1 view .LVU211
- 127:I2C.cpp       ****     hardware.Init();
- 797              		.loc 1 127 18 is_stmt 0 view .LVU212
- 798 0010 0021     		movs	r1, #0
- 799 0012 2948     		ldr	r0, .L41
- 800 0014 FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 27
-
-
- 801              	.LVL54:
- 128:I2C.cpp       ****     
- 802              		.loc 1 128 5 is_stmt 1 view .LVU213
- 128:I2C.cpp       ****     
- 803              		.loc 1 128 31 is_stmt 0 view .LVU214
- 804 0018 0421     		movs	r1, #4
- 805 001a 2748     		ldr	r0, .L41
- 806 001c FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
- 807              	.LVL55:
- 130:I2C.cpp       ****     
- 808              		.loc 1 130 5 is_stmt 1 view .LVU215
- 130:I2C.cpp       ****     
- 809              		.loc 1 130 48 is_stmt 0 view .LVU216
- 810 0020 2548     		ldr	r0, .L41
- 811 0022 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
- 812              	.LVL56:
- 137:I2C.cpp       ****     i2c_conf.pin_config.scl = seed::D11;
- 813              		.loc 1 137 29 view .LVU217
- 814 0026 254A     		ldr	r2, .L41+4
- 815              	.LBB137:
- 816              	.LBB138:
- 817              		.file 8 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h"
+  82              		@ frame_needed = 0, uses_anonymous_args = 0
+  12:I2C.cpp       ****     // Configure the handle
+  13:I2C.cpp       ****     I2CHandle::Config i2c1_conf;
+  83              		.loc 1 13 5 view .LVU11
+  11:I2C.cpp       ****     // Configure the handle
+  84              		.loc 1 11 1 is_stmt 0 view .LVU12
+  85 0000 10B5     		push	{r4, lr}
+  86              		.cfi_def_cfa_offset 8
+  87              		.cfi_offset 4, -8
+  88              		.cfi_offset 14, -4
+  14:I2C.cpp       ****     i2c1_conf.periph = I2CHandle::Config::Peripheral::I2C_1;
+  15:I2C.cpp       ****     i2c1_conf.mode = I2CHandle::Config::Mode::I2C_MASTER; // Use the peripheral as a controller
+  16:I2C.cpp       ****     i2c1_conf.speed = I2CHandle::Config::Speed::I2C_400KHZ;
+  17:I2C.cpp       ****     i2c1_conf.pin_config.scl = seed::D11; // Must match pinout for I2C1 SCL
+  89              		.loc 1 17 30 view .LVU13
+  90 0002 0C4B     		ldr	r3, .L5
+  11:I2C.cpp       ****     // Configure the handle
+  91              		.loc 1 11 1 view .LVU14
+  92 0004 88B0     		sub	sp, sp, #32
+  93              		.cfi_def_cfa_offset 40
+  94              	.LVL1:
+  95              	.LBB66:
+  96              	.LBI66:
+  97              		.file 7 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** #pragma once
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** #include "daisy_core.h"
    3:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
@@ -1611,327 +533,181 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   26:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****   public:
   27:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     /** Contains settings for initialising an I2C interface. */
   28:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     struct Config
- 818              		.loc 8 28 12 view .LVU218
- 819 0028 1021     		movs	r1, #16
- 820              	.LBE138:
- 821              	.LBE137:
- 134:I2C.cpp       ****     i2c_conf.mode   = I2CHandle::Config::Mode::I2C_MASTER;
- 822              		.loc 1 134 21 view .LVU219
- 823 002a 0023     		movs	r3, #0
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 28
+  98              		.loc 7 28 12 is_stmt 1 view .LVU15
+  99              	.LBB67:
+ 100 0006 1022     		movs	r2, #16
+ 101              	.LBE67:
+ 102              	.LBE66:
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 10
 
 
- 824              		.loc 1 137 29 view .LVU220
- 825 002c 1488     		ldrh	r4, [r2]
- 130:I2C.cpp       ****     
- 826              		.loc 1 130 48 view .LVU221
- 827 002e B0EE408A 		vmov.f32	s16, s0
- 828              	.LVL57:
- 133:I2C.cpp       ****     i2c_conf.periph = I2CHandle::Config::Peripheral::I2C_1;
- 829              		.loc 1 133 5 is_stmt 1 view .LVU222
- 830              	.LBB140:
- 831              	.LBI137:
- 832              		.loc 8 28 12 view .LVU223
- 833              	.LBE140:
- 138:I2C.cpp       ****     i2c_conf.pin_config.sda = seed::D12;
- 834              		.loc 1 138 29 is_stmt 0 view .LVU224
- 835 0032 9288     		ldrh	r2, [r2, #4]
- 836              	.LBB141:
- 837              	.LBB139:
- 838              		.loc 8 28 12 view .LVU225
- 839 0034 8DF81410 		strb	r1, [sp, #20]
- 840              	.LVL58:
- 841              		.loc 8 28 12 view .LVU226
- 842              	.LBE139:
- 843              	.LBE141:
- 134:I2C.cpp       ****     i2c_conf.mode   = I2CHandle::Config::Mode::I2C_MASTER;
- 844              		.loc 1 134 5 is_stmt 1 view .LVU227
- 139:I2C.cpp       ****     
- 140:I2C.cpp       ****     // Initialize I2C
- 141:I2C.cpp       ****     if (i2c.Init(i2c_conf) != I2CHandle::Result::OK) {
- 845              		.loc 1 141 17 is_stmt 0 view .LVU228
- 846 0038 01A9     		add	r1, sp, #4
- 847 003a 2148     		ldr	r0, .L41+8
- 134:I2C.cpp       ****     i2c_conf.mode   = I2CHandle::Config::Mode::I2C_MASTER;
- 848              		.loc 1 134 21 view .LVU229
- 849 003c 0193     		str	r3, [sp, #4]
- 135:I2C.cpp       ****     i2c_conf.speed  = I2CHandle::Config::Speed::I2C_400KHZ;
- 850              		.loc 1 135 5 is_stmt 1 view .LVU230
- 135:I2C.cpp       ****     i2c_conf.speed  = I2CHandle::Config::Speed::I2C_400KHZ;
- 851              		.loc 1 135 21 is_stmt 0 view .LVU231
- 852 003e 0493     		str	r3, [sp, #16]
- 136:I2C.cpp       ****     i2c_conf.pin_config.scl = seed::D11;
- 853              		.loc 1 136 5 is_stmt 1 view .LVU232
- 136:I2C.cpp       ****     i2c_conf.pin_config.scl = seed::D11;
- 854              		.loc 1 136 21 is_stmt 0 view .LVU233
- 855 0040 0395     		str	r5, [sp, #12]
- 137:I2C.cpp       ****     i2c_conf.pin_config.sda = seed::D12;
- 856              		.loc 1 137 5 is_stmt 1 view .LVU234
- 137:I2C.cpp       ****     i2c_conf.pin_config.sda = seed::D12;
- 857              		.loc 1 137 29 is_stmt 0 view .LVU235
- 858 0042 ADF80840 		strh	r4, [sp, #8]	@ movhi
- 138:I2C.cpp       ****     
- 859              		.loc 1 138 5 is_stmt 1 view .LVU236
- 138:I2C.cpp       ****     
- 860              		.loc 1 138 29 is_stmt 0 view .LVU237
- 861 0046 ADF80A20 		strh	r2, [sp, #10]	@ movhi
- 862              		.loc 1 141 5 is_stmt 1 view .LVU238
- 863              		.loc 1 141 17 is_stmt 0 view .LVU239
- 864 004a FFF7FEFF 		bl	_ZN5daisy9I2CHandle4InitERKNS0_6ConfigE
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 29
+  16:I2C.cpp       ****     i2c1_conf.pin_config.scl = seed::D11; // Must match pinout for I2C1 SCL
+ 103              		.loc 1 16 21 is_stmt 0 view .LVU16
+ 104 0008 0120     		movs	r0, #1
+ 105 000a 0021     		movs	r1, #0
+  14:I2C.cpp       ****     i2c1_conf.periph = I2CHandle::Config::Peripheral::I2C_1;
+ 106              		.loc 1 14 22 view .LVU17
+ 107 000c 0024     		movs	r4, #0
+ 108              	.LBB69:
+ 109              	.LBB68:
+ 110              		.loc 7 28 12 view .LVU18
+ 111 000e 8DF81820 		strb	r2, [sp, #24]
+ 112              	.LVL2:
+ 113              		.loc 7 28 12 view .LVU19
+ 114              	.LBE68:
+ 115              	.LBE69:
+  14:I2C.cpp       ****     i2c1_conf.periph = I2CHandle::Config::Peripheral::I2C_1;
+ 116              		.loc 1 14 5 is_stmt 1 view .LVU20
+  15:I2C.cpp       ****     i2c1_conf.speed = I2CHandle::Config::Speed::I2C_400KHZ;
+ 117              		.loc 1 15 5 view .LVU21
+  16:I2C.cpp       ****     i2c1_conf.pin_config.scl = seed::D11; // Must match pinout for I2C1 SCL
+ 118              		.loc 1 16 5 view .LVU22
+ 119              		.loc 1 17 30 is_stmt 0 view .LVU23
+ 120 0012 1A88     		ldrh	r2, [r3]
+  18:I2C.cpp       ****     i2c1_conf.pin_config.sda = seed::D12; // Must match pinout for I2C1 SDA
+ 121              		.loc 1 18 30 view .LVU24
+ 122 0014 9B88     		ldrh	r3, [r3, #4]
+  17:I2C.cpp       ****     i2c1_conf.pin_config.sda = seed::D12; // Must match pinout for I2C1 SDA
+ 123              		.loc 1 17 30 view .LVU25
+ 124 0016 ADF80C20 		strh	r2, [sp, #12]	@ movhi
+ 125              		.loc 1 18 30 view .LVU26
+ 126 001a ADF80E30 		strh	r3, [sp, #14]	@ movhi
+  16:I2C.cpp       ****     i2c1_conf.pin_config.scl = seed::D11; // Must match pinout for I2C1 SCL
+ 127              		.loc 1 16 21 view .LVU27
+ 128 001e CDE90401 		strd	r0, [sp, #16]
+  17:I2C.cpp       ****     i2c1_conf.pin_config.sda = seed::D12; // Must match pinout for I2C1 SDA
+ 129              		.loc 1 17 5 is_stmt 1 view .LVU28
+ 130              		.loc 1 18 5 view .LVU29
+  19:I2C.cpp       ****     // Address not needed for controller!
+  20:I2C.cpp       **** 
+  21:I2C.cpp       ****     // Initialise the handle
+  22:I2C.cpp       ****     I2CHandle i2c1_handle;
+ 131              		.loc 1 22 5 view .LVU30
+ 132              	.LVL3:
+ 133              	.LBB70:
+ 134              	.LBI70:
+  29:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     {
+  30:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         /** Specifies whether the interface will operate in master or slave mode. */
+  31:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         enum class Mode
+  32:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
+  33:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_MASTER,
+  34:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_SLAVE,
+  35:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         };
+  36:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  37:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         /** Specifices the internal peripheral to use (these are mapped to different pins on the ha
+  38:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         enum class Peripheral
+  39:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
+  40:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_1 = 0, /**< & */
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 11
 
 
- 865              	.LVL59:
- 866              		.loc 1 141 5 discriminator 1 view .LVU240
- 867 004e 00B1     		cbz	r0, .L37
- 868              	.L38:
- 142:I2C.cpp       ****         // I2C initialization failed - handle error
- 143:I2C.cpp       ****         while(1);
- 869              		.loc 1 143 9 is_stmt 1 view .LVU241
- 870              		.loc 1 143 9 view .LVU242
- 871              		.loc 1 143 9 view .LVU243
- 872              		.loc 1 143 9 view .LVU244
- 873 0050 FEE7     		b	.L38
- 874              	.L37:
- 144:I2C.cpp       ****     }
- 145:I2C.cpp       ****     
- 146:I2C.cpp       ****     // Initialize BNO055
- 147:I2C.cpp       ****     System::Delay(100); // Give sensor time to boot
- 875              		.loc 1 147 5 view .LVU245
- 876 0052 0546     		mov	r5, r0
- 877              		.loc 1 147 18 is_stmt 0 view .LVU246
- 878 0054 6420     		movs	r0, #100
- 879 0056 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 880              	.LVL60:
- 148:I2C.cpp       ****     InitBNO055();
- 881              		.loc 1 148 5 is_stmt 1 view .LVU247
- 882              	.LBB142:
- 883              	.LBB143:
-  52:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 884              		.loc 7 52 20 is_stmt 0 view .LVU248
- 885 005a 1A4C     		ldr	r4, .L41+12
- 886              	.LBE143:
- 887              	.LBE142:
- 888              		.loc 1 148 15 view .LVU249
- 889 005c FFF7FEFF 		bl	_Z10InitBNO055v
- 890              	.LVL61:
- 149:I2C.cpp       ****     
- 150:I2C.cpp       ****     // Set up oscillator with default values
- 151:I2C.cpp       ****     osc.Init(samplerate);
- 891              		.loc 1 151 5 is_stmt 1 view .LVU250
- 892              	.LBB146:
- 893              	.LBI142:
-  50:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
- 894              		.loc 7 50 10 view .LVU251
- 895              	.LBB144:
-  52:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 896              		.loc 7 52 9 view .LVU252
-  53:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 897              		.loc 7 53 27 is_stmt 0 view .LVU253
- 898 0060 B7EE007A 		vmov.f32	s14, #1.0e+0
-  55:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 899              		.loc 7 55 20 view .LVU254
- 900 0064 4FF07C56 		mov	r6, #1056964608
-  57:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 901              		.loc 7 57 20 view .LVU255
- 902 0068 0023     		movs	r3, #0
-  54:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 903              		.loc 7 54 20 view .LVU256
- 904 006a 9FED170A 		vldr.32	s0, .L41+16
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 30
+  41:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_2,     /**< & */
+  42:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_3,     /**< & */
+  43:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_4,     /**< & */
+  44:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         };
+  45:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  46:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         /** Rate at which the clock/data will be sent/received. The device being used will have max
+  47:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****          *  1MHZ Mode is currently 886kHz
+  48:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****          */
+  49:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         enum class Speed
+  50:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
+  51:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_100KHZ, /**< & */
+  52:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_400KHZ, /**< & */
+  53:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_1MHZ,   /**< & */
+  54:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         };
+  55:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  56:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         Peripheral periph; /**< & */
+  57:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         struct
+  58:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
+  59:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             dsy_gpio_pin scl; /**< & */
+  60:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             dsy_gpio_pin sda; /**< & */
+  61:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         } pin_config;         /**< & */
+  62:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  63:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         Speed speed; /**< & */
+  64:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         Mode  mode;  /**< & */
+  65:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         // 0x10 is chosen as a default to avoid conflicts with reserved addresses
+  66:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         uint8_t address = 0x10; /**< & */
+  67:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     };
+  68:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  69:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     /** Return values for I2C functions. */
+  70:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     enum class Result
+  71:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     {
+  72:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         OK, /**< & */
+  73:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         ERR /**< & */
+  74:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     };
+  75:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  76:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     enum class Direction
+  77:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     {
+  78:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         TRANSMIT, /**< & */
+  79:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         RECEIVE,  /**< & */
+  80:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     };
+  81:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
+  82:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     I2CHandle() : pimpl_(nullptr) {}
+ 135              		.loc 7 82 5 view .LVU31
+ 136              		.loc 7 82 5 is_stmt 0 view .LVU32
+ 137              	.LBE70:
+  23:I2C.cpp       ****     if (i2c1_handle.Init(i2c1_conf) != I2CHandle::Result::OK)
+ 138              		.loc 1 23 5 is_stmt 1 view .LVU33
+ 139              		.loc 1 23 25 is_stmt 0 view .LVU34
+ 140 0022 02A9     		add	r1, sp, #8
+ 141 0024 01A8     		add	r0, sp, #4
+ 142              	.LBB73:
+ 143              	.LBB71:
+ 144              	.LBB72:
+ 145              		.loc 7 82 19 view .LVU35
+ 146 0026 CDE90144 		strd	r4, r4, [sp, #4]
+ 147              	.LBE72:
+ 148              	.LBE71:
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 12
 
 
-  58:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 905              		.loc 7 58 34 view .LVU257
- 906 006e 2046     		mov	r0, r4
-  53:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 907              		.loc 7 53 27 view .LVU258
- 908 0070 C7EE087A 		vdiv.f32	s15, s14, s16
-  57:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 909              		.loc 7 57 20 view .LVU259
- 910 0074 A361     		str	r3, [r4, #24]	@ float
-  52:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 911              		.loc 7 52 20 view .LVU260
- 912 0076 84ED048A 		vstr.32	s16, [r4, #16]
-  53:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 913              		.loc 7 53 9 is_stmt 1 view .LVU261
-  54:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 914              		.loc 7 54 20 is_stmt 0 view .LVU262
- 915 007a 84ED020A 		vstr.32	s0, [r4, #8]
-  55:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 916              		.loc 7 55 20 view .LVU263
- 917 007e 6660     		str	r6, [r4, #4]	@ float
-  56:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 918              		.loc 7 56 20 view .LVU264
- 919 0080 E660     		str	r6, [r4, #12]	@ float
-  53:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 920              		.loc 7 53 20 view .LVU265
- 921 0082 C4ED057A 		vstr.32	s15, [r4, #20]
-  54:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 922              		.loc 7 54 9 is_stmt 1 view .LVU266
-  55:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 923              		.loc 7 55 9 view .LVU267
-  56:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 924              		.loc 7 56 9 view .LVU268
-  57:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 925              		.loc 7 57 9 view .LVU269
-  58:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 926              		.loc 7 58 9 view .LVU270
-  58:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 927              		.loc 7 58 34 is_stmt 0 view .LVU271
- 928 0086 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 929              	.LVL62:
- 930 008a F0EE407A 		vmov.f32	s15, s0
-  61:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 931              		.loc 7 61 20 view .LVU272
- 932 008e 40F20113 		movw	r3, #257
- 933              	.LBE144:
- 934              	.LBE146:
- 935              	.LBB147:
- 936              	.LBB148:
-  69:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 937              		.loc 7 69 20 view .LVU273
- 938 0092 9FED0E0A 		vldr.32	s0, .L41+20
-  70:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 939              		.loc 7 70 34 view .LVU274
- 940 0096 2046     		mov	r0, r4
- 941              	.LBE148:
- 942              	.LBE147:
- 943              	.LBB151:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 31
-
-
- 944              	.LBB145:
-  59:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         eoc_       = true;
- 945              		.loc 7 59 20 view .LVU275
- 946 0098 2570     		strb	r5, [r4]
-  58:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 947              		.loc 7 58 20 discriminator 1 view .LVU276
- 948 009a C4ED077A 		vstr.32	s15, [r4, #28]
-  59:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         eoc_       = true;
- 949              		.loc 7 59 9 is_stmt 1 view .LVU277
-  60:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         eor_       = true;
- 950              		.loc 7 60 9 view .LVU278
-  61:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 951              		.loc 7 61 9 view .LVU279
-  61:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 952              		.loc 7 61 20 is_stmt 0 view .LVU280
- 953 009e 2385     		strh	r3, [r4, #40]	@ movhi
- 954              	.LVL63:
-  61:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 955              		.loc 7 61 20 view .LVU281
- 956              	.LBE145:
- 957              	.LBE151:
- 152:I2C.cpp       ****     osc.SetWaveform(Oscillator::WAVE_SIN);
- 958              		.loc 1 152 5 is_stmt 1 view .LVU282
- 153:I2C.cpp       ****     osc.SetAmp(0.5f);
- 959              		.loc 1 153 5 view .LVU283
- 960              	.LBB152:
- 961              	.LBI152:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 962              		.loc 7 76 17 view .LVU284
- 963              	.LBB153:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 964              		.loc 7 76 41 view .LVU285
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 965              		.loc 7 76 46 is_stmt 0 view .LVU286
- 966 00a0 6660     		str	r6, [r4, #4]	@ float
- 967              	.LVL64:
-  76:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 968              		.loc 7 76 46 view .LVU287
- 969              	.LBE153:
- 970              	.LBE152:
- 154:I2C.cpp       ****     osc.SetFreq(440.0f);
- 971              		.loc 1 154 5 is_stmt 1 view .LVU288
- 972              	.LBB154:
- 973              	.LBI147:
-  67:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     {
- 974              		.loc 7 67 17 view .LVU289
- 975              	.LBB149:
-  69:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 976              		.loc 7 69 9 view .LVU290
-  69:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 977              		.loc 7 69 20 is_stmt 0 view .LVU291
- 978 00a2 84ED020A 		vstr.32	s0, [r4, #8]
-  70:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 979              		.loc 7 70 9 is_stmt 1 view .LVU292
-  70:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 980              		.loc 7 70 34 is_stmt 0 view .LVU293
- 981 00a6 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 32
-
-
- 982              	.LVL65:
- 983              	.LBE149:
- 984              	.LBE154:
- 155:I2C.cpp       ****     
- 156:I2C.cpp       ****     hardware.StartAudio(AudioCallback);
- 985              		.loc 1 156 24 view .LVU294
- 986 00aa 0949     		ldr	r1, .L41+24
- 987 00ac 0248     		ldr	r0, .L41
- 988              	.LBB155:
- 989              	.LBB150:
-  70:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 990              		.loc 7 70 20 discriminator 1 view .LVU295
- 991 00ae 84ED070A 		vstr.32	s0, [r4, #28]
- 992              	.LVL66:
-  70:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     }
- 993              		.loc 7 70 20 discriminator 1 view .LVU296
- 994              	.LBE150:
- 995              	.LBE155:
- 996              		.loc 1 156 5 is_stmt 1 view .LVU297
- 997              		.loc 1 156 24 is_stmt 0 view .LVU298
- 998 00b2 FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKfPfjE
- 999              	.LVL67:
- 1000              	.L39:
- 157:I2C.cpp       ****     
- 158:I2C.cpp       ****     for(;;) {}
- 1001              		.loc 1 158 5 is_stmt 1 view .LVU299
- 1002              		.loc 1 158 5 view .LVU300
- 1003              		.loc 1 158 5 view .LVU301
- 1004              		.loc 1 158 5 view .LVU302
- 1005 00b6 FEE7     		b	.L39
- 1006              	.L42:
- 1007              		.align	2
- 1008              	.L41:
- 1009 00b8 00000000 		.word	hardware
- 1010 00bc 00000000 		.word	.LANCHOR0
- 1011 00c0 00000000 		.word	i2c
- 1012 00c4 00000000 		.word	osc
- 1013 00c8 0000C842 		.word	1120403456
- 1014 00cc 0000DC43 		.word	1138491392
- 1015 00d0 00000000 		.word	_Z13AudioCallbackPKfPfj
- 1016              		.cfi_endproc
- 1017              	.LFE4737:
- 1019              		.section	.text.startup._GLOBAL__sub_I_hardware,"ax",%progbits
- 1020              		.align	1
- 1021              		.p2align 2,,3
- 1022              		.syntax unified
- 1023              		.thumb
- 1024              		.thumb_func
- 1026              	_GLOBAL__sub_I_hardware:
- 1027              	.LFB5341:
- 159:I2C.cpp       **** }...
- 1028              		.loc 1 159 1 view -0
- 1029              		.cfi_startproc
- 1030              		@ args = 0, pretend = 0, frame = 0
- 1031              		@ frame_needed = 0, uses_anonymous_args = 0
- 1032              	.LBB182:
- 1033              	.LBI182:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 33
-
-
- 1034              		.loc 1 159 1 view .LVU304
- 1035              	.LVL68:
- 1036              	.LBB183:
- 1037              	.LBB184:
- 1038              	.LBI184:
+ 149              	.LBE73:
+ 150              		.loc 1 23 25 view .LVU36
+ 151 002a FFF7FEFF 		bl	_ZN5daisy9I2CHandle4InitERKNS0_6ConfigE
+ 152              	.LVL4:
+  24:I2C.cpp       ****     {
+  25:I2C.cpp       ****         // Something went wrong! Handle it here.
+  26:I2C.cpp       ****     }
+  27:I2C.cpp       **** 
+  28:I2C.cpp       ****     // i2c1_handle is ready for use in controller mode
+  29:I2C.cpp       **** }...
+ 153              		.loc 1 29 1 view .LVU37
+ 154 002e 2046     		mov	r0, r4
+ 155 0030 08B0     		add	sp, sp, #32
+ 156              		.cfi_def_cfa_offset 8
+ 157              		@ sp needed
+ 158 0032 10BD     		pop	{r4, pc}
+ 159              	.L6:
+ 160              		.align	2
+ 161              	.L5:
+ 162 0034 00000000 		.word	.LANCHOR0
+ 163              		.cfi_endproc
+ 164              	.LFE4732:
+ 166              		.section	.text.startup._GLOBAL__sub_I_hardware,"ax",%progbits
+ 167              		.align	1
+ 168              		.p2align 2,,3
+ 169              		.syntax unified
+ 170              		.thumb
+ 171              		.thumb_func
+ 173              	_GLOBAL__sub_I_hardware:
+ 174              	.LFB5336:
+ 175              		.loc 1 29 1 is_stmt 1 view -0
+ 176              		.cfi_startproc
+ 177              		@ args = 0, pretend = 0, frame = 0
+ 178              		@ frame_needed = 0, uses_anonymous_args = 0
+ 179              	.LBB98:
+ 180              	.LBI98:
+ 181              		.loc 1 29 1 view .LVU39
+ 182              	.LVL5:
+ 183              	.LBB99:
+ 184              	.LBB100:
+ 185              	.LBI100:
   21:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/daisy_seed.h ****     ~DaisySeed() {}
- 1039              		.loc 2 21 5 view .LVU305
- 1040              	.LBB185:
- 1041              	.LBB186:
- 1042              	.LBI186:
- 1043              		.file 9 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h"
+ 186              		.loc 2 21 5 view .LVU40
+ 187              	.LBB101:
+ 188              	.LBB102:
+ 189              	.LBI102:
+ 190              		.file 8 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** #ifndef DSY_QSPI
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
@@ -1942,6 +718,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
    8:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
    9:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI_TEXT       \
   10:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     __attribute__((section( \
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 13
+
+
   11:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         ".qspiflash_text"))) /**< used for reading memory in memory_mapped mode. */
   12:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI_DATA       \
   13:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     __attribute__((section( \
@@ -1978,9 +757,6 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   44:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****          *  \param E_HAL_ERROR - HAL code did not return HAL_OK.
   45:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****          *  \param E_SWITCHING_MODES - An error was encountered while switching QSPI peripheral mod
   46:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****          *  \param E_INVALID_MODE - QSPI should not be written to while the program is executing fr
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 34
-
-
   47:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****          */
   48:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     enum Status
   49:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     {
@@ -2002,6 +778,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   65:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         };
   66:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
   67:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         /** 
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 14
+
+
   68:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         Modes of operation.
   69:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         Memory Mapped mode: QSPI configured so that the QSPI can be
   70:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         read from starting address 0x90000000. Writing is not
@@ -2038,9 +817,6 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
  101:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     Result Init(const Config& config);
  102:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
  103:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     /** Returns the current config. */
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 35
-
-
  104:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     const Config& GetConfig() const;
  105:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
  106:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     // Couldn't this just be called before anything else in init? That
@@ -2062,6 +838,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
  122:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         */
  123:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     Result WritePage(uint32_t address, uint32_t size, uint8_t* buffer);
  124:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 15
+
+
  125:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     /** 
  126:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         Writes data in buffer to to the QSPI. Starting at address to address+size 
  127:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****         \param address Address to write to
@@ -2098,83 +877,90 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
  158:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****      *  The memory at this address is read-only
  159:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****      *  to write to it use the Write function.
  160:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****      * 
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 36
-
-
  161:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****      *  \param offset returns the pointer starting this 
  162:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****      *                many bytes into the memory
  163:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     */
  164:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h **** 
  166:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 1044              		.loc 9 166 5 view .LVU306
- 1045              	.LBB187:
- 1046              	.LBB188:
- 1047              		.loc 9 166 20 is_stmt 0 view .LVU307
- 1048 0000 094B     		ldr	r3, .L45
- 1049              	.LBE188:
- 1050              	.LBE187:
- 1051              	.LBE186:
- 1052              	.LBE185:
- 1053              	.LBE184:
-   7:I2C.cpp       **** DaisySeed  hardware;
- 1054              		.loc 1 7 12 discriminator 1 view .LVU308
- 1055 0002 0A49     		ldr	r1, .L45+4
- 1056 0004 1846     		mov	r0, r3
- 1057 0006 0A4A     		ldr	r2, .L45+8
- 1058              	.LBE183:
- 1059              	.LBE182:
- 1060              		.loc 1 159 1 view .LVU309
- 1061 0008 10B5     		push	{r4, lr}
- 1062              		.cfi_def_cfa_offset 8
- 1063              		.cfi_offset 4, -8
- 1064              		.cfi_offset 14, -4
- 1065              	.LBB211:
- 1066              	.LBB210:
- 1067              	.LBB205:
- 1068              	.LBB204:
- 1069              	.LBB191:
- 1070              	.LBB190:
- 1071              	.LBB189:
- 1072              		.loc 9 166 20 view .LVU310
- 1073 000a 0024     		movs	r4, #0
- 1074 000c 1C60     		str	r4, [r3]
- 1075              	.LVL69:
- 1076              		.loc 9 166 20 view .LVU311
- 1077              	.LBE189:
- 1078              	.LBE190:
- 1079              	.LBE191:
- 1080              	.LBB192:
- 1081              	.LBI192:
-  95:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 1082              		.loc 6 95 5 is_stmt 1 view .LVU312
- 1083              	.LBB193:
- 1084              	.LBB194:
-  95:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 1085              		.loc 6 95 21 is_stmt 0 view .LVU313
- 1086 000e 5C61     		str	r4, [r3, #20]
- 1087              	.LVL70:
-  95:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 1088              		.loc 6 95 21 view .LVU314
- 1089              	.LBE194:
- 1090              	.LBE193:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 37
+ 191              		.loc 8 166 5 view .LVU41
+ 192              	.LBE102:
+ 193              	.LBE101:
+ 194              	.LBE100:
+ 195              	.LBE99:
+ 196              	.LBE98:
+ 197              		.loc 1 29 1 is_stmt 0 view .LVU42
+ 198 0000 10B5     		push	{r4, lr}
+ 199              		.cfi_def_cfa_offset 8
+ 200              		.cfi_offset 4, -8
+ 201              		.cfi_offset 14, -4
+ 202              	.LBB129:
+ 203              	.LBB128:
+   7:I2C.cpp       **** DaisySeed hardware;
+ 204              		.loc 1 7 11 discriminator 1 view .LVU43
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 16
 
 
- 1091              	.LBE192:
- 1092              	.LBB195:
- 1093              	.LBI195:
+ 205 0002 0648     		ldr	r0, .L9
+ 206              	.LBB123:
+ 207              	.LBB121:
+ 208              	.LBB107:
+ 209              	.LBB103:
+ 210              	.LBB104:
+ 211              		.loc 8 166 20 view .LVU44
+ 212 0004 0024     		movs	r4, #0
+ 213              	.LBE104:
+ 214              	.LBE103:
+ 215              	.LBE107:
+ 216              	.LBE121:
+ 217              	.LBE123:
+   7:I2C.cpp       **** DaisySeed hardware;
+ 218              		.loc 1 7 11 discriminator 1 view .LVU45
+ 219 0006 064A     		ldr	r2, .L9+4
+ 220 0008 0649     		ldr	r1, .L9+8
+ 221              	.LBB124:
+ 222              	.LBB122:
+ 223              	.LBB108:
+ 224              	.LBB106:
+ 225              	.LBB105:
+ 226              		.loc 8 166 20 view .LVU46
+ 227 000a 0460     		str	r4, [r0]
+ 228              	.LVL6:
+ 229              		.loc 8 166 20 view .LVU47
+ 230              	.LBE105:
+ 231              	.LBE106:
+ 232              	.LBE108:
+ 233              	.LBB109:
+ 234              	.LBI109:
+  95:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
+ 235              		.loc 6 95 5 is_stmt 1 view .LVU48
+ 236              	.LBB110:
+ 237              	.LBB111:
+  95:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
+ 238              		.loc 6 95 21 is_stmt 0 view .LVU49
+ 239 000c 4461     		str	r4, [r0, #20]
+ 240              	.LVL7:
+  95:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
+ 241              		.loc 6 95 21 view .LVU50
+ 242              	.LBE111:
+ 243              	.LBE110:
+ 244              	.LBE109:
+ 245              	.LBB112:
+ 246              	.LBI112:
  109:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 1094              		.loc 5 109 5 is_stmt 1 view .LVU315
+ 247              		.loc 5 109 5 is_stmt 1 view .LVU51
  109:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 1095              		.loc 5 109 5 is_stmt 0 view .LVU316
- 1096              	.LBE195:
- 1097              	.LBB196:
- 1098              	.LBI196:
- 1099              		.file 10 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h"
+ 248              		.loc 5 109 5 is_stmt 0 view .LVU52
+ 249              	.LBE112:
+ 250              	.LBB113:
+ 251              	.LBI113:
+ 252              		.file 9 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** #pragma once
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** #ifndef DSY_DAC_H
    3:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** #define DSY_DAC_H
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 17
+
+
    4:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** 
    5:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** #include "daisy_core.h"
    6:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** 
@@ -2218,9 +1004,6 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   44:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****      ** callback to fill the buffer when it is ready for more samples.
   45:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****      ***/
   46:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     enum class Mode
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 38
-
-
   47:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     {
   48:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****         POLLING,
   49:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****         DMA,
@@ -2235,6 +1018,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   58:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****         BITS_8,
   59:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****         BITS_12
   60:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     };
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 18
+
+
   61:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** 
   62:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     /** Sets whether the DAC output is buffered for higher drive ability. */
   63:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     enum class BufferState
@@ -2259,42 +1045,42 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   82:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     };
   83:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h **** 
   84:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 1100              		.loc 10 84 5 is_stmt 1 view .LVU317
- 1101              	.LBB197:
- 1102              	.LBB198:
- 1103              		.loc 10 84 19 is_stmt 0 view .LVU318
- 1104 0010 1C62     		str	r4, [r3, #32]
- 1105              	.LVL71:
- 1106              		.loc 10 84 19 view .LVU319
- 1107              	.LBE198:
- 1108              	.LBE197:
- 1109              	.LBE196:
- 1110              	.LBB199:
- 1111              	.LBI199:
+ 253              		.loc 9 84 5 is_stmt 1 view .LVU53
+ 254              	.LBB114:
+ 255              	.LBB115:
+ 256              		.loc 9 84 19 is_stmt 0 view .LVU54
+ 257 000e 0462     		str	r4, [r0, #32]
+ 258              	.LVL8:
+ 259              		.loc 9 84 19 view .LVU55
+ 260              	.LBE115:
+ 261              	.LBE114:
+ 262              	.LBE113:
+ 263              	.LBB116:
+ 264              	.LBI116:
   40:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** 
- 1112              		.loc 4 40 5 is_stmt 1 view .LVU320
+ 265              		.loc 4 40 5 is_stmt 1 view .LVU56
   40:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/hid/usb.h **** 
- 1113              		.loc 4 40 5 is_stmt 0 view .LVU321
- 1114              	.LBE199:
- 1115              	.LBB200:
- 1116              	.LBI200:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 39
-
-
+ 266              		.loc 4 40 5 is_stmt 0 view .LVU57
+ 267              	.LBE116:
+ 268              	.LBB117:
+ 269              	.LBI117:
   96:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
- 1117              		.loc 3 96 5 is_stmt 1 view .LVU322
+ 270              		.loc 3 96 5 is_stmt 1 view .LVU58
   96:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
- 1118              		.loc 3 96 5 is_stmt 0 view .LVU323
- 1119              	.LBE200:
- 1120              	.LBB201:
- 1121              	.LBI201:
- 1122              		.file 11 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h"
+ 271              		.loc 3 96 5 is_stmt 0 view .LVU59
+ 272              	.LBE117:
+ 273              	.LBB118:
+ 274              	.LBI118:
+ 275              		.file 10 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h"
    1:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** #pragma once
    2:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** #ifndef DSY_SAI_H
    3:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** #define DSY_SAI_H
    4:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** 
    5:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** #include "daisy_core.h"
    6:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** 
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 19
+
+
    7:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** namespace daisy
    8:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** {
    9:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** /** 
@@ -2338,9 +1124,6 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   47:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****     {
   48:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         /** Specifies the internal peripheral to use (mapped to different hardware pins) */
   49:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         enum class Peripheral
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 40
-
-
   50:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         {
   51:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****             SAI_1,
   52:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****             SAI_2,
@@ -2355,6 +1138,9 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
   61:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****             SAI_48KHZ,
   62:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****             SAI_96KHZ,
   63:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         };
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 20
+
+
   64:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** 
   65:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         /** Bit Depth that the hardware expects to be transferred to/from the device. */
   66:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         enum class BitDepth
@@ -2398,294 +1184,148 @@ ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 1
  104:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         OK,
  105:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****         ERR,
  106:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****     };
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 41
-
-
  107:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h **** 
  108:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/sai.h ****     SaiHandle() : pimpl_(nullptr) {}
- 1123              		.loc 11 108 5 is_stmt 1 view .LVU324
- 1124              	.LBB202:
- 1125              	.LBB203:
- 1126              		.loc 11 108 19 is_stmt 0 view .LVU325
- 1127 0012 DC63     		str	r4, [r3, #60]
- 1128              	.LVL72:
- 1129              		.loc 11 108 19 view .LVU326
- 1130              	.LBE203:
- 1131              	.LBE202:
- 1132              	.LBE201:
- 1133              	.LBE204:
- 1134              	.LBE205:
-   7:I2C.cpp       **** DaisySeed  hardware;
- 1135              		.loc 1 7 12 discriminator 1 view .LVU327
- 1136 0014 FFF7FEFF 		bl	__aeabi_atexit
- 1137              	.LVL73:
- 1138              	.LBB206:
- 1139              	.LBI206:
-  23:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 1140              		.loc 7 23 5 is_stmt 1 view .LVU328
-  23:/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 1141              		.loc 7 23 5 is_stmt 0 view .LVU329
- 1142              	.LBE206:
-   7:I2C.cpp       **** DaisySeed  hardware;
- 1143              		.loc 1 7 12 view .LVU330
- 1144 0018 054A     		ldr	r2, .L45+8
- 1145 001a 0649     		ldr	r1, .L45+12
- 1146 001c 0648     		ldr	r0, .L45+16
- 1147 001e FFF7FEFF 		bl	__aeabi_atexit
- 1148              	.LVL74:
- 1149              	.LBB207:
- 1150              	.LBI207:
-  29:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     {
-  30:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         /** Specifies whether the interface will operate in master or slave mode. */
-  31:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         enum class Mode
-  32:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
-  33:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_MASTER,
-  34:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_SLAVE,
-  35:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         };
-  36:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  37:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         /** Specifices the internal peripheral to use (these are mapped to different pins on the ha
-  38:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         enum class Peripheral
-  39:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
-  40:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_1 = 0, /**< & */
-  41:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_2,     /**< & */
-  42:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_3,     /**< & */
-  43:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_4,     /**< & */
-  44:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         };
-  45:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  46:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         /** Rate at which the clock/data will be sent/received. The device being used will have max
-  47:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****          *  1MHZ Mode is currently 886kHz
-  48:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****          */
-  49:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         enum class Speed
-  50:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
-  51:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_100KHZ, /**< & */
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 42
+ 276              		.loc 10 108 5 is_stmt 1 view .LVU60
+ 277              	.LBB119:
+ 278              	.LBB120:
+ 279              		.loc 10 108 19 is_stmt 0 view .LVU61
+ 280 0010 C463     		str	r4, [r0, #60]
+ 281              	.LVL9:
+ 282              		.loc 10 108 19 view .LVU62
+ 283              	.LBE120:
+ 284              	.LBE119:
+ 285              	.LBE118:
+ 286              	.LBE122:
+ 287              	.LBE124:
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 21
 
 
-  52:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_400KHZ, /**< & */
-  53:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             I2C_1MHZ,   /**< & */
-  54:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         };
-  55:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  56:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         Peripheral periph; /**< & */
-  57:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         struct
-  58:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         {
-  59:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             dsy_gpio_pin scl; /**< & */
-  60:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****             dsy_gpio_pin sda; /**< & */
-  61:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         } pin_config;         /**< & */
-  62:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  63:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         Speed speed; /**< & */
-  64:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         Mode  mode;  /**< & */
-  65:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         // 0x10 is chosen as a default to avoid conflicts with reserved addresses
-  66:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         uint8_t address = 0x10; /**< & */
-  67:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     };
-  68:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  69:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     /** Return values for I2C functions. */
-  70:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     enum class Result
-  71:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     {
-  72:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         OK, /**< & */
-  73:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         ERR /**< & */
-  74:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     };
-  75:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  76:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     enum class Direction
-  77:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     {
-  78:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         TRANSMIT, /**< & */
-  79:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****         RECEIVE,  /**< & */
-  80:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     };
-  81:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h **** 
-  82:/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/i2c.h ****     I2CHandle() : pimpl_(nullptr) {}
- 1151              		.loc 8 82 5 is_stmt 1 view .LVU331
- 1152              	.LBB208:
- 1153              	.LBB209:
- 1154              		.loc 8 82 19 is_stmt 0 view .LVU332
- 1155 0022 064B     		ldr	r3, .L45+20
- 1156 0024 1C60     		str	r4, [r3]
- 1157              	.LVL75:
- 1158              		.loc 8 82 19 view .LVU333
- 1159              	.LBE209:
- 1160              	.LBE208:
- 1161              	.LBE207:
- 1162              	.LBE210:
- 1163              	.LBE211:
- 1164              		.loc 1 159 1 view .LVU334
- 1165 0026 10BD     		pop	{r4, pc}
- 1166              	.L46:
- 1167              		.align	2
- 1168              	.L45:
- 1169 0028 00000000 		.word	hardware
- 1170 002c 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 1171 0030 00000000 		.word	__dso_handle
- 1172 0034 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
- 1173 0038 00000000 		.word	osc
- 1174 003c 00000000 		.word	i2c
- 1175              		.cfi_endproc
- 1176              	.LFE5341:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 43
+   7:I2C.cpp       **** DaisySeed hardware;
+ 288              		.loc 1 7 11 discriminator 1 view .LVU63
+ 289 0012 FFF7FEFF 		bl	__aeabi_atexit
+ 290              	.LVL10:
+ 291              	.LBB125:
+ 292              	.LBI125:
+ 293              		.loc 7 82 5 is_stmt 1 view .LVU64
+ 294              	.LBB126:
+ 295              	.LBB127:
+ 296              		.loc 7 82 19 is_stmt 0 view .LVU65
+ 297 0016 044B     		ldr	r3, .L9+12
+ 298 0018 1C60     		str	r4, [r3]
+ 299              	.LVL11:
+ 300              		.loc 7 82 19 view .LVU66
+ 301              	.LBE127:
+ 302              	.LBE126:
+ 303              	.LBE125:
+ 304              	.LBE128:
+ 305              	.LBE129:
+ 306              		.loc 1 29 1 view .LVU67
+ 307 001a 10BD     		pop	{r4, pc}
+ 308              	.L10:
+ 309              		.align	2
+ 310              	.L9:
+ 311 001c 00000000 		.word	hardware
+ 312 0020 00000000 		.word	__dso_handle
+ 313 0024 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 314 0028 00000000 		.word	i2c
+ 315              		.cfi_endproc
+ 316              	.LFE5336:
+ 318              		.section	.init_array,"aw",%init_array
+ 319              		.align	2
+ 320 0000 00000000 		.word	_GLOBAL__sub_I_hardware(target1)
+ 321              		.global	i2c
+ 322              		.section	.bss.i2c,"aw",%nobits
+ 323              		.align	2
+ 326              	i2c:
+ 327 0000 00000000 		.space	4
+ 328              		.global	hardware
+ 329              		.section	.bss.hardware,"aw",%nobits
+ 330              		.align	2
+ 333              	hardware:
+ 334 0000 00000000 		.space	64
+ 334      00000000 
+ 334      00000000 
+ 334      00000000 
+ 334      00000000 
+ 335              		.section	.rodata
+ 336              		.align	2
+ 337              		.set	.LANCHOR0,. + 0
+ 338              	.LC0:
+ 339 0000 01       		.byte	1
+ 340 0001 08       		.byte	8
+ 341 0002 0000     		.space	2
+ 342              	.LC1:
+ 343 0004 01       		.byte	1
+ 344 0005 09       		.byte	9
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 22
 
 
- 1178              		.section	.init_array,"aw",%init_array
- 1179              		.align	2
- 1180 0000 00000000 		.word	_GLOBAL__sub_I_hardware(target1)
- 1181              		.section	.bss._ZZ13AudioCallbackPKfPfjE7counter,"aw",%nobits
- 1182              		.align	2
- 1185              	_ZZ13AudioCallbackPKfPfjE7counter:
- 1186 0000 00000000 		.space	4
- 1187              		.global	euler_pitch
- 1188              		.section	.bss.euler_pitch,"aw",%nobits
- 1189              		.align	2
- 1192              	euler_pitch:
- 1193 0000 00000000 		.space	4
- 1194              		.global	euler_roll
- 1195              		.section	.bss.euler_roll,"aw",%nobits
- 1196              		.align	2
- 1199              	euler_roll:
- 1200 0000 00000000 		.space	4
- 1201              		.global	euler_heading
- 1202              		.section	.bss.euler_heading,"aw",%nobits
- 1203              		.align	2
- 1206              	euler_heading:
- 1207 0000 00000000 		.space	4
- 1208              		.global	i2c
- 1209              		.section	.bss.i2c,"aw",%nobits
- 1210              		.align	2
- 1213              	i2c:
- 1214 0000 00000000 		.space	4
- 1215              		.global	osc
- 1216              		.section	.bss.osc,"aw",%nobits
- 1217              		.align	2
- 1220              	osc:
- 1221 0000 00000000 		.space	44
- 1221      00000000 
- 1221      00000000 
- 1221      00000000 
- 1221      00000000 
- 1222              		.global	hardware
- 1223              		.section	.bss.hardware,"aw",%nobits
- 1224              		.align	2
- 1227              	hardware:
- 1228 0000 00000000 		.space	64
- 1228      00000000 
- 1228      00000000 
- 1228      00000000 
- 1228      00000000 
- 1229              		.section	.rodata
- 1230              		.align	2
- 1231              		.set	.LANCHOR0,. + 0
- 1232              	.LC0:
- 1233 0000 01       		.byte	1
- 1234 0001 08       		.byte	8
- 1235 0002 0000     		.space	2
- 1236              	.LC1:
- 1237 0004 01       		.byte	1
- 1238 0005 09       		.byte	9
- 1239              		.text
- 1240              	.Letext0:
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 44
-
-
- 1241              		.file 12 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_def
- 1242              		.file 13 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.
- 1243              		.file 14 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/stdint.h"
- 1244              		.file 15 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.3.1/inclu
- 1245              		.file 16 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1246              		.file 17 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
- 1247              		.file 18 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1248              		.file 19 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1249              		.file 20 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/t
- 1250              		.file 21 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/d
- 1251              		.file 22 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1252              		.file 23 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1253              		.file 24 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1254              		.file 25 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1255              		.file 26 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
- 1256              		.file 27 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
- 1257              		.file 28 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
- 1258              		.file 29 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
- 1259              		.file 30 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h
- 1260              		.file 31 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/reent.h"
- 1261              		.file 32 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h"
- 1262              		.file 33 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/math.h"
- 1263              		.file 34 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/stdlib.h"
- 1264              		.file 35 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/m
- 1265              		.file 36 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/s
- 1266              		.file 37 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/daisy_core.h"
- 1267              		.file 38 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/a
- 1268              		.file 39 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/util/wav_format.h"
- 1269              		.file 40 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/dev/max11300.h"
- 1270              		.file 41 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/gpio.h"
- 1271              		.file 42 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/dev/sdram.h"
- 1272              		.file 43 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.3.1/inclu
- 1273              		.file 44 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/stdio.h"
- 1274              		.file 45 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/string.h"
- 1275              		.file 46 "/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Control/adenv.h"
- 1276              		.file 47 "/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Utility/dsp.h"
- 1277              		.file 48 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/wchar.h"
- 1278              		.file 49 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/locale.h"
- 1279              		.file 50 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/dev/sr_595.h"
- 1280              		.file 51 "<built-in>"
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 45
+ 345              		.text
+ 346              	.Letext0:
+ 347              		.file 11 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_def
+ 348              		.file 12 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.
+ 349              		.file 13 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/stdint.h"
+ 350              		.file 14 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.3.1/inclu
+ 351              		.file 15 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 352              		.file 16 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
+ 353              		.file 17 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 354              		.file 18 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 355              		.file 19 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/t
+ 356              		.file 20 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/d
+ 357              		.file 21 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 358              		.file 22 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 359              		.file 23 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 360              		.file 24 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 361              		.file 25 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/c
+ 362              		.file 26 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
+ 363              		.file 27 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
+ 364              		.file 28 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/b
+ 365              		.file 29 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h
+ 366              		.file 30 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/reent.h"
+ 367              		.file 31 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h"
+ 368              		.file 32 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/math.h"
+ 369              		.file 33 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/stdlib.h"
+ 370              		.file 34 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/m
+ 371              		.file 35 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/s
+ 372              		.file 36 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/daisy_core.h"
+ 373              		.file 37 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/c++/14.3.1/a
+ 374              		.file 38 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/util/wav_format.h"
+ 375              		.file 39 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/dev/max11300.h"
+ 376              		.file 40 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/per/gpio.h"
+ 377              		.file 41 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/dev/sdram.h"
+ 378              		.file 42 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.3.1/inclu
+ 379              		.file 43 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/stdio.h"
+ 380              		.file 44 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/string.h"
+ 381              		.file 45 "/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 382              		.file 46 "/Users/ozalp/Documents/DaisyExamples/DaisySP/Source/Utility/dsp.h"
+ 383              		.file 47 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/wchar.h"
+ 384              		.file 48 "/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/arm-none-eabi/include/locale.h"
+ 385              		.file 49 "/Users/ozalp/Documents/DaisyExamples/libDaisy/src/dev/sr_595.h"
+ 386              		.file 50 "<built-in>"
+ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 I2C.cpp
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:20     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:70     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:77     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:77     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:94     .text._Z19WriteBNO055Registerhh:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:101    .text._Z19WriteBNO055Registerhh:00000000 _Z19WriteBNO055Registerhh
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:143    .text._Z19WriteBNO055Registerhh:00000020 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1213   .bss.i2c:00000000 i2c
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:148    .text._Z18ReadBNO055RegisterhPhh:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:155    .text._Z18ReadBNO055RegisterhPhh:00000000 _Z18ReadBNO055RegisterhPhh
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:212    .text._Z18ReadBNO055RegisterhPhh:00000030 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:217    .text._Z10InitBNO055v:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:224    .text._Z10InitBNO055v:00000000 _Z10InitBNO055v
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:372    .text._Z10InitBNO055v:00000078 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:377    .text._Z15ReadEulerAnglesv:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:384    .text._Z15ReadEulerAnglesv:00000000 _Z15ReadEulerAnglesv
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:494    .text._Z15ReadEulerAnglesv:00000074 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1206   .bss.euler_heading:00000000 euler_heading
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1199   .bss.euler_roll:00000000 euler_roll
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1192   .bss.euler_pitch:00000000 euler_pitch
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:503    .text._Z13AudioCallbackPKfPfj:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:510    .text._Z13AudioCallbackPKfPfj:00000000 _Z13AudioCallbackPKfPfj
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:743    .text._Z13AudioCallbackPKfPfj:000000e8 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1185   .bss._ZZ13AudioCallbackPKfPfjE7counter:00000000 _ZZ13AudioCallbackPKfPfjE7counter
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1220   .bss.osc:00000000 osc
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:761    .text.startup.main:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:768    .text.startup.main:00000000 main
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1009   .text.startup.main:000000b8 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1227   .bss.hardware:00000000 hardware
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1020   .text.startup._GLOBAL__sub_I_hardware:00000000 $t
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1026   .text.startup._GLOBAL__sub_I_hardware:00000000 _GLOBAL__sub_I_hardware
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1169   .text.startup._GLOBAL__sub_I_hardware:00000028 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1179   .init_array:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1182   .bss._ZZ13AudioCallbackPKfPfjE7counter:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1189   .bss.euler_pitch:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1196   .bss.euler_roll:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1203   .bss.euler_heading:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1210   .bss.i2c:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1217   .bss.osc:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1224   .bss.hardware:00000000 $d
-/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s:1230   .rodata:00000000 $d
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:20     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:70     .text.startup.main:00000000 $t
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:77     .text.startup.main:00000000 main
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:162    .text.startup.main:00000034 $d
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:167    .text.startup._GLOBAL__sub_I_hardware:00000000 $t
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:173    .text.startup._GLOBAL__sub_I_hardware:00000000 _GLOBAL__sub_I_hardware
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:311    .text.startup._GLOBAL__sub_I_hardware:0000001c $d
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:333    .bss.hardware:00000000 hardware
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:326    .bss.i2c:00000000 i2c
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:319    .init_array:00000000 $d
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:323    .bss.i2c:00000000 $d
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:330    .bss.hardware:00000000 $d
+/var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//cc9LmcmI.s:336    .rodata:00000000 $d
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
-                           .group:00000000 _ZN7daisysp10OscillatorD5Ev
 
 UNDEFINED SYMBOLS
-_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
-_ZN5daisy9I2CHandle15ReceiveBlockingEtPhtm
-_ZN5daisy6System5DelayEm
-_ZN7daisysp10Oscillator7ProcessEv
-_ZN7daisysp10Oscillator12CalcPhaseIncEf
-_ZN5daisy9DaisySeed9ConfigureEv
-_ZN5daisy9DaisySeed4InitEb
-_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
-ARM GAS  /var/folders/yk/qy9v9gw959gblxgjb8zzl1nw0000gn/T//ccpDexkt.s 			page 46
-
-
-_ZN5daisy9DaisySeed15AudioSampleRateEv
 _ZN5daisy9I2CHandle4InitERKNS0_6ConfigE
-_ZN5daisy9DaisySeed10StartAudioEPFvPKfPfjE
 __aeabi_atexit
 __dso_handle

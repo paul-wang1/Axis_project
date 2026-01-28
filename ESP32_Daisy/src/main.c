@@ -54,6 +54,16 @@ static bool i2c_slave_recv_done_cb(i2c_slave_dev_handle_t i2c_slave,
     return xTaskWoken;
 }
 
+//error
+// static bool i2c_slave_receive_cb(i2c_slave_dev_handle_t i2c_slave, const i2c_slave_rx_done_event_data_t *evt_data, void *arg)
+// {
+//     i2c_slave_event_t evt = I2C_SLAVE_EVT_RX;
+//     BaseType_t xTaskWoken = 0;
+//     // You can get data and length via i2c_slave_rx_done_event_data_t
+//     xQueueSendFromISR(context->event_queue, &evt, &xTaskWoken);
+//     return xTaskWoken;
+// }
+
 /* Load data into slave RAM based on command */
 static void load_response_data(uint8_t cmd)
 {
