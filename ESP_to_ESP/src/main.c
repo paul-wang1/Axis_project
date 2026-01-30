@@ -20,6 +20,7 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 /* BLE */
+// #include "nimble_port.h"
 #include "nimble/nimble_port.h"
 #include "nimble/nimble_port_freertos.h"
 #include "host/ble_hs.h"
