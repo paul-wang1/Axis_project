@@ -6,7 +6,7 @@ dependencies:
   nimble_central_utils:
     dependencies: []
     source:
-      path: /home/nahomts/.platformio/packages/framework-espidf/examples/bluetooth/nimble/common/nimble_central_utils
+      path: /home/ajsbreezy/.platformio/packages/framework-espidf/examples/bluetooth/nimble/common/nimble_central_utils
       type: local
     version: '*'
 direct_dependencies:
