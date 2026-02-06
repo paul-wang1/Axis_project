@@ -8,8 +8,12 @@ DaisySeed hardware;
 
 int main()
 {
+    bool led_state;
+    led_state = true;
+    
     // Initialize the Daisy Seed hardware (including LED)
     hardware.Init();
+    hardware.Configure();
 
     // Configure the I2C handle
     I2CHandle::Config i2c1_conf;
@@ -26,10 +30,14 @@ int main()
         // Init failed - rapid blink to indicate error
         while (true)
         {
-            hardware.SetLed(true);
-            hardware.DelayMs(100);
-            hardware.SetLed(false);
-            hardware.DelayMs(100);
+            // Set the onboard LED
+            hardware.SetLed(led_state);
+
+            // Toggle the LED state for the next time around.
+            led_state = !led_state;
+
+            // Wait 500ms
+            System::Delay(500);
         }
     }
 
