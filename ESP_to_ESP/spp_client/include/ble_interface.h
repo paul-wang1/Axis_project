@@ -1,0 +1,39 @@
+/* General Includes */
+#include "esp_log.h"
+#include "nvs_flash.h"
+
+/* BLE */
+#include "nimble/nimble_port.h"
+#include "nimble/nimble_port_freertos.h"
+#include "host/ble_hs.h"
+#include "host/util/util.h"
+#include "console/console.h"
+#include "services/gap/ble_svc_gap.h"
+#include "driver/uart.h"
+#include "modlog/modlog.h"
+#include "esp_central.h"
+
+
+#ifndef BLE_AXIS_INTERFACE
+#define BLE_AXIS_INTERFACE
+
+struct ble_hs_adv_fields;
+struct ble_gap_conn_desc;
+struct ble_hs_cfg;
+union ble_store_value;
+union ble_store_key;
+
+/* 16 Bit SPP Service UUID */
+#define GATT_SPP_SVC_UUID                                  0xABF0
+
+/* 16 Bit SPP Service Characteristic UUID */
+#define GATT_SPP_CHR_UUID                                  0xABF1
+
+
+void ble_spp_uart_init(void);
+void ble_spp_client_host_task(void *param);
+void ble_store_config_init(void);
+
+void ble_spp_client_on_reset(int reason);
+void ble_spp_client_on_sync(void);
+#endif
