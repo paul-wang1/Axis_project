@@ -6,7 +6,8 @@ using namespace daisysp;
 
 DaisySeed hardware;
 
-int main(){
+int main()
+{
     // Initialize the Daisy Seed hardware (including LED)
     hardware.Init();
 
@@ -32,12 +33,15 @@ int main(){
         }
     }
 
-    uint8_t buffer[16];
 
     // Main loop
+
+    // size of the buffer
+    uint8_t buffer[16];
     while (true)
     {
-        // Try to receive data
+        // Try to receive data -- got from 
+        // https://daisy.audio/tutorials/_a9_Getting_Started-I2C/#blocking-transmit-and-receive
         I2CHandle::Result result = i2c1_handle.ReceiveBlocking(
             0x28,
             buffer,

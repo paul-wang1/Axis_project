@@ -5,7 +5,6 @@
  * This code sets up the ESP32 as an I2C slave that responds to
  * commands from the DaisySeed (master) with dummy test data.
  */
-
 #include <stdio.h>
 #include <string.h>
 #include "esp_log.h"
@@ -17,17 +16,17 @@
 static const char *TAG = "i2c_slave";
 
 /* I2C Configuration - Adjust these pins for your ESP32-C3 wiring */
-#define I2C_SLAVE_SCL_IO    21                   /* GPIO for I2C clock */
-#define I2C_SLAVE_SDA_IO    20                   /* GPIO for I2C data */
-#define I2C_SLAVE_NUM       0
-#define ESP_SLAVE_ADDR      0x28                /* 7-bit I2C address */
-#define I2C_SLAVE_RAM_SIZE  128                 /* Size of slave RAM buffer */
+#define I2C_SLAVE_SCL_IO 21 /* GPIO for I2C clock */
+#define I2C_SLAVE_SDA_IO 20 /* GPIO for I2C data */
+#define I2C_SLAVE_NUM 0
+#define ESP_SLAVE_ADDR 0x28    /* 7-bit I2C address */
+#define I2C_SLAVE_RAM_SIZE 128 /* Size of slave RAM buffer */
 
 /* Command bytes the master (DaisySeed) will send */
-#define CMD_GET_VALUE_A     0x10
-#define CMD_GET_VALUE_B     0x20
-#define CMD_GET_VALUE_C     0x30
-#define CMD_GET_STRING      0x40
+#define CMD_GET_VALUE_A 0x10
+#define CMD_GET_VALUE_B 0x20
+#define CMD_GET_VALUE_C 0x30
+#define CMD_GET_STRING 0x40
 
 /* Dummy test data */
 static int dummy_value_a = 12345;
@@ -41,12 +40,13 @@ static QueueHandle_t cmd_queue = NULL;
 
 /* Callback when master finishes sending data to slave */
 static bool i2c_slave_recv_done_cb(i2c_slave_dev_handle_t i2c_slave,
-                                    const i2c_slave_rx_done_event_data_t *evt_data,
-                                    void *arg)
+                                   const i2c_slave_rx_done_event_data_t *evt_data,
+                                   void *arg)
 {
     BaseType_t xTaskWoken = pdFALSE;
 
-    if (evt_data->buffer != NULL) {
+    if (evt_data->buffer != NULL)
+    {
         uint8_t cmd = evt_data->buffer[0];
         xQueueSendFromISR(cmd_queue, &cmd, &xTaskWoken);
     }
@@ -54,23 +54,14 @@ static bool i2c_slave_recv_done_cb(i2c_slave_dev_handle_t i2c_slave,
     return xTaskWoken;
 }
 
-//error
-// static bool i2c_slave_receive_cb(i2c_slave_dev_handle_t i2c_slave, const i2c_slave_rx_done_event_data_t *evt_data, void *arg)
-// {
-//     i2c_slave_event_t evt = I2C_SLAVE_EVT_RX;
-//     BaseType_t xTaskWoken = 0;
-//     // You can get data and length via i2c_slave_rx_done_event_data_t
-//     xQueueSendFromISR(context->event_queue, &evt, &xTaskWoken);
-//     return xTaskWoken;
-// }
-
 /* Load data into slave RAM based on command */
 static void load_response_data(uint8_t cmd)
 {
     uint8_t buffer[I2C_SLAVE_RAM_SIZE] = {0};
     size_t len = 0;
 
-    switch (cmd) {
+    switch (cmd)
+    {
     case CMD_GET_VALUE_A:
         ESP_LOGI(TAG, "Loading Value A: %d", dummy_value_a);
         memcpy(buffer, &dummy_value_a, sizeof(int));
@@ -89,7 +80,8 @@ static void load_response_data(uint8_t cmd)
     case CMD_GET_STRING:
         ESP_LOGI(TAG, "Loading String: %s", dummy_string);
         len = strlen(dummy_string) + 1;
-        if (len > I2C_SLAVE_RAM_SIZE) len = I2C_SLAVE_RAM_SIZE;
+        if (len > I2C_SLAVE_RAM_SIZE)
+            len = I2C_SLAVE_RAM_SIZE;
         memcpy(buffer, dummy_string, len);
         break;
     default:
@@ -100,7 +92,8 @@ static void load_response_data(uint8_t cmd)
 
     /* Write data to slave RAM - master will read this on next read operation */
     esp_err_t err = i2c_slave_write_ram(i2c_slave_handle, 0, buffer, len);
-    if (err != ESP_OK) {
+    if (err != ESP_OK)
+    {
         ESP_LOGE(TAG, "Failed to write to slave RAM: %s", esp_err_to_name(err));
     }
 }
@@ -112,8 +105,10 @@ static void cmd_handler_task(void *arg)
 
     ESP_LOGI(TAG, "Command handler task started");
 
-    while (true) {
-        if (xQueueReceive(cmd_queue, &cmd, portMAX_DELAY) == pdTRUE) {
+    while (true)
+    {
+        if (xQueueReceive(cmd_queue, &cmd, portMAX_DELAY) == pdTRUE)
+        {
             ESP_LOGI(TAG, "Received command: 0x%02X", cmd);
             load_response_data(cmd);
         }
@@ -139,7 +134,8 @@ void app_main(void)
 
     /* Create command queue */
     cmd_queue = xQueueCreate(16, sizeof(uint8_t));
-    if (cmd_queue == NULL) {
+    if (cmd_queue == NULL)
+    {
         ESP_LOGE(TAG, "Failed to create command queue");
         return;
     }
@@ -155,7 +151,8 @@ void app_main(void)
     };
 
     esp_err_t err = i2c_new_slave_device(&i2c_slv_config, &i2c_slave_handle);
-    if (err != ESP_OK) {
+    if (err != ESP_OK)
+    {
         ESP_LOGE(TAG, "Failed to create I2C slave device: %s", esp_err_to_name(err));
         return;
     }
@@ -166,7 +163,8 @@ void app_main(void)
         .on_recv_done = i2c_slave_recv_done_cb,
     };
     err = i2c_slave_register_event_callbacks(i2c_slave_handle, &cbs, NULL);
-    if (err != ESP_OK) {
+    if (err != ESP_OK)
+    {
         ESP_LOGE(TAG, "Failed to register callbacks: %s", esp_err_to_name(err));
         return;
     }
