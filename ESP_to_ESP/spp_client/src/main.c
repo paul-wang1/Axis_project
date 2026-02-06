@@ -355,6 +355,7 @@ ble_spp_client_gap_event(struct ble_gap_event *event, void *arg)
                     event->notify_rx.conn_handle,
                     event->notify_rx.attr_handle,
                     OS_MBUF_PKTLEN(event->notify_rx.om));
+        MODLOG_DFLT(INFO, "data is %c", OS_MBUF_DATA(event->notify_rx.om, int)[0]);
 
         /* Attribute data is contained in event->notify_rx.om. Use
          * `os_mbuf_copydata` to copy the data received in notification mbuf */
