@@ -254,8 +254,6 @@ Discarded input sections
                 0x00000000        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .text._ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
                 0x00000000       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
- .text._ZN5daisy9I2CHandle15ReceiveBlockingEtPhtm
-                0x00000000       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .text._ZN5daisy9I2CHandle11TransmitDmaEtPhtPFvPvNS0_6ResultEES2_
                 0x00000000       0x68 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .text._ZN5daisy9I2CHandle10ReceiveDmaEtPhtPFvPvNS0_6ResultEES2_
@@ -613,10 +611,6 @@ Discarded input sections
                 0x00000000       0x90 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.I2C_RequestMemoryWrite.constprop.0
                 0x00000000       0x90 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .text.I2C_WaitOnSTOPFlagUntilTimeout
-                0x00000000       0xa8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .text.I2C_WaitOnRXNEFlagUntilTimeout
-                0x00000000       0xe8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_MspInit
                 0x00000000        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_MspDeInit
@@ -625,12 +619,8 @@ Discarded input sections
                 0x00000000       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_Master_Transmit
                 0x00000000      0x1a8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .text.HAL_I2C_Master_Receive
-                0x00000000      0x1a4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_Slave_Transmit
                 0x00000000      0x1e4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .text.HAL_I2C_Slave_Receive
-                0x00000000      0x1ac /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_Master_Transmit_IT
                 0x00000000       0x9c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_Master_Receive_IT
@@ -733,8 +723,6 @@ Discarded input sections
                 0x00000000       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_ER_IRQHandler
                 0x00000000      0x18c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .text.HAL_I2C_GetState
-                0x00000000        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_GetMode
                 0x00000000        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_GetError
@@ -2529,7 +2517,7 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x08000000                g_pfnVectors
                 0x08000298                        . = ALIGN (0x4)
 
-.text           0x08000298     0x81c4
+.text           0x08000298     0x8714
                 0x08000298                        . = ALIGN (0x4)
                 0x08000298                        _stext = .
  *(.text)
@@ -2676,870 +2664,887 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x080003a4                daisy::DaisySeed::~DaisySeed()
                 0x080003a4                daisy::DaisySeed::~DaisySeed()
  .text.startup.main
-                0x080003a8       0x38 build/I2C.o
+                0x080003a8       0x4c build/I2C.o
                 0x080003a8                main
  .text.startup._GLOBAL__sub_I_hardware
-                0x080003e0       0x2c build/I2C.o
+                0x080003f4       0x2c build/I2C.o
  .text._ZN5daisy9I2CHandle4Impl8InitPinsEv
-                0x0800040c       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x0800040c                daisy::I2CHandle::Impl::InitPins()
+                0x08000420       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x08000420                daisy::I2CHandle::Impl::InitPins()
  .text.HAL_I2C_MspInit
-                0x08000464      0x1b4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x08000464                HAL_I2C_MspInit
+                0x08000478      0x1b4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x08000478                HAL_I2C_MspInit
  .text.DMA1_Stream6_IRQHandler
-                0x08000618       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x08000618                DMA1_Stream6_IRQHandler
+                0x0800062c       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x0800062c                DMA1_Stream6_IRQHandler
  .text.I2C1_EV_IRQHandler
-                0x08000648        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x08000648                I2C1_EV_IRQHandler
+                0x0800065c        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x0800065c                I2C1_EV_IRQHandler
  .text.I2C2_EV_IRQHandler
-                0x08000654        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x08000654                I2C2_EV_IRQHandler
+                0x08000668        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x08000668                I2C2_EV_IRQHandler
  .text.I2C3_EV_IRQHandler
-                0x08000660        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x08000660                I2C3_EV_IRQHandler
+                0x08000674        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x08000674                I2C3_EV_IRQHandler
  .text._ZN5daisy9I2CHandle4InitERKNS0_6ConfigE
-                0x0800066c      0x120 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
-                0x0800066c                daisy::I2CHandle::Init(daisy::I2CHandle::Config const&)
+                0x08000680      0x120 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x08000680                daisy::I2CHandle::Init(daisy::I2CHandle::Config const&)
+ .text._ZN5daisy9I2CHandle15ReceiveBlockingEtPhtm
+                0x080007a0       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x080007a0                daisy::I2CHandle::ReceiveBlocking(unsigned short, unsigned char*, unsigned short, unsigned long)
  .text.startup._GLOBAL__sub_I__ZN5daisy9I2CHandle4Impl10GlobalInitEv
-                0x0800078c       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x080007f0       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .text._ZN5daisy11TimerHandleD2Ev
-                0x080007a4        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x080007a4                daisy::TimerHandle::~TimerHandle()
-                0x080007a4                daisy::TimerHandle::~TimerHandle()
+                0x08000808        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x08000808                daisy::TimerHandle::~TimerHandle()
+                0x08000808                daisy::TimerHandle::~TimerHandle()
  .text.SysTick_Handler
-                0x080007a8       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x080007a8                SysTick_Handler
+                0x0800080c       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x0800080c                SysTick_Handler
  .text.OTG_HS_EP1_OUT_IRQHandler
-                0x080007b8       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x080007b8                OTG_HS_EP1_OUT_IRQHandler
+                0x0800081c       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x0800081c                OTG_HS_EP1_OUT_IRQHandler
  .text.OTG_HS_EP1_IN_IRQHandler
-                0x080007dc       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x080007dc                OTG_HS_EP1_IN_IRQHandler
+                0x08000840       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x08000840                OTG_HS_EP1_IN_IRQHandler
  .text.OTG_HS_IRQHandler
-                0x08000800       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x08000800                OTG_HS_IRQHandler
+                0x08000864       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x08000864                OTG_HS_IRQHandler
  .text.HardFault_Handler
-                0x08000824       0xe0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x08000824                HardFault_Handler
+                0x08000888       0xe0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x08000888                HardFault_Handler
  .text._ZN5daisy6System12GetPClk1FreqEv
-                0x08000904        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
-                0x08000904                daisy::System::GetPClk1Freq()
+                0x08000968        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x08000968                daisy::System::GetPClk1Freq()
  .text.startup._GLOBAL__sub_I__ZN5daisy9boot_infoE
-                0x08000908       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x0800096c       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
  .text.SystemInit
-                0x08000928       0x98 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
-                0x08000928                SystemInit
+                0x0800098c       0x98 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+                0x0800098c                SystemInit
  .text.HAL_PCD_SetupStageCallback
-                0x080009c0        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x080009c0                HAL_PCD_SetupStageCallback
+                0x08000a24        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000a24                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x080009cc       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x080009cc                HAL_PCD_DataOutStageCallback
+                0x08000a30       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000a30                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x080009e0       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x080009e0                HAL_PCD_DataInStageCallback
+                0x08000a44       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000a44                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x080009f4        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x080009f4                HAL_PCD_SOFCallback
- .text.HAL_PCD_ResetCallback
-                0x080009fc       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x080009fc                HAL_PCD_ResetCallback
- .text.HAL_PCD_SuspendCallback
-                0x08000a20       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a20                HAL_PCD_SuspendCallback
- .text.HAL_PCD_ResumeCallback
-                0x08000a50        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a50                HAL_PCD_ResumeCallback
- .text.HAL_PCD_ISOOUTIncompleteCallback
                 0x08000a58        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a58                HAL_PCD_ISOOUTIncompleteCallback
+                0x08000a58                HAL_PCD_SOFCallback
+ .text.HAL_PCD_ResetCallback
+                0x08000a60       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000a60                HAL_PCD_ResetCallback
+ .text.HAL_PCD_SuspendCallback
+                0x08000a84       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000a84                HAL_PCD_SuspendCallback
+ .text.HAL_PCD_ResumeCallback
+                0x08000ab4        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000ab4                HAL_PCD_ResumeCallback
+ .text.HAL_PCD_ISOOUTIncompleteCallback
+                0x08000abc        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000abc                HAL_PCD_ISOOUTIncompleteCallback
  .text.HAL_PCD_ISOINIncompleteCallback
-                0x08000a60        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a60                HAL_PCD_ISOINIncompleteCallback
+                0x08000ac4        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000ac4                HAL_PCD_ISOINIncompleteCallback
  .text.HAL_PCD_ConnectCallback
-                0x08000a68        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a68                HAL_PCD_ConnectCallback
+                0x08000acc        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000acc                HAL_PCD_ConnectCallback
  .text.HAL_PCD_DisconnectCallback
-                0x08000a70        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a70                HAL_PCD_DisconnectCallback
+                0x08000ad4        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000ad4                HAL_PCD_DisconnectCallback
  .text.USBD_LL_OpenEP
-                0x08000a78       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a78                USBD_LL_OpenEP
+                0x08000adc       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000adc                USBD_LL_OpenEP
  .text.USBD_LL_StallEP
-                0x08000a94       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000a94                USBD_LL_StallEP
+                0x08000af8       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000af8                USBD_LL_StallEP
  .text.USBD_LL_ClearStallEP
-                0x08000aac       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000aac                USBD_LL_ClearStallEP
+                0x08000b10       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000b10                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x08000ac4       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000ac4                USBD_LL_IsStallEP
+                0x08000b28       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000b28                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x08000aec       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000aec                USBD_LL_SetUSBAddress
+                0x08000b50       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000b50                USBD_LL_SetUSBAddress
  .text.USBD_LL_Transmit
-                0x08000b04       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000b04                USBD_LL_Transmit
+                0x08000b68       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000b68                USBD_LL_Transmit
  .text.USBD_LL_PrepareReceive
-                0x08000b1c       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
-                0x08000b1c                USBD_LL_PrepareReceive
+                0x08000b80       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08000b80                USBD_LL_PrepareReceive
  .text.HAL_HCD_SOF_Callback
-                0x08000b34        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b34                HAL_HCD_SOF_Callback
+                0x08000b98        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000b98                HAL_HCD_SOF_Callback
  .text.HAL_HCD_Connect_Callback
-                0x08000b3c        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b3c                HAL_HCD_Connect_Callback
+                0x08000ba0        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000ba0                HAL_HCD_Connect_Callback
  .text.HAL_HCD_Disconnect_Callback
-                0x08000b44        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b44                HAL_HCD_Disconnect_Callback
+                0x08000ba8        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000ba8                HAL_HCD_Disconnect_Callback
  .text.HAL_HCD_HC_NotifyURBChange_Callback
-                0x08000b4c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b4c                HAL_HCD_HC_NotifyURBChange_Callback
+                0x08000bb0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000bb0                HAL_HCD_HC_NotifyURBChange_Callback
  .text.HAL_HCD_PortEnabled_Callback
-                0x08000b50        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b50                HAL_HCD_PortEnabled_Callback
+                0x08000bb4        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000bb4                HAL_HCD_PortEnabled_Callback
  .text.HAL_HCD_PortDisabled_Callback
-                0x08000b58        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b58                HAL_HCD_PortDisabled_Callback
+                0x08000bbc        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000bbc                HAL_HCD_PortDisabled_Callback
  .text.USBH_LL_Stop
-                0x08000b60       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
-                0x08000b60                USBH_LL_Stop
+                0x08000bc4       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08000bc4                USBH_LL_Stop
  .text.dsy_hal_map_get_port
-                0x08000b78       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
-                0x08000b78                dsy_hal_map_get_port
+                0x08000bdc       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x08000bdc                dsy_hal_map_get_port
  .text.dsy_hal_map_get_pin
-                0x08000b88       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
-                0x08000b88                dsy_hal_map_get_pin
+                0x08000bec       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x08000bec                dsy_hal_map_get_pin
  .text.dsy_hal_map_gpio_clk_enable
-                0x08000b98      0x150 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
-                0x08000b98                dsy_hal_map_gpio_clk_enable
+                0x08000bfc      0x150 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x08000bfc                dsy_hal_map_gpio_clk_enable
  .text.HAL_IncTick
-                0x08000ce8       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
-                0x08000ce8                HAL_IncTick
+                0x08000d4c       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+                0x08000d4c                HAL_IncTick
  .text.HAL_GetTick
-                0x08000d00        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
-                0x08000d00                HAL_GetTick
+                0x08000d64        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+                0x08000d64                HAL_GetTick
  .text.HAL_NVIC_SetPriority
-                0x08000d0c       0x78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08000d0c                HAL_NVIC_SetPriority
+                0x08000d70       0x78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08000d70                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08000d84       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08000d84                HAL_NVIC_EnableIRQ
+                0x08000de8       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08000de8                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Callback
-                0x08000da0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08000da0                HAL_SYSTICK_Callback
+                0x08000e04        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08000e04                HAL_SYSTICK_Callback
  .text.HAL_SYSTICK_IRQHandler
-                0x08000da4        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08000da4                HAL_SYSTICK_IRQHandler
+                0x08000e08        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08000e08                HAL_SYSTICK_IRQHandler
  .text.DMA_CalcBaseAndBitshift
-                0x08000dac      0x100 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08000e10      0x100 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
  .text.DMA_CalcDMAMUXChannelBaseAndMask
-                0x08000eac       0xd4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08000f10       0xd4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
  .text.HAL_DMA_Init
-                0x08000f80      0x360 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
-                0x08000f80                HAL_DMA_Init
+                0x08000fe4      0x360 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08000fe4                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x080012e0      0x26c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
-                0x080012e0                HAL_DMA_Start_IT
+                0x08001344      0x26c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08001344                HAL_DMA_Start_IT
  .text.HAL_DMA_Abort_IT
-                0x0800154c      0x134 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
-                0x0800154c                HAL_DMA_Abort_IT
+                0x080015b0      0x134 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x080015b0                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x08001680      0x424 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
-                0x08001680                HAL_DMA_IRQHandler
+                0x080016e4      0x424 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x080016e4                HAL_DMA_IRQHandler
  .text.HAL_DMA_GetError
-                0x08001aa4        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
-                0x08001aa4                HAL_DMA_GetError
+                0x08001b08        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08001b08                HAL_DMA_GetError
  .text.HAL_GPIO_Init
-                0x08001aa8      0x41c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
-                0x08001aa8                HAL_GPIO_Init
+                0x08001b0c      0x41c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x08001b0c                HAL_GPIO_Init
  .text.HAL_HCD_IRQHandler
-                0x08001ec4      0x770 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
-                0x08001ec4                HAL_HCD_IRQHandler
+                0x08001f28      0x770 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+                0x08001f28                HAL_HCD_IRQHandler
  .text.HAL_HCD_Stop
-                0x08002634       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
-                0x08002634                HAL_HCD_Stop
+                0x08002698       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+                0x08002698                HAL_HCD_Stop
+ .text.I2C_WaitOnSTOPFlagUntilTimeout
+                0x080026c0       0xa8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+ .text.I2C_WaitOnRXNEFlagUntilTimeout
+                0x08002768       0xe8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_Init
-                0x0800265c       0xac /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
-                0x0800265c                HAL_I2C_Init
+                0x08002850       0xac /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08002850                HAL_I2C_Init
+ .text.HAL_I2C_Master_Receive
+                0x080028fc      0x1a4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x080028fc                HAL_I2C_Master_Receive
+ .text.HAL_I2C_Slave_Receive
+                0x08002aa0      0x1ac /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08002aa0                HAL_I2C_Slave_Receive
  .text.HAL_I2C_EV_IRQHandler
-                0x08002708       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
-                0x08002708                HAL_I2C_EV_IRQHandler
+                0x08002c4c       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08002c4c                HAL_I2C_EV_IRQHandler
+ .text.HAL_I2C_GetState
+                0x08002c5c        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08002c5c                HAL_I2C_GetState
  .text.HAL_I2CEx_ConfigAnalogFilter
-                0x08002718       0x54 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
-                0x08002718                HAL_I2CEx_ConfigAnalogFilter
+                0x08002c64       0x54 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x08002c64                HAL_I2CEx_ConfigAnalogFilter
  .text.HAL_I2CEx_ConfigDigitalFilter
-                0x0800276c       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
-                0x0800276c                HAL_I2CEx_ConfigDigitalFilter
+                0x08002cb8       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x08002cb8                HAL_I2CEx_ConfigDigitalFilter
  .text.HAL_PCD_IRQHandler
-                0x080027c4      0x704 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x080027c4                HAL_PCD_IRQHandler
+                0x08002d10      0x704 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002d10                HAL_PCD_IRQHandler
  .text.HAL_PCD_SetAddress
-                0x08002ec8       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002ec8                HAL_PCD_SetAddress
+                0x08003414       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08003414                HAL_PCD_SetAddress
  .text.HAL_PCD_EP_Open
-                0x08002ef4       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002ef4                HAL_PCD_EP_Open
+                0x08003440       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08003440                HAL_PCD_EP_Open
  .text.HAL_PCD_EP_Receive
-                0x08002f64       0x4c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002f64                HAL_PCD_EP_Receive
+                0x080034b0       0x4c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x080034b0                HAL_PCD_EP_Receive
  .text.HAL_PCD_EP_Transmit
-                0x08002fb0       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002fb0                HAL_PCD_EP_Transmit
+                0x080034fc       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x080034fc                HAL_PCD_EP_Transmit
  .text.HAL_PCD_EP_SetStall
-                0x08003000       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08003000                HAL_PCD_EP_SetStall
+                0x0800354c       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x0800354c                HAL_PCD_EP_SetStall
  .text.HAL_PCD_EP_ClrStall
-                0x08003084       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08003084                HAL_PCD_EP_ClrStall
+                0x080035d0       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x080035d0                HAL_PCD_EP_ClrStall
  .text.HAL_PCDEx_LPM_Callback
-                0x080030f4        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
-                0x080030f4                HAL_PCDEx_LPM_Callback
+                0x08003640        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x08003640                HAL_PCDEx_LPM_Callback
  .text.HAL_RCC_GetSysClockFreq
-                0x080030f8      0x11c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x080030f8                HAL_RCC_GetSysClockFreq
+                0x08003644      0x11c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x08003644                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08003214       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x08003214                HAL_RCC_GetHCLKFreq
+                0x08003760       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x08003760                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08003240       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x08003240                HAL_RCC_GetPCLK1Freq
+                0x0800378c       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x0800378c                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08003278       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x08003278                HAL_RCC_GetPCLK2Freq
+                0x080037c4       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x080037c4                HAL_RCC_GetPCLK2Freq
  .text.HAL_RCCEx_GetD3PCLK1Freq
-                0x080032b0       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x080032b0                HAL_RCCEx_GetD3PCLK1Freq
+                0x080037fc       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x080037fc                HAL_RCCEx_GetD3PCLK1Freq
  .text.HAL_RCCEx_GetPLL2ClockFreq
-                0x080032d4      0x134 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x080032d4                HAL_RCCEx_GetPLL2ClockFreq
+                0x08003820      0x134 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08003820                HAL_RCCEx_GetPLL2ClockFreq
  .text.HAL_RCCEx_GetPLL3ClockFreq
-                0x08003408      0x134 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x08003408                HAL_RCCEx_GetPLL3ClockFreq
+                0x08003954      0x134 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08003954                HAL_RCCEx_GetPLL3ClockFreq
  .text.HAL_RCCEx_GetD1SysClockFreq
-                0x0800353c       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x0800353c                HAL_RCCEx_GetD1SysClockFreq
+                0x08003a88       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08003a88                HAL_RCCEx_GetD1SysClockFreq
  .text.USB_SetTurnaroundTime
-                0x08003568      0x104 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003568                USB_SetTurnaroundTime
+                0x08003ab4      0x104 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003ab4                USB_SetTurnaroundTime
  .text.USB_FlushTxFifo
-                0x0800366c       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x0800366c                USB_FlushTxFifo
+                0x08003bb8       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003bb8                USB_FlushTxFifo
  .text.USB_GetDevSpeed
-                0x080036a0       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080036a0                USB_GetDevSpeed
+                0x08003bec       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003bec                USB_GetDevSpeed
  .text.USB_ActivateEndpoint
-                0x080036c4       0x8c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080036c4                USB_ActivateEndpoint
+                0x08003c10       0x8c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003c10                USB_ActivateEndpoint
  .text.USB_EPStartXfer
-                0x08003750      0x210 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003750                USB_EPStartXfer
+                0x08003c9c      0x210 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003c9c                USB_EPStartXfer
  .text.USB_EP0StartXfer
-                0x08003960       0xf8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003960                USB_EP0StartXfer
+                0x08003eac       0xf8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003eac                USB_EP0StartXfer
  .text.USB_WritePacket
-                0x08003a58       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003a58                USB_WritePacket
+                0x08003fa4       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003fa4                USB_WritePacket
  .text.USB_ReadPacket
-                0x08003a84       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003a84                USB_ReadPacket
+                0x08003fd0       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003fd0                USB_ReadPacket
  .text.USB_EPSetStall
-                0x08003aac       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003aac                USB_EPSetStall
+                0x08003ff8       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003ff8                USB_EPSetStall
  .text.USB_EPClearStall
-                0x08003b1c       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003b1c                USB_EPClearStall
+                0x08004068       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08004068                USB_EPClearStall
  .text.USB_SetDevAddress
-                0x08003b74       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003b74                USB_SetDevAddress
+                0x080040c0       0x24 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080040c0                USB_SetDevAddress
  .text.USB_ReadInterrupts
-                0x08003b98       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003b98                USB_ReadInterrupts
+                0x080040e4       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080040e4                USB_ReadInterrupts
  .text.USB_ReadDevAllOutEpInterrupt
-                0x08003bac       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003bac                USB_ReadDevAllOutEpInterrupt
+                0x080040f8       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080040f8                USB_ReadDevAllOutEpInterrupt
  .text.USB_ReadDevAllInEpInterrupt
-                0x08003bc8       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003bc8                USB_ReadDevAllInEpInterrupt
+                0x08004114       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08004114                USB_ReadDevAllInEpInterrupt
  .text.USB_ReadDevOutEPInterrupt
-                0x08003be4       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003be4                USB_ReadDevOutEPInterrupt
+                0x08004130       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08004130                USB_ReadDevOutEPInterrupt
  .text.USB_ReadDevInEPInterrupt
-                0x08003c00       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003c00                USB_ReadDevInEPInterrupt
+                0x0800414c       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800414c                USB_ReadDevInEPInterrupt
  .text.USB_GetMode
-                0x08003c38        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003c38                USB_GetMode
+                0x08004184        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08004184                USB_GetMode
  .text.USB_ActivateSetup
-                0x08003c40       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003c40                USB_ActivateSetup
+                0x0800418c       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800418c                USB_ActivateSetup
  .text.USB_EP0_OutStart
-                0x08003c74       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003c74                USB_EP0_OutStart
+                0x080041c0       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080041c0                USB_EP0_OutStart
  .text.USB_InitFSLSPClkSel
-                0x08003cc4       0x44 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003cc4                USB_InitFSLSPClkSel
+                0x08004210       0x44 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08004210                USB_InitFSLSPClkSel
  .text.USB_HC_ReadInterrupt
-                0x08003d08        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003d08                USB_HC_ReadInterrupt
+                0x08004254        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08004254                USB_HC_ReadInterrupt
  .text.USB_HC_Halt
-                0x08003d10       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003d10                USB_HC_Halt
+                0x0800425c       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800425c                USB_HC_Halt
  .text.USB_StopHost
-                0x08003dd0      0x2f0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003dd0                USB_StopHost
+                0x0800431c      0x2f0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800431c                USB_StopHost
  .text.USBD_SetClassConfig
-                0x080040c0       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080040c0                USBD_SetClassConfig
+                0x0800460c       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x0800460c                USBD_SetClassConfig
  .text.USBD_ClrClassConfig
-                0x080040dc       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080040dc                USBD_ClrClassConfig
+                0x08004628       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004628                USBD_ClrClassConfig
  .text.USBD_LL_SetupStage
-                0x080040ec       0x5c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080040ec                USBD_LL_SetupStage
+                0x08004638       0x5c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004638                USBD_LL_SetupStage
  .text.USBD_LL_DataOutStage
-                0x08004148       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x08004148                USBD_LL_DataOutStage
+                0x08004694       0x70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004694                USBD_LL_DataOutStage
  .text.USBD_LL_DataInStage
-                0x080041b8       0xc4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080041b8                USBD_LL_DataInStage
+                0x08004704       0xc4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004704                USBD_LL_DataInStage
  .text.USBD_LL_Reset
-                0x0800427c       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x0800427c                USBD_LL_Reset
+                0x080047c8       0x50 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x080047c8                USBD_LL_Reset
  .text.USBD_LL_SetSpeed
-                0x080042cc        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080042cc                USBD_LL_SetSpeed
+                0x08004818        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004818                USBD_LL_SetSpeed
  .text.USBD_LL_Suspend
-                0x080042d4       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080042d4                USBD_LL_Suspend
+                0x08004820       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004820                USBD_LL_Suspend
  .text.USBD_LL_Resume
-                0x080042e8       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080042e8                USBD_LL_Resume
+                0x08004834       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004834                USBD_LL_Resume
  .text.USBD_LL_SOF
-                0x080042f8       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x080042f8                USBD_LL_SOF
+                0x08004844       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004844                USBD_LL_SOF
  .text.USBD_LL_IsoINIncomplete
-                0x08004314        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x08004314                USBD_LL_IsoINIncomplete
+                0x08004860        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004860                USBD_LL_IsoINIncomplete
  .text.USBD_LL_IsoOUTIncomplete
-                0x08004318        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x08004318                USBD_LL_IsoOUTIncomplete
+                0x08004864        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004864                USBD_LL_IsoOUTIncomplete
  .text.USBD_LL_DevConnected
-                0x0800431c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x0800431c                USBD_LL_DevConnected
+                0x08004868        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08004868                USBD_LL_DevConnected
  .text.USBD_LL_DevDisconnected
-                0x08004320       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
-                0x08004320                USBD_LL_DevDisconnected
+                0x0800486c       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x0800486c                USBD_LL_DevDisconnected
  .text.USBD_StdDevReq
-                0x08004338      0x300 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
-                0x08004338                USBD_StdDevReq
+                0x08004884      0x300 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+                0x08004884                USBD_StdDevReq
  .text.USBD_StdItfReq
-                0x08004638       0x68 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
-                0x08004638                USBD_StdItfReq
+                0x08004b84       0x68 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+                0x08004b84                USBD_StdItfReq
  .text.USBD_StdEPReq
-                0x080046a0      0x138 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
-                0x080046a0                USBD_StdEPReq
+                0x08004bec      0x138 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+                0x08004bec                USBD_StdEPReq
  .text.USBD_ParseSetupRequest
-                0x080047d8       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
-                0x080047d8                USBD_ParseSetupRequest
+                0x08004d24       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+                0x08004d24                USBD_ParseSetupRequest
  .text.USBD_CtlSendData
-                0x080047f0       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
-                0x080047f0                USBD_CtlSendData
+                0x08004d3c       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x08004d3c                USBD_CtlSendData
  .text.USBD_CtlContinueSendData
-                0x0800480c       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
-                0x0800480c                USBD_CtlContinueSendData
+                0x08004d58       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x08004d58                USBD_CtlContinueSendData
  .text.USBD_CtlContinueRx
-                0x08004820       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
-                0x08004820                USBD_CtlContinueRx
+                0x08004d6c       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x08004d6c                USBD_CtlContinueRx
  .text.USBD_CtlSendStatus
-                0x08004834       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
-                0x08004834                USBD_CtlSendStatus
+                0x08004d80       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x08004d80                USBD_CtlSendStatus
  .text.USBD_CtlReceiveStatus
-                0x0800484c       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
-                0x0800484c                USBD_CtlReceiveStatus
+                0x08004d98       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x08004d98                USBD_CtlReceiveStatus
  .text.USBH_LL_IncTimer
-                0x08004864       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
-                0x08004864                USBH_LL_IncTimer
+                0x08004db0       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x08004db0                USBH_LL_IncTimer
  .text.USBH_LL_PortEnabled
-                0x08004884        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
-                0x08004884                USBH_LL_PortEnabled
+                0x08004dd0        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x08004dd0                USBH_LL_PortEnabled
  .text.USBH_LL_PortDisabled
-                0x0800488c        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
-                0x0800488c                USBH_LL_PortDisabled
+                0x08004dd8        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x08004dd8                USBH_LL_PortDisabled
  .text.USBH_LL_Connect
-                0x08004894       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
-                0x08004894                USBH_LL_Connect
+                0x08004de0       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x08004de0                USBH_LL_Connect
  .text.USBH_LL_Disconnect
-                0x080048ac       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
-                0x080048ac                USBH_LL_Disconnect
+                0x08004df8       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x08004df8                USBH_LL_Disconnect
  .text.USBH_FreePipe
-                0x080048d8       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
-                0x080048d8                USBH_FreePipe
+                0x08004e24       0x18 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
+                0x08004e24                USBH_FreePipe
  .text._ZN5daisy9SpiHandle4Impl7InitDmaEv
-                0x080048f0       0xec /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x080048f0                daisy::SpiHandle::Impl::InitDma()
+                0x08004e3c       0xec /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08004e3c                daisy::SpiHandle::Impl::InitDma()
  .text._ZN5daisy9SpiHandle4Impl10StartDmaTxEPhjPFvPvEPFvS3_NS0_6ResultEES3_
-                0x080049dc       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x080049dc                daisy::SpiHandle::Impl::StartDmaTx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::SpiHandle::Result), void*)
+                0x08004f28       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08004f28                daisy::SpiHandle::Impl::StartDmaTx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::SpiHandle::Result), void*)
  .text._ZN5daisy9SpiHandle4Impl10StartDmaRxEPhjPFvPvEPFvS3_NS0_6ResultEES3_
-                0x08004a60       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004a60                daisy::SpiHandle::Impl::StartDmaRx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::SpiHandle::Result), void*)
+                0x08004fac       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08004fac                daisy::SpiHandle::Impl::StartDmaRx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::SpiHandle::Result), void*)
  .text._ZN5daisy9SpiHandle4Impl12StartDmaRxTxEPhS2_jPFvPvEPFvS3_NS0_6ResultEES3_
-                0x08004ae4       0x88 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004ae4                daisy::SpiHandle::Impl::StartDmaRxTx(unsigned char*, unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::SpiHandle::Result), void*)
+                0x08005030       0x88 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08005030                daisy::SpiHandle::Impl::StartDmaRxTx(unsigned char*, unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::SpiHandle::Result), void*)
  .text._ZN5daisy9SpiHandle4Impl8InitPinsEv
-                0x08004b6c      0x220 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004b6c                daisy::SpiHandle::Impl::InitPins()
+                0x080050b8      0x220 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080050b8                daisy::SpiHandle::Impl::InitPins()
  .text.HAL_SPI_MspInit
-                0x08004d8c      0x1a8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004d8c                HAL_SPI_MspInit
+                0x080052d8      0x1a8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080052d8                HAL_SPI_MspInit
  .text.SPI1_IRQHandler
-                0x08004f34        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004f34                SPI1_IRQHandler
+                0x08005480        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08005480                SPI1_IRQHandler
  .text.SPI2_IRQHandler
-                0x08004f40        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004f40                SPI2_IRQHandler
+                0x0800548c        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x0800548c                SPI2_IRQHandler
  .text.SPI3_IRQHandler
-                0x08004f4c        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004f4c                SPI3_IRQHandler
+                0x08005498        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08005498                SPI3_IRQHandler
  .text.SPI4_IRQHandler
-                0x08004f58        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004f58                SPI4_IRQHandler
+                0x080054a4        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080054a4                SPI4_IRQHandler
  .text.SPI5_IRQHandler
-                0x08004f64        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004f64                SPI5_IRQHandler
+                0x080054b0        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080054b0                SPI5_IRQHandler
  .text.DMA2_Stream2_IRQHandler
-                0x08004f70       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004f70                DMA2_Stream2_IRQHandler
+                0x080054bc       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080054bc                DMA2_Stream2_IRQHandler
  .text.DMA2_Stream3_IRQHandler
-                0x08004fa4       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004fa4                DMA2_Stream3_IRQHandler
+                0x080054f0       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080054f0                DMA2_Stream3_IRQHandler
  .text.HAL_SPI_TxCpltCallback
-                0x08004fd8       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08004fd8                HAL_SPI_TxCpltCallback
+                0x08005524       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08005524                HAL_SPI_TxCpltCallback
  .text.HAL_SPI_RxCpltCallback
-                0x08005098       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08005098                HAL_SPI_RxCpltCallback
+                0x080055e4       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080055e4                HAL_SPI_RxCpltCallback
  .text.HAL_SPI_TxRxCpltCallback
-                0x08005158       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08005158                HAL_SPI_TxRxCpltCallback
+                0x080056a4       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080056a4                HAL_SPI_TxRxCpltCallback
  .text.HAL_SPI_ErrorCallback
-                0x08005218       0xc8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
-                0x08005218                HAL_SPI_ErrorCallback
+                0x08005764       0xc8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08005764                HAL_SPI_ErrorCallback
+ *fill*         0x0800582c        0x4 
  .text.startup._GLOBAL__sub_I__Z19MapInstanceToHandleP11SPI_TypeDef
-                0x080052e0      0x1bc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08005830      0x1bc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0800549c       0x44 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
-                0x0800549c                HAL_TIM_PeriodElapsedCallback
+                0x080059ec       0x44 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x080059ec                HAL_TIM_PeriodElapsedCallback
  .text.TIM2_IRQHandler
-                0x080054e0        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
-                0x080054e0                TIM2_IRQHandler
+                0x08005a30        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x08005a30                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x080054ec        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
-                0x080054ec                TIM3_IRQHandler
+                0x08005a3c        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x08005a3c                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x080054f8        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
-                0x080054f8                TIM4_IRQHandler
+                0x08005a48        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x08005a48                TIM4_IRQHandler
  .text.TIM5_IRQHandler
-                0x08005504        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
-                0x08005504                TIM5_IRQHandler
+                0x08005a54        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x08005a54                TIM5_IRQHandler
  .text.startup._GLOBAL__sub_I__ZN5daisy11TimerHandle4Impl4InitERKNS0_6ConfigE
-                0x08005510       0x44 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x08005a60       0x44 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
  .text._ZL20UART_CheckRxListenerPN5daisy11UartHandler4ImplE
-                0x08005554       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08005aa4       0x84 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
  .text._ZN5daisy11UartHandler4Impl10StartDmaTxEPhjPFvPvEPFvS3_NS0_6ResultEES3_
-                0x080055d8      0x170 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x080055d8                daisy::UartHandler::Impl::StartDmaTx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::UartHandler::Result), void*)
+                0x08005b28      0x170 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08005b28                daisy::UartHandler::Impl::StartDmaTx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::UartHandler::Result), void*)
  .text._ZN5daisy11UartHandler4Impl10StartDmaRxEPhjPFvPvEPFvS3_NS0_6ResultEES3_
-                0x08005748      0x170 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005748                daisy::UartHandler::Impl::StartDmaRx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::UartHandler::Result), void*)
+                0x08005c98      0x170 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08005c98                daisy::UartHandler::Impl::StartDmaRx(unsigned char*, unsigned int, void (*)(void*), void (*)(void*, daisy::UartHandler::Result), void*)
  .text._ZN5daisy11UartHandler4Impl19DmaTransferFinishedEP20__UART_HandleTypeDefNS0_6ResultE
-                0x080058b8       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x080058b8                daisy::UartHandler::Impl::DmaTransferFinished(__UART_HandleTypeDef*, daisy::UartHandler::Result)
+                0x08005e08       0xc0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08005e08                daisy::UartHandler::Impl::DmaTransferFinished(__UART_HandleTypeDef*, daisy::UartHandler::Result)
  .text._ZN5daisy11UartHandler4Impl8InitPinsEv
-                0x08005978      0x154 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005978                daisy::UartHandler::Impl::InitPins()
+                0x08005ec8      0x154 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08005ec8                daisy::UartHandler::Impl::InitPins()
  .text.HAL_UART_MspInit
-                0x08005acc      0x20c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005acc                HAL_UART_MspInit
+                0x0800601c      0x20c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x0800601c                HAL_UART_MspInit
  .text.USART1_IRQHandler
-                0x08005cd8       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005cd8                USART1_IRQHandler
+                0x08006228       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006228                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x08005d08       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005d08                USART2_IRQHandler
+                0x08006258       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006258                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x08005d40       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005d40                USART3_IRQHandler
+                0x08006290       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006290                USART3_IRQHandler
  .text.UART4_IRQHandler
-                0x08005d78       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005d78                UART4_IRQHandler
+                0x080062c8       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x080062c8                UART4_IRQHandler
  .text.UART5_IRQHandler
-                0x08005db0       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005db0                UART5_IRQHandler
+                0x08006300       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006300                UART5_IRQHandler
  .text.USART6_IRQHandler
-                0x08005de8       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005de8                USART6_IRQHandler
+                0x08006338       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006338                USART6_IRQHandler
  .text.UART7_IRQHandler
-                0x08005e20       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005e20                UART7_IRQHandler
+                0x08006370       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006370                UART7_IRQHandler
  .text.UART8_IRQHandler
-                0x08005e58       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005e58                UART8_IRQHandler
+                0x080063a8       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x080063a8                UART8_IRQHandler
  .text.LPUART1_IRQHandler
-                0x08005e90       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005e90                LPUART1_IRQHandler
+                0x080063e0       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x080063e0                LPUART1_IRQHandler
  .text.DMA1_Stream5_IRQHandler
-                0x08005ec8       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005ec8                DMA1_Stream5_IRQHandler
+                0x08006418       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006418                DMA1_Stream5_IRQHandler
  .text.DMA2_Stream4_IRQHandler
-                0x08005efc       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005efc                DMA2_Stream4_IRQHandler
+                0x0800644c       0x34 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x0800644c                DMA2_Stream4_IRQHandler
  .text.HAL_UART_TxCpltCallback
-                0x08005f30        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005f30                HAL_UART_TxCpltCallback
+                0x08006480        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006480                HAL_UART_TxCpltCallback
  .text.HAL_UART_RxCpltCallback
-                0x08005f38       0x94 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005f38                HAL_UART_RxCpltCallback
+                0x08006488       0x94 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08006488                HAL_UART_RxCpltCallback
  .text.HAL_UART_RxHalfCpltCallback
-                0x08005fcc       0x90 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08005fcc                HAL_UART_RxHalfCpltCallback
+                0x0800651c       0x90 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x0800651c                HAL_UART_RxHalfCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x0800605c        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x0800605c                HAL_UART_ErrorCallback
- *fill*         0x08006064        0x4 
+                0x080065ac        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x080065ac                HAL_UART_ErrorCallback
+ *fill*         0x080065b4        0x4 
  .text.startup._GLOBAL__sub_I__Z19MapInstanceToHandleP13USART_TypeDef
-                0x08006068      0x19c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x080065b8      0x19c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
  .text.dsy_dma_invalidate_cache_for_buffer
-                0x08006204       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
-                0x08006204                dsy_dma_invalidate_cache_for_buffer
+                0x08006754       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
+                0x08006754                dsy_dma_invalidate_cache_for_buffer
  .text.SPI_CloseTransfer
-                0x08006230       0xb8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006780       0xb8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.HAL_SPI_Init
-                0x080062e8      0x150 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x080062e8                HAL_SPI_Init
+                0x08006838      0x150 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006838                HAL_SPI_Init
  .text.HAL_SPI_Transmit_DMA
-                0x08006438      0x158 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006438                HAL_SPI_Transmit_DMA
+                0x08006988      0x158 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006988                HAL_SPI_Transmit_DMA
  .text.HAL_SPI_TransmitReceive_DMA
-                0x08006590      0x1f0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006590                HAL_SPI_TransmitReceive_DMA
+                0x08006ae0      0x1f0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ae0                HAL_SPI_TransmitReceive_DMA
  .text.HAL_SPI_Receive_DMA
-                0x08006780      0x188 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006780                HAL_SPI_Receive_DMA
+                0x08006cd0      0x188 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006cd0                HAL_SPI_Receive_DMA
  .text.SPI_DMATransmitCplt
-                0x08006908       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006e58       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.SPI_DMAReceiveCplt
-                0x08006930       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006e80       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.SPI_DMATransmitReceiveCplt
-                0x08006958       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ea8       0x28 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.HAL_SPI_TxHalfCpltCallback
-                0x08006980        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006980                HAL_SPI_TxHalfCpltCallback
+                0x08006ed0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ed0                HAL_SPI_TxHalfCpltCallback
  .text.SPI_DMAHalfTransmitCplt
-                0x08006984        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ed4        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.HAL_SPI_RxHalfCpltCallback
-                0x08006990        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006990                HAL_SPI_RxHalfCpltCallback
+                0x08006ee0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ee0                HAL_SPI_RxHalfCpltCallback
  .text.SPI_DMAHalfReceiveCplt
-                0x08006994        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ee4        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.HAL_SPI_TxRxHalfCpltCallback
-                0x080069a0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x080069a0                HAL_SPI_TxRxHalfCpltCallback
+                0x08006ef0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ef0                HAL_SPI_TxRxHalfCpltCallback
  .text.SPI_DMAHalfTransmitReceiveCplt
-                0x080069a4        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006ef4        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.SPI_DMAError
-                0x080069b0       0xd8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006f00       0xd8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.HAL_SPI_IRQHandler
-                0x08006a88      0x234 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006a88                HAL_SPI_IRQHandler
+                0x08006fd8      0x234 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08006fd8                HAL_SPI_IRQHandler
  .text.SPI_DMAAbortOnError
-                0x08006cbc       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x0800720c       0x1c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .text.HAL_SPI_GetState
-                0x08006cd8        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
-                0x08006cd8                HAL_SPI_GetState
+                0x08007228        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08007228                HAL_SPI_GetState
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08006ce0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08006ce0                HAL_TIM_OC_DelayElapsedCallback
+                0x08007230        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08007230                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08006ce4        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08006ce4                HAL_TIM_IC_CaptureCallback
+                0x08007234        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08007234                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08006ce8        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08006ce8                HAL_TIM_PWM_PulseFinishedCallback
+                0x08007238        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08007238                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08006cec        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08006cec                HAL_TIM_TriggerCallback
+                0x0800723c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x0800723c                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x08006cf0      0x170 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08006cf0                HAL_TIM_IRQHandler
+                0x08007240      0x170 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08007240                HAL_TIM_IRQHandler
  .text.HAL_TIMEx_CommutCallback
-                0x08006e60        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
-                0x08006e60                HAL_TIMEx_CommutCallback
+                0x080073b0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x080073b0                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08006e64        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
-                0x08006e64                HAL_TIMEx_BreakCallback
+                0x080073b4        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x080073b4                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x08006e68        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
-                0x08006e68                HAL_TIMEx_Break2Callback
+                0x080073b8        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x080073b8                HAL_TIMEx_Break2Callback
  .text.HAL_UART_Transmit_DMA
-                0x08006e6c       0x90 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08006e6c                HAL_UART_Transmit_DMA
+                0x080073bc       0x90 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080073bc                HAL_UART_Transmit_DMA
  .text.HAL_UART_Receive_DMA
-                0x08006efc       0x98 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08006efc                HAL_UART_Receive_DMA
+                0x0800744c       0x98 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x0800744c                HAL_UART_Receive_DMA
  .text.UART_DMATransmitCplt
-                0x08006f94       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080074e4       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .text.HAL_UART_TxHalfCpltCallback
-                0x08006fc0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08006fc0                HAL_UART_TxHalfCpltCallback
+                0x08007510        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08007510                HAL_UART_TxHalfCpltCallback
  .text.UART_DMATxHalfCplt
-                0x08006fc4        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08007514        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .text.UART_DMAReceiveCplt
-                0x08006fd0       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08007520       0x38 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .text.UART_DMARxHalfCplt
-                0x08007008        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08007558        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .text.UART_DMAError
-                0x08007014       0x78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08007564       0x78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .text.HAL_UART_IRQHandler
-                0x0800708c      0x1e0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x0800708c                HAL_UART_IRQHandler
+                0x080075dc      0x1e0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080075dc                HAL_UART_IRQHandler
  .text.UART_DMAAbortOnError
-                0x0800726c       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080077bc       0x14 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .text.HAL_UART_GetState
-                0x08007280        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08007280                HAL_UART_GetState
+                0x080077d0        0xc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080077d0                HAL_UART_GetState
  .text.UART_SetConfig
-                0x0800728c      0xb00 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x0800728c                UART_SetConfig
+                0x080077dc      0xb00 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080077dc                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x08007d8c       0xb0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08007d8c                UART_AdvFeatureConfig
+                0x080082dc       0xb0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x080082dc                UART_AdvFeatureConfig
  .text.UART_CheckIdleState
-                0x08007e3c       0x80 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08007e3c                UART_CheckIdleState
+                0x0800838c       0x80 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x0800838c                UART_CheckIdleState
  .text.HAL_UART_Init
-                0x08007ebc       0x68 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
-                0x08007ebc                HAL_UART_Init
+                0x0800840c       0x68 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x0800840c                HAL_UART_Init
  .text.HAL_UARTEx_WakeupCallback
-                0x08007f24        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
-                0x08007f24                HAL_UARTEx_WakeupCallback
+                0x08008474        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+                0x08008474                HAL_UARTEx_WakeupCallback
  .text.HAL_UARTEx_RxFifoFullCallback
-                0x08007f28        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
-                0x08007f28                HAL_UARTEx_RxFifoFullCallback
+                0x08008478        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+                0x08008478                HAL_UARTEx_RxFifoFullCallback
  .text.HAL_UARTEx_TxFifoEmptyCallback
-                0x08007f2c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
-                0x08007f2c                HAL_UARTEx_TxFifoEmptyCallback
+                0x0800847c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+                0x0800847c                HAL_UARTEx_TxFifoEmptyCallback
  .text.__aeabi_atexit
-                0x08007f30        0xa /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(atexit_arm.o)
-                0x08007f30                __aeabi_atexit
- .text.memset   0x08007f3a       0x10 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memset.o)
-                0x08007f3a                memset
- *fill*         0x08007f4a        0x2 
+                0x08008480        0xa /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(atexit_arm.o)
+                0x08008480                __aeabi_atexit
+ .text.memset   0x0800848a       0x10 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memset.o)
+                0x0800848a                memset
+ *fill*         0x0800849a        0x2 
  .text.__libc_init_array
-                0x08007f4c       0x48 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-init.o)
-                0x08007f4c                __libc_init_array
+                0x0800849c       0x48 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-init.o)
+                0x0800849c                __libc_init_array
  .text.__cxa_atexit
-                0x08007f94       0x1c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-cxa_atexit.o)
-                0x08007f94                __cxa_atexit
- .text.memcpy   0x08007fb0       0x1c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memcpy-stub.o)
-                0x08007fb0                memcpy
+                0x080084e4       0x1c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-cxa_atexit.o)
+                0x080084e4                __cxa_atexit
+ .text.memcpy   0x08008500       0x1c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memcpy-stub.o)
+                0x08008500                memcpy
  .text.__udivmoddi4
-                0x08007fcc      0x2f8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
-                0x08007fcc                __udivmoddi4
+                0x0800851c      0x2f8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
+                0x0800851c                __udivmoddi4
  *(.rodata)
- .rodata        0x080082c4        0x6 build/I2C.o
- *fill*         0x080082ca        0x2 
- .rodata        0x080082cc       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
- .rodata        0x080082dc       0x12 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+ .rodata        0x08008814        0x6 build/I2C.o
+ *fill*         0x0800881a        0x2 
+ .rodata        0x0800881c       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+ .rodata        0x0800882c       0x12 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
  *(.rodata*)
- *fill*         0x080082ee        0x2 
+ *fill*         0x0800883e        0x2 
  .rodata.D1CorePrescTable
-                0x080082f0       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
-                0x080082f0                D1CorePrescTable
+                0x08008840       0x10 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+                0x08008840                D1CorePrescTable
  .rodata.gpio_hal_pin_map
-                0x08008300       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x08008850       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
  .rodata.gpio_hal_port_map
-                0x08008320       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x08008870       0x30 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
  .rodata.flagBitshiftOffset.0
-                0x08008350        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x080088a0        0x8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
  .rodata._ZL16pins_periphs_spi
-                0x08008358       0x60 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x080088a8       0x60 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
  .rodata._ZL13pins_none_spi
-                0x080083b8        0x3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
- *fill*         0x080083bb        0x5 
+                0x08008908        0x3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+ *fill*         0x0800890b        0x5 
  .rodata.CSWTCH.422
-                0x080083c0       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08008910       0x58 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .rodata.CSWTCH.418
-                0x08008418       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08008968       0x2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  *(.glue_7)
- .glue_7        0x08008444        0x0 linker stubs
+ .glue_7        0x08008994        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08008444        0x0 linker stubs
+ .glue_7t       0x08008994        0x0 linker stubs
  *(.init)
- .init          0x08008444        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x08008444                _init
- .init          0x08008448        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .init          0x08008994        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x08008994                _init
+ .init          0x08008998        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x08008450        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x08008450                _fini
- .fini          0x08008454        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtn.o
-                0x0800845c                        . = ALIGN (0x4)
-                0x0800845c                        _etext = .
+ .fini          0x080089a0        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080089a0                _fini
+ .fini          0x080089a4        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x080089ac                        . = ALIGN (0x4)
+                0x080089ac                        _etext = .
 
-.eh_frame       0x0800845c        0x0
- .eh_frame      0x0800845c        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.eh_frame       0x080089ac        0x0
+ .eh_frame      0x080089ac        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.vfp11_veneer   0x0800845c        0x0
- .vfp11_veneer  0x0800845c        0x0 linker stubs
+.vfp11_veneer   0x080089ac        0x0
+ .vfp11_veneer  0x080089ac        0x0 linker stubs
 
-.v4_bx          0x0800845c        0x0
- .v4_bx         0x0800845c        0x0 linker stubs
+.v4_bx          0x080089ac        0x0
+ .v4_bx         0x080089ac        0x0 linker stubs
 
-.iplt           0x0800845c        0x0
- .iplt          0x0800845c        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x080089ac        0x0
+ .iplt          0x080089ac        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.ARM.extab      0x0800845c        0x0
-                0x0800845c                        . = ALIGN (0x4)
+.ARM.extab      0x080089ac        0x0
+                0x080089ac                        . = ALIGN (0x4)
  *(.ARM.extab)
  *(.gnu.linkonce.armextab.*)
-                0x0800845c                        . = ALIGN (0x4)
+                0x080089ac                        . = ALIGN (0x4)
 
-.exidx          0x0800845c        0x8
-                0x0800845c                        . = ALIGN (0x4)
+.exidx          0x080089ac        0x8
+                0x080089ac                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__exidx_start = .)
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x0800845c        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
-                0x08008464                        . = ALIGN (0x4)
+                0x080089ac        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
+                0x080089b4                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__exidx_end = .)
 
-.rel.dyn        0x08008464        0x0
- .rel.iplt      0x08008464        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x080089b4        0x0
+ .rel.iplt      0x080089b4        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
 .ARM.attributes
-                0x08008464       0x2e
+                0x080089b4       0x2e
  *(.ARM.attributes)
  .ARM.attributes
-                0x08008464       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080089b4       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crti.o
  .ARM.attributes
-                0x08008484       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x080089d4       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  .ARM.attributes
-                0x080084b6       0x32 build/startup_stm32h750xx.o
+                0x08008a06       0x32 build/startup_stm32h750xx.o
  .ARM.attributes
-                0x080084e8       0x32 build/I2C.o
+                0x08008a38       0x32 build/I2C.o
  .ARM.attributes
-                0x0800851a       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x08008a6a       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .ARM.attributes
-                0x0800854c       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x08008a9c       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
  .ARM.attributes
-                0x0800857e       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+                0x08008ace       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
  .ARM.attributes
-                0x080085b0       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x08008b00       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
  .ARM.attributes
-                0x080085e2       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x08008b32       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
  .ARM.attributes
-                0x08008614       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x08008b64       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
  .ARM.attributes
-                0x08008646       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+                0x08008b96       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
  .ARM.attributes
-                0x08008678       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08008bc8       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
  .ARM.attributes
-                0x080086aa       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08008bfa       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
  .ARM.attributes
-                0x080086dc       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x08008c2c       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
  .ARM.attributes
-                0x0800870e       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+                0x08008c5e       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
  .ARM.attributes
-                0x08008740       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08008c90       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .ARM.attributes
-                0x08008772       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x08008cc2       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
  .ARM.attributes
-                0x080087a4       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08008cf4       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
  .ARM.attributes
-                0x080087d6       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x08008d26       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
  .ARM.attributes
-                0x08008808       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x08008d58       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
  .ARM.attributes
-                0x0800883a       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08008d8a       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
  .ARM.attributes
-                0x0800886c       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08008dbc       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
  .ARM.attributes
-                0x0800889e       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x08008dee       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
  .ARM.attributes
-                0x080088d0       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+                0x08008e20       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
  .ARM.attributes
-                0x08008902       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x08008e52       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
  .ARM.attributes
-                0x08008934       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x08008e84       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
  .ARM.attributes
-                0x08008966       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
+                0x08008eb6       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
  .ARM.attributes
-                0x08008998       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x08008ee8       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
  .ARM.attributes
-                0x080089ca       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x08008f1a       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
  .ARM.attributes
-                0x080089fc       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x08008f4c       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
  .ARM.attributes
-                0x08008a2e       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
+                0x08008f7e       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
  .ARM.attributes
-                0x08008a60       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x08008fb0       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .ARM.attributes
-                0x08008a92       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08008fe2       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
  .ARM.attributes
-                0x08008ac4       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x08009014       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
  .ARM.attributes
-                0x08008af6       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x08009046       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .ARM.attributes
-                0x08008b28       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+                0x08009078       0x32 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
  .ARM.attributes
-                0x08008b5a       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(atexit_arm.o)
+                0x080090aa       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(atexit_arm.o)
  .ARM.attributes
-                0x08008b8c       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memset.o)
+                0x080090dc       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x08008bbe       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-init.o)
+                0x0800910e       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x08008bf0       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-cxa_atexit.o)
+                0x08009140       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-cxa_atexit.o)
  .ARM.attributes
-                0x08008c22       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memcpy-stub.o)
+                0x08009172       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x08008c54       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x080091a4       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x08008c74       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
+                0x080091c4       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x08008ca6       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_dvmd_tls.o)
+                0x080091f6       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x08008cc6       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtend.o
+                0x08009216       0x32 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtend.o
  .ARM.attributes
-                0x08008cf8       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x08009248       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtn.o
 
-.preinit_array  0x08008464        0x0
-                0x08008464                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080089b4        0x0
+                0x080089b4                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08008464                        PROVIDE (__preinit_array_end = .)
+                0x080089b4                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08008464       0x1c
-                0x08008464                        PROVIDE (__init_array_start = .)
+.init_array     0x080089b4       0x1c
+                0x080089b4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08008464        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
- .init_array    0x08008468        0x4 build/I2C.o
- .init_array    0x0800846c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
- .init_array    0x08008470        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
- .init_array    0x08008474        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
- .init_array    0x08008478        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
- .init_array    0x0800847c        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
-                0x08008480                        PROVIDE (__init_array_end = .)
+ .init_array    0x080089b4        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .init_array    0x080089b8        0x4 build/I2C.o
+ .init_array    0x080089bc        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+ .init_array    0x080089c0        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+ .init_array    0x080089c4        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+ .init_array    0x080089c8        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+ .init_array    0x080089cc        0x4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x080089d0                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x08008480        0x4
+.fini_array     0x080089d0        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(.fini_array*)
- .fini_array    0x08008480        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x080089d0        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(SORT_BY_NAME(.fini_array.*))
                 [!provide]                        PROVIDE (__fini_array_end = .)
 
-.data           0x24000000      0x330 load address 0x08008484
+.data           0x24000000      0x330 load address 0x080089d4
                 0x24000000                        . = ALIGN (0x4)
                 0x24000000                        _sdata = .
                 [!provide]                        PROVIDE (__data_start__ = _sdata)
@@ -3677,19 +3682,19 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *fill*         0x2400032f        0x1 
                 0x24000330                        _edata = .
                 [!provide]                        PROVIDE (__data_end__ = _edata)
-                0x08008484                        _sidata = LOADADDR (.data)
+                0x080089d4                        _sidata = LOADADDR (.data)
 
 .tm_clone_table
-                0x24000330        0x0 load address 0x080087b4
+                0x24000330        0x0 load address 0x08008d04
  .tm_clone_table
                 0x24000330        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  .tm_clone_table
                 0x24000330        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtend.o
 
-.igot.plt       0x24000330        0x0 load address 0x080087b4
+.igot.plt       0x24000330        0x0 load address 0x08008d04
  .igot.plt      0x24000330        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.bss            0x24000330     0x2598 load address 0x080087b4
+.bss            0x24000330     0x2598 load address 0x08008d04
                 0x24000330                        . = ALIGN (0x4)
                 0x24000330                        _sbss = .
                 0x24000330                        PROVIDE (__bss_start__ = _sbss)
@@ -3890,77 +3895,77 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libm.a
 LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+dp/hard/libgcc.a
 
-.debug_info     0x00000000    0x50605
+.debug_info     0x00000000    0x50657
  .debug_info    0x00000000      0x1c6 build/startup_stm32h750xx.o
- .debug_info    0x000001c6     0x5f8a build/I2C.o
- .debug_info    0x00006150     0x69d8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
- .debug_info    0x0000cb28     0x5260 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
- .debug_info    0x00011d88      0xa3a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
- .debug_info    0x000127c2     0x2a52 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
- .debug_info    0x00015214     0x28da /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
- .debug_info    0x00017aee      0x7ab /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
- .debug_info    0x00018299     0x1630 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
- .debug_info    0x000198c9     0x1302 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
- .debug_info    0x0001abcb      0xea2 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
- .debug_info    0x0001ba6d      0xc78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
- .debug_info    0x0001c6e5     0x14d4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
- .debug_info    0x0001dbb9     0x628a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .debug_info    0x00023e43      0xd8b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
- .debug_info    0x00024bce     0x1b5e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
- .debug_info    0x0002672c      0xa09 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
- .debug_info    0x00027135     0x11b1 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
- .debug_info    0x000282e6     0x1f70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
- .debug_info    0x0002a256     0x2137 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
- .debug_info    0x0002c38d      0xf16 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
- .debug_info    0x0002d2a3      0xfaa /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
- .debug_info    0x0002e24d      0x86e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
- .debug_info    0x0002eabb     0x16b4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
- .debug_info    0x0003016f      0xb67 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
- .debug_info    0x00030cd6     0x72d0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
- .debug_info    0x00037fa6     0x4e8a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
- .debug_info    0x0003ce30     0x7289 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
- .debug_info    0x000440b9     0x11ce /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
- .debug_info    0x00045287     0x1af6 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
- .debug_info    0x00046d7d     0x48f8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
- .debug_info    0x0004b675     0x199a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
- .debug_info    0x0004d00f     0x2841 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
- .debug_info    0x0004f850      0xdb5 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+ .debug_info    0x000001c6     0x5fdc build/I2C.o
+ .debug_info    0x000061a2     0x69d8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+ .debug_info    0x0000cb7a     0x5260 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+ .debug_info    0x00011dda      0xa3a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+ .debug_info    0x00012814     0x2a52 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+ .debug_info    0x00015266     0x28da /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+ .debug_info    0x00017b40      0x7ab /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+ .debug_info    0x000182eb     0x1630 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+ .debug_info    0x0001991b     0x1302 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+ .debug_info    0x0001ac1d      0xea2 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+ .debug_info    0x0001babf      0xc78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
+ .debug_info    0x0001c737     0x14d4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+ .debug_info    0x0001dc0b     0x628a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+ .debug_info    0x00023e95      0xd8b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+ .debug_info    0x00024c20     0x1b5e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+ .debug_info    0x0002677e      0xa09 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+ .debug_info    0x00027187     0x11b1 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+ .debug_info    0x00028338     0x1f70 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+ .debug_info    0x0002a2a8     0x2137 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+ .debug_info    0x0002c3df      0xf16 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+ .debug_info    0x0002d2f5      0xfaa /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+ .debug_info    0x0002e29f      0x86e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+ .debug_info    0x0002eb0d     0x16b4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+ .debug_info    0x000301c1      0xb67 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
+ .debug_info    0x00030d28     0x72d0 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+ .debug_info    0x00037ff8     0x4e8a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+ .debug_info    0x0003ce82     0x7289 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+ .debug_info    0x0004410b     0x11ce /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
+ .debug_info    0x000452d9     0x1af6 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+ .debug_info    0x00046dcf     0x48f8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+ .debug_info    0x0004b6c7     0x199a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+ .debug_info    0x0004d061     0x2841 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+ .debug_info    0x0004f8a2      0xdb5 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
 
-.debug_abbrev   0x00000000     0x8ce5
+.debug_abbrev   0x00000000     0x8cf0
  .debug_abbrev  0x00000000      0x14d build/startup_stm32h750xx.o
- .debug_abbrev  0x0000014d      0x7df build/I2C.o
- .debug_abbrev  0x0000092c      0x949 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
- .debug_abbrev  0x00001275      0x901 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
- .debug_abbrev  0x00001b76      0x14d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
- .debug_abbrev  0x00001cc3      0x368 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
- .debug_abbrev  0x0000202b      0x495 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
- .debug_abbrev  0x000024c0      0x19a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
- .debug_abbrev  0x0000265a      0x2ed /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
- .debug_abbrev  0x00002947      0x38c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
- .debug_abbrev  0x00002cd3      0x33f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
- .debug_abbrev  0x00003012      0x24a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
- .debug_abbrev  0x0000325c      0x34d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
- .debug_abbrev  0x000035a9      0x3f7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .debug_abbrev  0x000039a0      0x1f7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
- .debug_abbrev  0x00003b97      0x3e4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
- .debug_abbrev  0x00003f7b      0x31b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
- .debug_abbrev  0x00004296      0x326 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
- .debug_abbrev  0x000045bc      0x348 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
- .debug_abbrev  0x00004904      0x449 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
- .debug_abbrev  0x00004d4d      0x2e3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
- .debug_abbrev  0x00005030      0x3b3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
- .debug_abbrev  0x000053e3      0x1b3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
- .debug_abbrev  0x00005596      0x457 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
- .debug_abbrev  0x000059ed      0x2d9 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
- .debug_abbrev  0x00005cc6      0x9a8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
- .debug_abbrev  0x0000666e      0x834 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
- .debug_abbrev  0x00006ea2      0xa1a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
- .debug_abbrev  0x000078bc      0x20f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
- .debug_abbrev  0x00007acb      0x40a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
- .debug_abbrev  0x00007ed5      0x38d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
- .debug_abbrev  0x00008262      0x34b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
- .debug_abbrev  0x000085ad      0x43a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
- .debug_abbrev  0x000089e7      0x2fe /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+ .debug_abbrev  0x0000014d      0x7ea build/I2C.o
+ .debug_abbrev  0x00000937      0x949 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+ .debug_abbrev  0x00001280      0x901 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+ .debug_abbrev  0x00001b81      0x14d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+ .debug_abbrev  0x00001cce      0x368 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+ .debug_abbrev  0x00002036      0x495 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+ .debug_abbrev  0x000024cb      0x19a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+ .debug_abbrev  0x00002665      0x2ed /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+ .debug_abbrev  0x00002952      0x38c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+ .debug_abbrev  0x00002cde      0x33f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+ .debug_abbrev  0x0000301d      0x24a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
+ .debug_abbrev  0x00003267      0x34d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+ .debug_abbrev  0x000035b4      0x3f7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+ .debug_abbrev  0x000039ab      0x1f7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+ .debug_abbrev  0x00003ba2      0x3e4 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+ .debug_abbrev  0x00003f86      0x31b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+ .debug_abbrev  0x000042a1      0x326 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+ .debug_abbrev  0x000045c7      0x348 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+ .debug_abbrev  0x0000490f      0x449 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+ .debug_abbrev  0x00004d58      0x2e3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+ .debug_abbrev  0x0000503b      0x3b3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+ .debug_abbrev  0x000053ee      0x1b3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+ .debug_abbrev  0x000055a1      0x457 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+ .debug_abbrev  0x000059f8      0x2d9 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
+ .debug_abbrev  0x00005cd1      0x9a8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+ .debug_abbrev  0x00006679      0x834 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+ .debug_abbrev  0x00006ead      0xa1a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+ .debug_abbrev  0x000078c7      0x20f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
+ .debug_abbrev  0x00007ad6      0x40a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+ .debug_abbrev  0x00007ee0      0x38d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+ .debug_abbrev  0x0000826d      0x34b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+ .debug_abbrev  0x000085b8      0x43a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+ .debug_abbrev  0x000089f2      0x2fe /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
 
 .debug_aranges  0x00000000     0x1ff0
  .debug_aranges
@@ -4033,116 +4038,116 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x00001f78       0x78 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
 
 .debug_rnglists
-                0x00000000     0x3ded
+                0x00000000     0x3df0
  .debug_rnglists
                 0x00000000       0x19 build/startup_stm32h750xx.o
  .debug_rnglists
-                0x00000019       0x61 build/I2C.o
+                0x00000019       0x64 build/I2C.o
  .debug_rnglists
-                0x0000007a      0x3dc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                0x0000007d      0x3dc /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .debug_rnglists
-                0x00000456      0x163 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+                0x00000459      0x163 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
  .debug_rnglists
-                0x000005b9       0x1b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+                0x000005bc       0x1b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
  .debug_rnglists
-                0x000005d4       0xfd /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+                0x000005d7       0xfd /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
  .debug_rnglists
-                0x000006d1       0xc5 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+                0x000006d4       0xc5 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
  .debug_rnglists
-                0x00000796       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+                0x00000799       0x20 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
  .debug_rnglists
-                0x000007b6      0x133 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+                0x000007b9      0x133 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
  .debug_rnglists
-                0x000008e9       0xf7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x000008ec       0xf7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
  .debug_rnglists
-                0x000009e0       0xf7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+                0x000009e3       0xf7 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
  .debug_rnglists
-                0x00000ad7       0x63 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x00000ada       0x63 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
  .debug_rnglists
-                0x00000b3a      0x157 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+                0x00000b3d      0x157 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
  .debug_rnglists
-                0x00000c91      0xa2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x00000c94      0xa2c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
  .debug_rnglists
-                0x000016bd       0x49 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x000016c0       0x49 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
  .debug_rnglists
-                0x00001706      0x13a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x00001709      0x13a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
  .debug_rnglists
-                0x00001840       0x51 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x00001843       0x51 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
  .debug_rnglists
-                0x00001891      0x113 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x00001894      0x113 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
  .debug_rnglists
-                0x000019a4      0x178 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x000019a7      0x178 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
  .debug_rnglists
-                0x00001b1c      0x1b1 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+                0x00001b1f      0x1b1 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
  .debug_rnglists
-                0x00001ccd       0x86 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+                0x00001cd0       0x86 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
  .debug_rnglists
-                0x00001d53       0x9e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+                0x00001d56       0x9e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
  .debug_rnglists
-                0x00001df1       0x37 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+                0x00001df4       0x37 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
  .debug_rnglists
-                0x00001e28       0xe9 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+                0x00001e2b       0xe9 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
  .debug_rnglists
-                0x00001f11       0x36 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
+                0x00001f14       0x36 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
  .debug_rnglists
-                0x00001f47      0x74b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+                0x00001f4a      0x74b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
  .debug_rnglists
-                0x00002692      0x2f2 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+                0x00002695      0x2f2 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
  .debug_rnglists
-                0x00002984      0x77d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+                0x00002987      0x77d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
  .debug_rnglists
-                0x00003101       0x35 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
+                0x00003104       0x35 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
  .debug_rnglists
-                0x00003136      0x1af /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+                0x00003139      0x1af /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
  .debug_rnglists
-                0x000032e5      0x637 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+                0x000032e8      0x637 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
  .debug_rnglists
-                0x0000391c      0x18f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x0000391f      0x18f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
  .debug_rnglists
-                0x00003aab      0x2af /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+                0x00003aae      0x2af /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
  .debug_rnglists
-                0x00003d5a       0x93 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+                0x00003d5d       0x93 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
 
-.debug_line     0x00000000    0x2e682
+.debug_line     0x00000000    0x2e697
  .debug_line    0x00000000      0x1fe build/startup_stm32h750xx.o
- .debug_line    0x000001fe      0x865 build/I2C.o
- .debug_line    0x00000a63     0x1e73 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
- .debug_line    0x000028d6     0x11ed /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
- .debug_line    0x00003ac3      0x41f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
- .debug_line    0x00003ee2      0x92f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
- .debug_line    0x00004811      0x787 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
- .debug_line    0x00004f98      0x223 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
- .debug_line    0x000051bb      0x993 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
- .debug_line    0x00005b4e      0x812 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
- .debug_line    0x00006360     0x2089 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
- .debug_line    0x000083e9      0xad6 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
- .debug_line    0x00008ebf      0xf77 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
- .debug_line    0x00009e36     0x6db6 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
- .debug_line    0x00010bec      0x436 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
- .debug_line    0x00011022     0x1448 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
- .debug_line    0x0001246a      0x74d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
- .debug_line    0x00012bb7     0x139c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
- .debug_line    0x00013f53     0x1ec3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
- .debug_line    0x00015e16     0x2a03 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
- .debug_line    0x00018819      0x77e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
- .debug_line    0x00018f97      0x842 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
- .debug_line    0x000197d9      0x2a3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
- .debug_line    0x00019a7c      0xc5a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
- .debug_line    0x0001a6d6      0x374 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
- .debug_line    0x0001aa4a     0x2c96 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
- .debug_line    0x0001d6e0     0x135b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
- .debug_line    0x0001ea3b     0x362c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
- .debug_line    0x00022067      0x39a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
- .debug_line    0x00022401     0x27cf /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
- .debug_line    0x00024bd0     0x5106 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
- .debug_line    0x00029cd6     0x1246 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
- .debug_line    0x0002af1c     0x2fa8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
- .debug_line    0x0002dec4      0x7be /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
+ .debug_line    0x000001fe      0x87a build/I2C.o
+ .debug_line    0x00000a78     0x1e73 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+ .debug_line    0x000028eb     0x11ed /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
+ .debug_line    0x00003ad8      0x41f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
+ .debug_line    0x00003ef7      0x92f /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_conf.o)
+ .debug_line    0x00004826      0x787 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_conf.o)
+ .debug_line    0x00004fad      0x223 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(hal_map.o)
+ .debug_line    0x000051d0      0x993 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal.o)
+ .debug_line    0x00005b63      0x812 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_cortex.o)
+ .debug_line    0x00006375     0x2089 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_dma.o)
+ .debug_line    0x000083fe      0xad6 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_gpio.o)
+ .debug_line    0x00008ed4      0xf77 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_hcd.o)
+ .debug_line    0x00009e4b     0x6db6 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c.o)
+ .debug_line    0x00010c01      0x436 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+ .debug_line    0x00011037     0x1448 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd.o)
+ .debug_line    0x0001247f      0x74d /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+ .debug_line    0x00012bcc     0x139c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc.o)
+ .debug_line    0x00013f68     0x1ec3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+ .debug_line    0x00015e2b     0x2a03 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_ll_usb.o)
+ .debug_line    0x0001882e      0x77e /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_core.o)
+ .debug_line    0x00018fac      0x842 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ctlreq.o)
+ .debug_line    0x000197ee      0x2a3 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbd_ioreq.o)
+ .debug_line    0x00019a91      0xc5a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_core.o)
+ .debug_line    0x0001a6eb      0x374 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(usbh_pipes.o)
+ .debug_line    0x0001aa5f     0x2c96 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(spi.o)
+ .debug_line    0x0001d6f5     0x135b /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(tim.o)
+ .debug_line    0x0001ea50     0x362c /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(uart.o)
+ .debug_line    0x0002207c      0x39a /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(dma.o)
+ .debug_line    0x00022416     0x27cf /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_spi.o)
+ .debug_line    0x00024be5     0x5106 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim.o)
+ .debug_line    0x00029ceb     0x1246 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_tim_ex.o)
+ .debug_line    0x0002af31     0x2fa8 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart.o)
+ .debug_line    0x0002ded9      0x7be /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(stm32h7xx_hal_uart_ex.o)
 
 .debug_str      0x00000000     0xfc02
  .debug_str     0x00000000     0xfc02 build/startup_stm32h750xx.o
                                 0x296 (size before relaxing)
- .debug_str     0x0000fc02     0x3d1c build/I2C.o
+ .debug_str     0x0000fc02     0x3d23 build/I2C.o
  .debug_str     0x0000fc02     0x36ed /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
  .debug_str     0x0000fc02     0x3401 /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system.o)
  .debug_str     0x0000fc02      0x5dd /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(system_stm32h7xx.o)
@@ -5794,6 +5799,7 @@ daisy::I2CHandle::Init(daisy::I2CHandle::Config const&) /Users/ozalp/Documents/D
                                                   build/I2C.o
 daisy::I2CHandle::ReadDataAtAddress(unsigned short, unsigned short, unsigned short, unsigned char*, unsigned short, unsigned long) /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
 daisy::I2CHandle::ReceiveBlocking(unsigned short, unsigned char*, unsigned short, unsigned long) /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
+                                                  build/I2C.o
 daisy::I2CHandle::ReceiveDma(unsigned short, unsigned char*, unsigned short, void (*)(void*, daisy::I2CHandle::Result), void*) /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
 daisy::I2CHandle::TransmitBlocking(unsigned short, unsigned char*, unsigned short, unsigned long) /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
 daisy::I2CHandle::TransmitDma(unsigned short, unsigned char*, unsigned short, void (*)(void*, daisy::I2CHandle::Result), void*) /Users/ozalp/Documents/DaisyExamples/libDaisy/build/libdaisy.a(i2c.o)
