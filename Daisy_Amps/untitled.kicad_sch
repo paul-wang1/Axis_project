@@ -1,0 +1,102 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "96fb9e65-c78d-4b44-92b7-d9f495359ec6")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 53.34 77.47) (xy 54.61 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fcac838-a9a2-4824-80ca-5d15f1dd9d17")
+	)
+	(wire
+		(pts
+			(xy 31.75 60.96) (xy 53.34 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7abeb850-d698-4106-a2f5-0893025214b2")
+	)
+	(wire
+		(pts
+			(xy 31.75 97.79) (xy 31.75 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ff01152-5e73-406d-a9a8-b231289120c2")
+	)
+	(wire
+		(pts
+			(xy 53.34 90.17) (xy 53.34 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5eb0e3c-8028-4f50-8867-10b51c7daa7b")
+	)
+	(wire
+		(pts
+			(xy 53.34 97.79) (xy 31.75 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa2e11f2-6a4a-4203-a908-4de41342379d")
+	)
+	(hierarchical_label "Audio_out_daisy_left"
+		(shape input)
+		(at 54.61 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b1a04a1-7556-49eb-899b-26dd69e93baf")
+	)
+	(hierarchical_label "Audio_out_daisy_right"
+		(shape input)
+		(at 53.34 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "58cf36e5-75f4-4e4f-a1e3-eea48465ca08")
+	)
+	(hierarchical_label "Audio_out_jack_right"
+		(shape output)
+		(at 53.34 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "947cdd8b-a6c3-4e22-9ecc-9d4dee24ab31")
+	)
+	(hierarchical_label "Audio_out_jack_left"
+		(shape output)
+		(at 53.34 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e771ef9d-ed76-46f0-a3dc-c60212f30b1b")
+	)
+)
