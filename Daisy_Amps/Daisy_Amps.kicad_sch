@@ -3446,7 +3446,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN06_JACK_ACJS_15P75X25_AMP"
+		(property "Footprint" "audiojack:CONN06_JACK_ACJS_15P75X25_AMP"
 			(at 205.74 38.1 0)
 			(effects
 				(font
@@ -3796,7 +3796,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 130.81 104.14 0)
 			(effects
 				(font
@@ -3867,7 +3867,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN06_JACK_ACJS_15P75X25_AMP"
+		(property "Footprint" "audiojack:CONN06_JACK_ACJS_15P75X25_AMP"
 			(at 222.25 64.77 0)
 			(effects
 				(font
@@ -3950,7 +3950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 127 116.84 0)
 			(effects
 				(font
