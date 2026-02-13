@@ -311,7 +311,7 @@ void ble_server_uart_task(void *pvParameters)
 
     int rc = 0;
     for (;;) {
-        vTaskDelay(5000 / portTICK_PERIOD_MS);
+        vTaskDelay(1);
         uint8_t *message;
         message = (uint8_t *)malloc(sizeof(uint8_t) * 6);
 
@@ -355,8 +355,9 @@ void ble_spp_uart_init(void)
     //Set UART parameters
     uart_param_config(UART_NUM_0, &uart_config);
     //Set UART pins
+    uint32_t dog = 32;
     uart_set_pin(UART_NUM_0, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-    xTaskCreate(ble_server_uart_task, "uTask", 4096, (void *)UART_NUM_0, 8, NULL);
+    xTaskCreate(ble_server_uart_task, "uTask", 4096, (void *)dog, 8, NULL);
 }
 /* Define new custom service */
 const struct ble_gatt_svc_def new_ble_svc_gatt_defs[] = {

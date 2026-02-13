@@ -10,6 +10,7 @@
 #include "console/console.h"
 #include "services/gap/ble_svc_gap.h"
 #include "driver/uart.h"
+#include "driver/gpio.h"
 #include "modlog/modlog.h"
 #include "esp_central.h"
 
@@ -23,17 +24,17 @@ struct ble_hs_cfg;
 union ble_store_value;
 union ble_store_key;
 
-/* 16 Bit SPP Service UUID */
-#define GATT_SPP_SVC_UUID                                  0xABF0
+/* 16 Bit AXIS Service UUID */
+#define GATT_AXIS_SVC_UUID                                  0xABF0
 
-/* 16 Bit SPP Service Characteristic UUID */
-#define GATT_SPP_CHR_UUID                                  0xABF1
+/* 16 Bit AXIS Service Characteristic UUID */
+#define GATT_AXIS_CHR_UUID                                  0xABF1
 
 
-void ble_spp_uart_init(void);
-void ble_spp_client_host_task(void *param);
+// void ble_axis_uart_init(void);
+void ble_axis_client_host_task(void *param);
 void ble_store_config_init(void);
 
-void ble_spp_client_on_reset(int reason);
-void ble_spp_client_on_sync(void);
+void ble_axis_client_on_reset(int reason);
+void ble_axis_client_on_sync(void);
 #endif
