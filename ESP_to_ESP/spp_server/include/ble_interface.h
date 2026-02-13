@@ -34,7 +34,7 @@ struct ble_gatt_register_ctxt;
 int ble_spp_server_gap_event(struct ble_gap_event *event, void *arg);
 
 /* Counts the number of subscriber connections */
-extern bool  conn_handle_subscriber[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
+extern bool conn_handle_subscriber[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
 
 int gatt_svr_register(void);
 
@@ -44,6 +44,9 @@ extern const struct ble_gatt_svc_def new_ble_svc_gatt_defs[];
 // Declare any functions or handles used in the definition
 extern uint16_t ble_spp_svc_gatt_read_val_handle;
 
+// typedef struct {
+//     (void *)UART_NUM_0;
+// } DataToSend;
 
 void ble_store_config_init(void);
 void ble_spp_server_advertise(void);
