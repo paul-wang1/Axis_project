@@ -1,7 +1,6 @@
 #include "ble_interface.h"
 
 static const char *tag = "NimBLE_AXIS_BLE_CENT";
-QueueHandle_t axis_common_uart_queue = NULL;
 uint16_t attribute_handle[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
 static ble_addr_t connected_addr[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
 bool logic_level = false;
@@ -18,7 +17,7 @@ static void ble_axis_client_on_disc_complete(const struct peer *peer, int status
 static void ble_axis_client_scan(void);
 static int ble_axis_client_should_connect(const struct ble_gap_disc_desc *disc);
 static void ble_axis_client_connect_if_interesting(const struct ble_gap_disc_desc *disc);
-static void ble_client_uart_task(void *pvParameters);
+// static void ble_client_uart_task(void *pvParameters);
 
 
 /* Function Definitions */
@@ -129,6 +128,9 @@ static int ble_axis_client_gap_event(struct ble_gap_event *event, void *arg)
         // MODLOG_DFLT(INFO, "data is %s", OS_MBUF_DATA(event->notify_rx.om, int));
         logic_level = !logic_level;
         gpio_set_level(GPIO_NUM_8, logic_level);
+        // esp_err_t err = i2c_slave_write_ram(i2c_slave_handle, 0, (OS_MBUF_DATA(event->notify_rx.om, uint8_t*)), 14);
+        i2c_slave_transmit(i2c_slave_handle, (OS_MBUF_DATA(event->notify_rx.om, uint8_t*)), 14, 100);
+
 
         /* Attribute data is contained in event->notify_rx.om. Use
          * `os_mbuf_copydata` to copy the data received in notification mbuf */

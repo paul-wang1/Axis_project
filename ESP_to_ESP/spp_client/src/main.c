@@ -11,6 +11,7 @@
 #define PEER_ADDR_VAL_SIZE      6
 
 static const char *TAG = "app_main";
+i2c_slave_dev_handle_t i2c_slave_handle = NULL;
 
 void app_main(void)
 {
@@ -30,7 +31,8 @@ void app_main(void)
     gpio_config(&io_conf);
 
     // bool logic_level = !logic_level;
-        gpio_set_level(GPIO_NUM_8, 1);
+    gpio_set_level(GPIO_NUM_8, 1);
+
     int rc;
     /* Initialize NVS — it is used to store PHY calibration data */
     esp_err_t ret = nvs_flash_init();
@@ -65,13 +67,13 @@ void app_main(void)
     ble_store_config_init();
 
     nimble_port_freertos_init(ble_axis_client_host_task);
-        /* Create command queue */
-    cmd_queue = xQueueCreate(16, sizeof(uint8_t));
-    if (cmd_queue == NULL)
-    {
-        // ESP_LOGE(TAG, "Failed to create command queue");
-        return;
-    }
+    //     /* Create command queue */
+    // cmd_queue = xQueueCreate(16, sizeof(uint8_t));
+    // if (cmd_queue == NULL)
+    // {
+    //     ESP_LOGE(TAG, "Failed to create command queue");
+    //     return;
+    // }
 
     /* Configure I2C slave */
     i2c_slave_config_t i2c_slv_config = {
@@ -86,26 +88,26 @@ void app_main(void)
     esp_err_t err = i2c_new_slave_device(&i2c_slv_config, &i2c_slave_handle);
     if (err != ESP_OK)
     {
-        // ESP_LOGE(TAG, "Failed to create I2C slave device: %s", esp_err_to_name(err));
+        ESP_LOGE(TAG, "Failed to create I2C slave device: %s", esp_err_to_name(err));
         return;
     }
     ESP_LOGI(TAG, "I2C slave device created");
 
     /* Register callbacks */
-    i2c_slave_event_callbacks_t cbs = {
-        .on_recv_done = i2c_slave_recv_done_cb,
-    };
-    err = i2c_slave_register_event_callbacks(i2c_slave_handle, &cbs, NULL);
-    if (err != ESP_OK)
-    {
-        // ESP_LOGE(TAG, "Failed to register callbacks: %s", esp_err_to_name(err));
-        return;
-    }
+    // i2c_slave_event_callbacks_t cbs = {
+    //     .on_recv_done = i2c_slave_recv_done_cb,
+    // };
+    // err = i2c_slave_register_event_callbacks(i2c_slave_handle, &cbs, NULL);
+    // if (err != ESP_OK)
+    // {
+    //     ESP_LOGE(TAG, "Failed to register callbacks: %s", esp_err_to_name(err));
+    //     return;
+    // }
     // ESP_LOGI(TAG, "I2C callbacks registered");
 
     /* Pre-load default data (Value A) */
-    load_response_data(CMD_GET_VALUE_A);
+    // load_response_data(CMD_GET_VALUE_A);
 
     /* Start command handler task */
-    xTaskCreate(cmd_handler_task, "cmd_handler", 4096, NULL, 10, NULL);
+    // xTaskCreate(cmd_handler_task, "cmd_handler", 4096, NULL, 10, NULL);
 }

@@ -14,6 +14,8 @@
 #include "modlog/modlog.h"
 #include "esp_central.h"
 
+#include "i2c.h"
+
 
 #ifndef BLE_AXIS_INTERFACE
 #define BLE_AXIS_INTERFACE
@@ -30,6 +32,7 @@ union ble_store_key;
 /* 16 Bit AXIS Service Characteristic UUID */
 #define GATT_AXIS_CHR_UUID                                  0xABF1
 
+extern QueueHandle_t axis_I2C_buffer_queue;
 
 // void ble_axis_uart_init(void);
 void ble_axis_client_host_task(void *param);

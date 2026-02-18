@@ -18,7 +18,6 @@
 
 /* Global handle for I2C slave */
 extern i2c_slave_dev_handle_t i2c_slave_handle;
-extern QueueHandle_t cmd_queue;
 
 /* I2C Configuration - Adjust these pins for your ESP32-C3 wiring */
 #define I2C_SLAVE_SCL_IO 21 /* GPIO for I2C clock */
@@ -32,13 +31,5 @@ extern QueueHandle_t cmd_queue;
 #define CMD_GET_VALUE_B 0x20
 #define CMD_GET_VALUE_C 0x30
 #define CMD_GET_STRING 0x40
-
-void load_response_data(uint8_t cmd);
-
-bool i2c_slave_recv_done_cb(i2c_slave_dev_handle_t i2c_slave,
-                                   const i2c_slave_rx_done_event_data_t *evt_data,
-                                   void *arg);
-
-void cmd_handler_task(void *arg);
 
 #endif
