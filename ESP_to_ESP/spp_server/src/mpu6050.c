@@ -3,7 +3,7 @@
 // Sensitivity (defaults)
 
 static const float GYRO_SENSITIVITY = 131.0f;
-static const float ACCEL_SENSITIVITY = 16384.0f;
+// static const float ACCEL_SENSITIVITY = 16384.0f;
 static float gyro_x_offset = 0.0f;
 static float gyro_y_offset = 0.0f;
 static float gyro_z_offset = 0.0f;
@@ -54,36 +54,36 @@ void CalibrateGyro(i2c_master_dev_handle_t dev_handle) {
 }
 
 // --- Read Data ---
-SensorData ReadSensorData(i2c_master_dev_handle_t dev_handle) {
-    uint8_t buffer[14];
+void ReadSensorData(i2c_master_dev_handle_t dev_handle, uint8_t *buffer) {
+
     mpu6050_register_read(dev_handle, MPU6050_ACCEL_XOUT_H, buffer, 14);
 
-    SensorData data;
+    // SensorData data;
     
-    // Raw Values
-    int16_t raw_ax = (int16_t)((buffer[0] << 8) | buffer[1]);
-    int16_t raw_ay = (int16_t)((buffer[2] << 8) | buffer[3]);
-    int16_t raw_az = (int16_t)((buffer[4] << 8) | buffer[5]);
-    int16_t raw_gx = (int16_t)((buffer[8] << 8) | buffer[9]);
-    int16_t raw_gy = (int16_t)((buffer[10] << 8) | buffer[11]);
-    int16_t raw_gz = (int16_t)((buffer[12] << 8) | buffer[13]);
+    // // Raw Values
+    // int16_t raw_ax = (int16_t)((buffer[0] << 8) | buffer[1]);
+    // int16_t raw_ay = (int16_t)((buffer[2] << 8) | buffer[3]);
+    // int16_t raw_az = (int16_t)((buffer[4] << 8) | buffer[5]);
+    // int16_t raw_gx = (int16_t)((buffer[8] << 8) | buffer[9]);
+    // int16_t raw_gy = (int16_t)((buffer[10] << 8) | buffer[11]);
+    // int16_t raw_gz = (int16_t)((buffer[12] << 8) | buffer[13]);
 
-    // Convert to physical units
-    data.accel_x_g = raw_ax / ACCEL_SENSITIVITY;
-    data.accel_y_g = raw_ay / ACCEL_SENSITIVITY;
-    data.accel_z_g = raw_az / ACCEL_SENSITIVITY;
+    // // Convert to physical units
+    // data.accel_x_g = raw_ax / ACCEL_SENSITIVITY;
+    // data.accel_y_g = raw_ay / ACCEL_SENSITIVITY;
+    // data.accel_z_g = raw_az / ACCEL_SENSITIVITY;
 
-    // Apply Calibration Offsets to Gyro
-    data.gyro_x_dps = (raw_gx / GYRO_SENSITIVITY) - gyro_x_offset;
-    data.gyro_y_dps = (raw_gy / GYRO_SENSITIVITY) - gyro_y_offset;
-    data.gyro_z_dps = (raw_gz / GYRO_SENSITIVITY) - gyro_z_offset;
+    // // Apply Calibration Offsets to Gyro
+    // data.gyro_x_dps = (raw_gx / GYRO_SENSITIVITY) - gyro_x_offset;
+    // data.gyro_y_dps = (raw_gy / GYRO_SENSITIVITY) - gyro_y_offset;
+    // data.gyro_z_dps = (raw_gz / GYRO_SENSITIVITY) - gyro_z_offset;
 
-    // Calculate Accelerometer Angles (The "Stable" but Noisy values)
-    // Note: atan2 returns radians, convert to degrees
-    data.roll_accel = atan2(data.accel_y_g, data.accel_z_g) * 180.0f / M_PI;
-    data.pitch_accel = atan2(-data.accel_x_g, sqrt(data.accel_y_g * data.accel_y_g + data.accel_z_g * data.accel_z_g)) * 180.0f / M_PI;
+    // // Calculate Accelerometer Angles (The "Stable" but Noisy values)
+    // // Note: atan2 returns radians, convert to degrees
+    // data.roll_accel = atan2(data.accel_y_g, data.accel_z_g) * 180.0f / M_PI;
+    // data.pitch_accel = atan2(-data.accel_x_g, sqrt(data.accel_y_g * data.accel_y_g + data.accel_z_g * data.accel_z_g)) * 180.0f / M_PI;
 
-    return data;
+    // return data;
 }
 
 // Map function (Improved to protect against division by zero)

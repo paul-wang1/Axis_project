@@ -30,12 +30,11 @@
 
 struct ble_hs_cfg;
 struct ble_gatt_register_ctxt;
-
 int ble_spp_server_gap_event(struct ble_gap_event *event, void *arg);
 
 /* Counts the number of subscriber connections */
 extern bool conn_handle_subscriber[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
-
+extern QueueHandle_t I2C_Queue;
 int gatt_svr_register(void);
 
 // Declare the SPP service definitions

@@ -4,6 +4,9 @@ const float ALPHA = 0.98f; // Complementary Filter: 98% Gyro, 2% Accel
 void
 app_main(void)
 {
+    uint8_t buffer[14];   
+    I2C_Queue = xQueueCreate(10, sizeof(buffer)); // create I2C data buffer queue
+
     // 1. Setup I2C
     i2c_master_bus_handle_t bus_handle;
     i2c_master_dev_handle_t dev_handle;
@@ -100,25 +103,26 @@ app_main(void)
     
     // 5. Main Loopaccel_x
     while(1) {
-        // A. Calculate Delta Time (dt) accurately
-        int64_t current_time = esp_timer_get_time();
-        float dt = (current_time - last_time) / 1000000.0f; // Convert us to seconds
-        last_time = current_time;
+        // // A. Calculate Delta Time (dt) accurately
+        // int64_t current_time = esp_timer_get_time();
+        // float dt = (current_time - last_time) / 1000000.0f; // Convert us to seconds
+        // last_time = current_time;
 
-        // B. Read Data
-        SensorData data = ReadSensorData(dev_handle);
+        
+        ReadSensorData(dev_handle, buffer);
+        xQueueSend(I2C_Queue,buffer,0); // send data buffer to the queue
 
         // C. COMPLEMENTARY FILTER (The Fix for Drift)
         // Formula: Angle = 0.98 * (Angle + Gyro_Rate * dt) + 0.02 * Accel_Angle
         
-        filtered_pitch = ALPHA * (filtered_pitch + data.gyro_y_dps * dt) + (1.0f - ALPHA) * data.pitch_accel;
-        filtered_roll  = ALPHA * (filtered_roll  + data.gyro_x_dps * dt) + (1.0f - ALPHA) * data.roll_accel;
+        // filtered_pitch = ALPHA * (filtered_pitch + data.gyro_y_dps * dt) + (1.0f - ALPHA) * data.pitch_accel;
+        // filtered_roll  = ALPHA * (filtered_roll  + data.gyro_x_dps * dt) + (1.0f - ALPHA) * data.roll_accel;
 
         // D. Mapping (Corrected Range)
         // Previous code mapped -45..45 to 0..180. This caused "dead zones" past 45 degrees.
         // New map: -90..90 to 0..180 (Full 180 degree motion)
-        float output_pitch = Map(filtered_pitch, -90.0f, 90.0f, 0.0f, 180.0f);
-        float output_roll  = Map(filtered_roll,  -90.0f, 90.0f, 0.0f, 180.0f);
+        // float output_pitch = Map(filtered_pitch, -90.0f, 90.0f, 0.0f, 180.0f);
+        // float output_roll  = Map(filtered_roll,  -90.0f, 90.0f, 0.0f, 180.0f);
 
         // // Print every 100ms
         // if (print_counter++ >= 10) { 

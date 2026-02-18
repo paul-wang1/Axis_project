@@ -8,6 +8,7 @@ QueueHandle_t spp_common_uart_queue = NULL;
 bool conn_handle_subscriber[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
 uint8_t own_addr_type;
 uint16_t ble_spp_svc_gatt_read_val_handle;
+QueueHandle_t I2C_Queue;
 // static bool  conn_handle_subscriber[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
 
 void ble_spp_server_print_conn_desc(struct ble_gap_conn_desc *desc)
@@ -312,28 +313,34 @@ void ble_server_uart_task(void *pvParameters)
     int rc = 0;
     for (;;) {
         vTaskDelay(1);
-        uint8_t *message;
-        message = (uint8_t *)malloc(sizeof(uint8_t) * 6);
+        uint8_t buffer[14];
 
-        memset(message, 0x00, 6);
-        sprintf((char *) message, "hello");
+        if (xQueueReceive(I2C_Queue, buffer, portMAX_DELAY) != pdTRUE) {
+            continue;
+        }
+        
+        
+
+        // memset(message, 0x00, 6);
+        // sprintf((char *) message, "hello");
 
         for (int i = 0; i <= CONFIG_BT_NIMBLE_MAX_CONNECTIONS; i++) {
             /* Check if client has subscribed to notifications */
             if (conn_handle_subscriber[i]) {
                 struct os_mbuf *txom;
-                txom = ble_hs_mbuf_from_flat(message, 6);
+                txom = ble_hs_mbuf_from_flat(buffer, 14);
                 rc = ble_gatts_notify_custom(i, ble_spp_svc_gatt_read_val_handle,
                                                 txom);
                 if (rc == 0) {
                     MODLOG_DFLT(INFO, "Notification sent successfully");
                 } else {
                     MODLOG_DFLT(INFO, "Error in sending notification rc = %d", rc);
+                    // MODLOG_DFLT(INFO, "Error in sending notification rc = %x", *buffer);
                 }
             }
         }
 
-        free(message);
+        // free(message);
 
     }
     vTaskDelete(NULL);
@@ -355,9 +362,8 @@ void ble_spp_uart_init(void)
     //Set UART parameters
     uart_param_config(UART_NUM_0, &uart_config);
     //Set UART pins
-    uint32_t dog = 32;
     uart_set_pin(UART_NUM_0, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-    xTaskCreate(ble_server_uart_task, "uTask", 4096, (void *)dog, 8, NULL);
+    xTaskCreate(ble_server_uart_task, "uTask", 4096, (void *)UART_NUM_0, 8, NULL);
 }
 /* Define new custom service */
 const struct ble_gatt_svc_def new_ble_svc_gatt_defs[] = {

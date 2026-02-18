@@ -38,7 +38,7 @@ typedef struct {
 
 
 float Map(float x, float in_min, float in_max, float out_min, float out_max);
-SensorData ReadSensorData(i2c_master_dev_handle_t dev_handle);
+void ReadSensorData(i2c_master_dev_handle_t dev_handle, uint8_t* buffer);
 void CalibrateGyro(i2c_master_dev_handle_t dev_handle);
 void InitMPU6050(i2c_master_dev_handle_t dev_handle);
 
