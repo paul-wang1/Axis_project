@@ -5,9 +5,9 @@ an effect of your choice based on guitar movement. Two different effects can be
 modulated at the same time by choosing to modulate on different rotational
 axes.
 ### Features
-	- Modulate effects based on movement
-	- Two effects can be modulated
-	- Effects are programmable
+- Modulate effects based on movement
+- Two effects can be modulated
+- Effects are programmable
 ## Schematics and PCB Designs
 Schematics and PCB designs are created using KiCad. The project files for both
 the guitar unit and the floor unit can be found within the PCB folder. 
