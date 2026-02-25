@@ -4,9 +4,9 @@
  * * * * * * * * * * * * * * * * * */
 
 #include "esp_log.h"
+#include "i2c.h"
 #include "nvs_flash.h"
 #include "ble_interface.h"
-#include "i2c.h"
 
 #define PEER_ADDR_VAL_SIZE      6
 
@@ -15,25 +15,6 @@ i2c_slave_dev_handle_t i2c_slave_handle = NULL;
 
 void app_main(void)
 {
-    //zero-initialize the config structure.
-    gpio_config_t io_conf = {};
-    //disable interrupt
-    io_conf.intr_type = GPIO_INTR_DISABLE;
-    //set as output mode
-    io_conf.mode = GPIO_MODE_OUTPUT;
-    //bit mask of the pins that you want to set,e.g.GPIO18/19
-    io_conf.pin_bit_mask = 1 << GPIO_NUM_8 ;
-    //disable pull-down mode
-    io_conf.pull_down_en = 0;
-    //disable pull-up mode
-    io_conf.pull_up_en = 0;
-    //configure GPIO with the given settings
-    gpio_config(&io_conf);
-
-    // bool logic_level = !logic_level;
-    gpio_set_level(GPIO_NUM_8, 1);
-
-    int rc;
     /* Initialize NVS — it is used to store PHY calibration data */
     esp_err_t ret = nvs_flash_init();
     if  (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
@@ -57,6 +38,7 @@ void app_main(void)
     ble_hs_cfg.store_status_cb = ble_store_util_status_rr;
 
     /* Initialize data structures to track connected peers. */
+    int rc;
     rc = peer_init(MYNEWT_VAL(BLE_MAX_CONNECTIONS), 64, 64, 64);
     assert(rc == 0);
     /* Set the default device name. */
@@ -67,13 +49,6 @@ void app_main(void)
     ble_store_config_init();
 
     nimble_port_freertos_init(ble_axis_client_host_task);
-    //     /* Create command queue */
-    // cmd_queue = xQueueCreate(16, sizeof(uint8_t));
-    // if (cmd_queue == NULL)
-    // {
-    //     ESP_LOGE(TAG, "Failed to create command queue");
-    //     return;
-    // }
 
     /* Configure I2C slave */
     i2c_slave_config_t i2c_slv_config = {
@@ -92,22 +67,4 @@ void app_main(void)
         return;
     }
     ESP_LOGI(TAG, "I2C slave device created");
-
-    /* Register callbacks */
-    // i2c_slave_event_callbacks_t cbs = {
-    //     .on_recv_done = i2c_slave_recv_done_cb,
-    // };
-    // err = i2c_slave_register_event_callbacks(i2c_slave_handle, &cbs, NULL);
-    // if (err != ESP_OK)
-    // {
-    //     ESP_LOGE(TAG, "Failed to register callbacks: %s", esp_err_to_name(err));
-    //     return;
-    // }
-    // ESP_LOGI(TAG, "I2C callbacks registered");
-
-    /* Pre-load default data (Value A) */
-    // load_response_data(CMD_GET_VALUE_A);
-
-    /* Start command handler task */
-    // xTaskCreate(cmd_handler_task, "cmd_handler", 4096, NULL, 10, NULL);
 }

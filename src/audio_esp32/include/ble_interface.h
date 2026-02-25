@@ -1,4 +1,8 @@
-/* General Includes */
+/* * * * BLE Interface * * *
+* The interface to use bluetooth with ESP32. 
+*  * * * * * * * * * * * * */
+
+/* General includes */
 #include "esp_log.h"
 #include "nvs_flash.h"
 
@@ -34,7 +38,6 @@ union ble_store_key;
 
 extern QueueHandle_t axis_I2C_buffer_queue;
 
-// void ble_axis_uart_init(void);
 void ble_axis_client_host_task(void *param);
 void ble_store_config_init(void);
 

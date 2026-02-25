@@ -5,3 +5,5 @@
 .vscode/ipch
 Makefile
 .DS_Store
+.*
+compile_commands.json
