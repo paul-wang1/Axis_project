@@ -2,24 +2,7 @@
 * The interface to use bluetooth with ESP32. 
 *  * * * * * * * * * * * * */
 
-/* General includes */
-#include "esp_log.h"
-#include "nvs_flash.h"
-
-/* BLE */
-#include "nimble/nimble_port.h"
-#include "nimble/nimble_port_freertos.h"
-#include "host/ble_hs.h"
-#include "host/util/util.h"
-#include "console/console.h"
-#include "services/gap/ble_svc_gap.h"
-#include "driver/uart.h"
-#include "driver/gpio.h"
-#include "modlog/modlog.h"
-#include "esp_central.h"
-
 #include "i2c.h"
-
 
 #ifndef BLE_AXIS_INTERFACE
 #define BLE_AXIS_INTERFACE

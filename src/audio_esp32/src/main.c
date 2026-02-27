@@ -5,8 +5,19 @@
 
 #include "esp_log.h"
 #include "i2c.h"
+
+/* BLE */
 #include "nvs_flash.h"
+#include "nimble/nimble_port.h"
+#include "nimble/nimble_port_freertos.h"
+#include "host/ble_hs.h"
+#include "modlog/modlog.h"
+#include "esp_central.h"
 #include "ble_interface.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/queue.h"
+#include "services/gap/ble_svc_gap.h"
 
 #define PEER_ADDR_VAL_SIZE      6
 
@@ -15,7 +26,7 @@ i2c_slave_dev_handle_t i2c_slave_handle = NULL;
 
 void app_main(void)
 {
-    /* Initialize NVS — it is used to store PHY calibration data */
+    /* Initialize NVS — it is used to store PHY calibration data for bluetooth */
     esp_err_t ret = nvs_flash_init();
     if  (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK(nvs_flash_erase());
@@ -28,9 +39,6 @@ void app_main(void)
         MODLOG_DFLT(ERROR, "Failed to init nimble %d \n", ret);
         return;
     }
-
-    /* Initialize UART driver and start uart task */
-    // ble_axis_uart_init();
 
     /* Configure the host. */
     ble_hs_cfg.reset_cb = ble_axis_client_on_reset;

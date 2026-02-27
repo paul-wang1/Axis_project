@@ -1,9 +1,25 @@
+//#include "ble_interface.h"
+/* General Includes */
+#include <string.h>
+#include "esp_log.h"
+#include "driver/i2c_slave.h"
+
+/* I2C */
+#include "i2c.h"
+
+/* BLE */
 #include "ble_interface.h"
+#include "nvs_flash.h"
+#include "nimble/nimble_port.h"
+#include "nimble/nimble_port_freertos.h"
+#include "host/ble_hs.h"
+#include "host/util/util.h"
+#include "modlog/modlog.h"
+#include "esp_central.h"
 
 static const char *tag = "NimBLE_AXIS_BLE_CENT";
 uint16_t attribute_handle[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
 static ble_addr_t connected_addr[CONFIG_BT_NIMBLE_MAX_CONNECTIONS + 1];
-bool logic_level = false;
 
 
 /* Function Declarations */
@@ -14,10 +30,8 @@ static int ble_axis_client_gap_event(struct ble_gap_event *event, void *arg);
 static void ble_axis_client_write_subscribe(const struct peer *peer);
 static void ble_axis_client_set_handle(const struct peer *peer);
 static void ble_axis_client_on_disc_complete(const struct peer *peer, int status, void *arg);
-static void ble_axis_client_scan(void);
 static int ble_axis_client_should_connect(const struct ble_gap_disc_desc *disc);
 static void ble_axis_client_connect_if_interesting(const struct ble_gap_disc_desc *disc);
-// static void ble_client_uart_task(void *pvParameters);
 
 
 /* Function Definitions */
@@ -116,24 +130,9 @@ static int ble_axis_client_gap_event(struct ble_gap_event *event, void *arg)
         return 0;
 
     case BLE_GAP_EVENT_NOTIFY_RX:
-        /* Peer sent us a notification or indication. */
-        // MODLOG_DFLT(INFO, "received %s; conn_handle=%d attr_handle=%d "
-        //             "attr_len=%d\n",
-        //             event->notify_rx.indication ?
-        //             "indication" :
-        //             "notification",
-        //             event->notify_rx.conn_handle,
-        //             event->notify_rx.attr_handle,
-        //             OS_MBUF_PKTLEN(event->notify_rx.om));
-        // MODLOG_DFLT(INFO, "data is %s", OS_MBUF_DATA(event->notify_rx.om, int));
-        logic_level = !logic_level;
-        gpio_set_level(GPIO_NUM_8, logic_level);
-        // esp_err_t err = i2c_slave_write_ram(i2c_slave_handle, 0, (OS_MBUF_DATA(event->notify_rx.om, uint8_t*)), 14);
+        /* Peer sent us a notification. In our case that means that 
+		 * we can send this packet to the */
         i2c_slave_transmit(i2c_slave_handle, (OS_MBUF_DATA(event->notify_rx.om, uint8_t*)), 14, 100);
-
-
-        /* Attribute data is contained in event->notify_rx.om. Use
-         * `os_mbuf_copydata` to copy the data received in notification mbuf */
         return 0;
 
     case BLE_GAP_EVENT_MTU:
@@ -227,7 +226,13 @@ static void ble_axis_client_set_handle(const struct peer *peer)
 }
 
 /**
- * Called when service discovery of the specified peer has completed.
+ * Called when service discovery of the specified peer has completed. 
+ * Writes back to set its handle and subscribe to the Axis service
+ *
+ * @param peer                  The peer information for the device that is being
+ *                              subscribed to
+ * @param status                Status of the discovery that was completeted
+ * @return                      None
  */
 static void ble_axis_client_on_disc_complete(const struct peer *peer, int status, void *arg)
 {
@@ -247,7 +252,6 @@ static void ble_axis_client_on_disc_complete(const struct peer *peer, int status
                 "conn_handle=%d\n", status, peer->conn_handle);
 
     ble_axis_client_set_handle(peer);
-    // TODO: figure out if this funcgtion call is even needed
     ble_axis_client_write_subscribe(peer);
 
 #if CONFIG_BT_NIMBLE_MAX_CONNECTIONS > 1
@@ -400,6 +404,9 @@ void ble_axis_client_on_sync(void)
     ble_axis_client_scan();
 }
 
+/**
+ * Task that begins the BLE stack and deinitializes when finished
+ */
 void ble_axis_client_host_task(void *param)
 {
     ESP_LOGI(tag, "BLE Host Task Started");
@@ -408,70 +415,3 @@ void ble_axis_client_host_task(void *param)
 
     nimble_port_freertos_deinit();
 }
-// static void ble_client_uart_task(void *pvParameters)
-// {
-//     ESP_LOGI(tag, "BLE client UART task started");
-//     int rc;
-//     int i;
-//     uart_event_t event;
-//     for (;;) {
-//         //Waiting for UART event.
-//         if (xQueueReceive(axis_common_uart_queue, (void * )&event, (TickType_t)portMAX_DELAY)) {
-//             switch (event.type) {
-//             //Event of UART receiving data
-//             case UART_DATA:
-//                 if (event.size) {
-
-//                     /* Writing characteristics */
-//                     uint8_t *temp = NULL;
-//                     temp = (uint8_t *)malloc(sizeof(uint8_t) * event.size);
-//                     if (temp == NULL) {
-//                         ESP_LOGE(tag, "malloc failed,%s L#%d", __func__, __LINE__);
-//                         break;
-//                     }
-//                     memset(temp, 0x0, event.size);
-//                     uart_read_bytes(UART_NUM_0, temp, event.size, portMAX_DELAY);
-//                     for ( i = 0; i <= CONFIG_BT_NIMBLE_MAX_CONNECTIONS; i++) {
-//                         if (attribute_handle[i] != 0) {
-// #if MYNEWT_VAL(BLE_GATTC)
-//                             rc = ble_gattc_write_flat(i, attribute_handle[i], temp, event.size, NULL, NULL);
-//                             if (rc == 0) {
-//                                 ESP_LOGI(tag, "Write in uart task success!");
-//                             } else {
-//                                 ESP_LOGI(tag, "Error in writing characteristic rc=%d", rc);
-//                             }
-// #endif
-//                             vTaskDelay(10);
-//                         }
-//                     }
-//                     free(temp);
-//                 }
-//                 break;
-//             default:
-//                 break;
-//             }
-//         }
-//     }
-//     vTaskDelete(NULL);
-
-// }
-// void ble_axis_uart_init(void)
-// {
-//     uart_config_t uart_config = {
-//         .baud_rate = 115200,
-//         .data_bits = UART_DATA_8_BITS,
-//         .parity = UART_PARITY_DISABLE,
-//         .stop_bits = UART_STOP_BITS_1,
-//         .flow_ctrl = UART_HW_FLOWCTRL_RTS,
-//         .rx_flow_ctrl_thresh = 122,
-//         .source_clk = UART_SCLK_DEFAULT,
-//     };
-
-//     //Install UART driver, and get the queue.
-//     uart_driver_install(UART_NUM_0, 4096, 8192, 10, &axis_common_uart_queue, 0);
-//     //Set UART parameters
-//     uart_param_config(UART_NUM_0, &uart_config);
-//     //Set UART pins
-//     uart_set_pin(UART_NUM_0, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-//     xTaskCreate(ble_client_uart_task, "uTask", 4096, (void *)UART_NUM_0, 8, NULL);
-// }

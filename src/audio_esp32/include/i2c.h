@@ -5,13 +5,11 @@
  * This code sets up the ESP32 as an I2C slave that responds to
  * commands from the DaisySeed (master) with dummy test data.
  */
-#include <stdio.h>
-#include <string.h>
-#include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "driver/i2c_slave.h"
+
 #ifndef I2C_H
 #define I2C_H
 
