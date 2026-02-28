@@ -34,10 +34,10 @@ int main()
     }
 
 
-    // Main loop
 
-    // size of the buffer
     uint8_t buffer[16];
+
+    // Main loop
     while (true)
     {
         // Try to receive data -- got from 
