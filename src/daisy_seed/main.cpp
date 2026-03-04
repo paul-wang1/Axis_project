@@ -17,14 +17,19 @@ void AudioCallback(AudioHandle::InputBuffer  in,
                    AudioHandle::OutputBuffer out,
                    size_t                    size)
 {
-    tremolo.SetDepth(trem_depth);
-    tremolo.SetFreq(trem_freq);
+    // tremolo.SetDepth(trem_depth);
+    // tremolo.SetFreq(trem_freq);
+
+    // for (size_t i = 0; i < size; i++) {
+    //     float dry = in[0][i];
+    //     float wet = tremolo.Process(dry);
+    //     out[0][i] = wet;
+    //     out[1][i] = wet;
+    // }
 
     for (size_t i = 0; i < size; i++) {
-        float dry = in[0][i];
-        float wet = tremolo.Process(dry);
-        out[0][i] = wet;
-        out[1][i] = wet;
+        out[0][i] = in[0][i];
+        out[1][i] = in[1][i];
     }
 }
 
