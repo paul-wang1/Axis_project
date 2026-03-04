@@ -2790,6 +2790,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 29.21) (xy 35.56 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d82e745-e88f-463b-87f9-716c56edd238")
+	)
+	(wire
+		(pts
 			(xy 39.37 60.96) (xy 45.72 60.96)
 		)
 		(stroke
@@ -3140,7 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 29.21) (xy 35.56 29.21)
+			(xy 99.06 29.21) (xy 52.07 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3644,6 +3654,74 @@
 			(project "axis_imu"
 				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 48.26 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07ed69cc-de31-4b2d-bc0d-cba288b694ff")
+		(property "Reference" "R6"
+			(at 48.26 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 48.26 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 48.26 30.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e96c8c3-c682-4893-ab5a-f573b3bbe1c0")
+		)
+		(pin "2"
+			(uuid "920b02ec-14b3-4467-97a5-82bddac60966")
+		)
+		(instances
+			(project "imu_esp_pcb"
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5192,6 +5270,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 15.24 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "937f2784-7586-4880-8f34-6e91575fb4e5")
+		(property "Reference" "#PWR019"
+			(at 15.24 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 15.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 15.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48079304-7030-4168-b80a-521cefaff91d")
+		)
+		(instances
+			(project "imu_esp_pcb"
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2026-01-30_16-01-32:MPU-6050")
 		(at 45.72 38.1 0)
 		(unit 1)
@@ -5474,6 +5618,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 15.24 12.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab38770b-11fd-439a-9e86-145234f33321")
+		(property "Reference" "#PWR018"
+			(at 15.24 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 15.24 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 15.24 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18c2bb55-0647-4d5d-a1ae-44e139ee4ecb")
+		)
+		(instances
+			(project "imu_esp_pcb"
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 222.25 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5533,6 +5743,72 @@
 			(project "imu_esp_pcb"
 				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 15.24 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "beebbd5f-92af-4522-804b-0d9139f88d76")
+		(property "Reference" "#PWR017"
+			(at 15.24 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 15.24 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 15.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f027b63-eb5d-4f47-8ef0-879bfcfc3ba3")
+		)
+		(instances
+			(project ""
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5602,6 +5878,76 @@
 			(project "axis_imu"
 				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 15.24 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c748ed15-faa4-4bac-9e00-dd82773522a6")
+		(property "Reference" "R4"
+			(at 17.78 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 17.78 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 13.462 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 15.24 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 15.24 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79583319-81b0-4913-89d6-547d77e468ed")
+		)
+		(pin "2"
+			(uuid "4205b996-ea27-49cc-8667-f908c13f4b70")
+		)
+		(instances
+			(project "imu_esp_pcb"
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5804,6 +6150,142 @@
 			(project ""
 				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 15.24 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed7029ec-32d7-4de6-883d-f9b824d1571f")
+		(property "Reference" "#PWR016"
+			(at 15.24 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 15.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 15.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62a7b3de-e255-4cce-ac8f-3459f7942b6f")
+		)
+		(instances
+			(project ""
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 15.24 16.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1de4e42-cae6-4927-897a-2bc77ac6485d")
+		(property "Reference" "R5"
+			(at 17.78 15.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 17.78 17.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 13.462 16.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 15.24 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 15.24 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f7ba6ad-03c5-49de-8ff1-ccc20e439cbe")
+		)
+		(pin "2"
+			(uuid "8946ca5f-2ebc-4e6b-a4b1-7ea2733f517b")
+		)
+		(instances
+			(project "imu_esp_pcb"
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "R5")
 					(unit 1)
 				)
 			)
