@@ -7,7 +7,7 @@
 
 
 // DaisySeed hw;
-// Oscillator osc;
+
 // PitchShifter ps;
 // SensorData data;
 // Tremolo tremolo;
@@ -149,10 +149,10 @@
 //     // System::Delay(1000);
     
 //     float sample_rate = hw.AudioSampleRate();
-//     osc.Init(sample_rate);
-//     osc.SetWaveform(Oscillator::WAVE_SIN);
-//     osc.SetAmp(0.5f);
-//     osc.SetFreq(440.0f);
+    // osc.Init(sample_rate);
+    // osc.SetWaveform(Oscillator::WAVE_SIN);
+    // osc.SetAmp(0.5f);
+    // osc.SetFreq(440.0f);
     
 //     //Start audio
 //     hw.StartAudio(AudioCallback);
@@ -187,6 +187,7 @@ using namespace daisysp;
 
 DaisySeed hw;
 Tremolo tremolo;
+Oscillator osc;
 SensorData data;
 
 volatile float trem_depth = 0.5f;
@@ -196,14 +197,19 @@ void AudioCallback(AudioHandle::InputBuffer  in,
                    AudioHandle::OutputBuffer out,
                    size_t                    size)
 {
-    tremolo.SetDepth(trem_depth);
-    tremolo.SetFreq(trem_freq);
+    // tremolo.SetDepth(trem_depth);
+    // tremolo.SetFreq(trem_freq);
 
-    for (size_t i = 0; i < size; i++) {
-        float dry = in[0][i];
-        float wet = tremolo.Process(dry);
-        out[0][i] = wet;
-        out[1][i] = wet;
+    // for (size_t i = 0; i < size; i++) {
+    //     float dry = in[0][i];
+    //     float wet = tremolo.Process(dry);
+    //     out[0][i] = wet;
+    //     out[1][i] = wet;
+    // }
+
+    for(size_t i = 0; i < size; i++) {
+        out[0][i] = in[0][i] * osc.Process();
+        out[1][i] = in[1][i] * osc.Process();
     }
 }
 
@@ -219,26 +225,37 @@ int main(void)
     hw.SetAudioBlockSize(4);
     
     // No StartLog - it might interfere
+
+    //     // Start USB serial for debugging
+    hw.StartLog(false);
+    System::Delay(1000);
     
     InitMPU6050();
     
-    float sample_rate = hw.AudioSampleRate();
-    tremolo.Init(sample_rate);
-    tremolo.SetWaveform(Oscillator::WAVE_SIN);
+    // float sample_rate = hw.AudioSampleRate();
+    // tremolo.Init(sample_rate);
+    // tremolo.SetWaveform(Oscillator::WAVE_SIN);
     
-    hw.StartAudio(AudioCallback);
+    // hw.StartAudio(AudioCallback);
     
-    uint32_t last_read = System::GetNow();
+    // uint32_t last_read = System::GetNow();
+
+    // osc.Init(sample_rate);
+    // osc.SetWaveform(Oscillator::WAVE_SIN);
+    // osc.SetAmp(0.5f);
+    // osc.SetFreq(440.0f);
     
     while(1)
     {
-        if(System::GetNow() - last_read >= 100)
-        {
-            data = ReadSensorData();
-            last_read = System::GetNow();
+        hw.PrintLine("hello world");
+        System::Delay(1000);
+        // if(System::GetNow() - last_read >= 100)
+        // {
+        //     data = ReadSensorData();
+        //     last_read = System::GetNow();
             
-            trem_depth = Map(data.pitch, -45.0f, 45.0f, 0.0f, 1.0f);
-            trem_freq = Map(data.roll, -45.0f, 45.0f, 2.0f, 12.0f);
-        }
+        //     trem_depth = Map(data.pitch, -45.0f, 45.0f, 0.0f, 1.0f);
+        //     trem_freq = Map(data.roll, -45.0f, 45.0f, 2.0f, 12.0f);
+        // }
     }
 }
