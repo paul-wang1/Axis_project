@@ -34,12 +34,12 @@ void InitESP32() {
     i2c_conf.pin_config.sda = seed::D12;
     
     // Initialize I2C
-    if (i2c.Init(i2c_conf) != I2CHandle::Result::OK) {
-        // I2C initialization failed - handle error
-        while(1) System::Delay(100);
-    }
+    i2c.Init(i2c_conf);
+    //     // I2C initialization failed - handle error
+    //     while(1) System::Delay(100);
+    // }
     
-    System::Delay(100); // Give sensor time to boot
+    // System::Delay(100); // Give sensor time to boot
 }
     
 
@@ -49,41 +49,51 @@ void InitESP32() {
  */
 SensorData ReadSensorData() {
     uint8_t buffer[14];
-    
-    // Read all 14 bytes starting from ACCEL_XOUT_H
-    // This reads: ACCEL_X, ACCEL_Y, ACCEL_Z, TEMP, GYRO_X, GYRO_Y, GYRO_Z
-    ReadESP32Register(ESP32_ACCEL_XOUT_H, buffer, 14);
-    
-    SensorData data;
-    
-    // Parse raw values (big-endian format)
-    data.accel_x = (int16_t)((buffer[0] << 8) | buffer[1]);
-    data.accel_y = (int16_t)((buffer[2] << 8) | buffer[3]);
-    data.accel_z = (int16_t)((buffer[4] << 8) | buffer[5]);
-    // buffer[6-7] is temperature (we're skipping it)
-    data.gyro_x = (int16_t)((buffer[8] << 8) | buffer[9]);
-    data.gyro_y = (int16_t)((buffer[10] << 8) | buffer[11]);
-    data.gyro_z = (int16_t)((buffer[12] << 8) | buffer[13]);
-    
-    // Convert to physical units
-    data.accel_x_g = data.accel_x / ACCEL_SENSITIVITY;
-    data.accel_y_g = data.accel_y / ACCEL_SENSITIVITY;
-    data.accel_z_g = data.accel_z / ACCEL_SENSITIVITY;
-    
-    data.gyro_x_dps = data.gyro_x / GYRO_SENSITIVITY;
-    data.gyro_y_dps = data.gyro_y / GYRO_SENSITIVITY;
-    data.gyro_z_dps = data.gyro_z / GYRO_SENSITIVITY;
-    
-    // Calculate roll and pitch from accelerometer
-    // Note: These are static angles, not from sensor fusion like BNO055
-    // Roll (rotation around X-axis)
-    data.roll = atan2(data.accel_y_g, data.accel_z_g) * 180.0f / M_PI;
-    
-    // Pitch (rotation around Y-axis)
-    data.pitch = atan2(-data.accel_x_g, sqrt(data.accel_y_g * data.accel_y_g + 
-                                              data.accel_z_g * data.accel_z_g)) * 180.0f / M_PI;
-    
-    // Note: Heading/yaw cannot be calculated without a magnetometer
-    
-    return data;
+    // Try to receive data
+        I2CHandle::Result result = i2c1_handle.ReceiveBlocking(
+            0x28,
+            buffer,
+            sizeof(buffer),
+            1000
+        );
+
+        // Flash LED if data was received successfully
+        if (result == I2CHandle::Result::OK)
+        {
+            SensorData data;
+            
+            // Parse raw values (big-endian format)
+            data.accel_x = (int16_t)((buffer[0] << 8) | buffer[1]);
+            data.accel_y = (int16_t)((buffer[2] << 8) | buffer[3]);
+            data.accel_z = (int16_t)((buffer[4] << 8) | buffer[5]);
+            // buffer[6-7] is temperature (we're skipping it)
+            data.gyro_x = (int16_t)((buffer[8] << 8) | buffer[9]);
+            data.gyro_y = (int16_t)((buffer[10] << 8) | buffer[11]);
+            data.gyro_z = (int16_t)((buffer[12] << 8) | buffer[13]);
+            
+            // Convert to physical units
+            data.accel_x_g = data.accel_x / ACCEL_SENSITIVITY;
+            data.accel_y_g = data.accel_y / ACCEL_SENSITIVITY;
+            data.accel_z_g = data.accel_z / ACCEL_SENSITIVITY;
+            
+            data.gyro_x_dps = data.gyro_x / GYRO_SENSITIVITY;
+            data.gyro_y_dps = data.gyro_y / GYRO_SENSITIVITY;
+            data.gyro_z_dps = data.gyro_z / GYRO_SENSITIVITY;
+            
+            // Calculate roll and pitch from accelerometer
+            // Note: These are static angles, not from sensor fusion like BNO055
+            // Roll (rotation around X-axis)
+            data.roll = atan2(data.accel_y_g, data.accel_z_g) * 180.0f / M_PI;
+            
+            // Pitch (rotation around Y-axis)
+            data.pitch = atan2(-data.accel_x_g, sqrt(data.accel_y_g * data.accel_y_g + 
+                                                    data.accel_z_g * data.accel_z_g)) * 180.0f / M_PI;
+            
+            // Note: Heading/yaw cannot be calculated without a magnetometer
+            
+            return data;
+        } else {
+            SensorData data;
+            return data;
+        }
 }
