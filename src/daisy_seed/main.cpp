@@ -101,6 +101,7 @@ int main(){
     // Initialize the Daisy Seed hardware (including LED)
     hardware.Init();
     hardware.StartLog(true);
+    hardware.Print("Hello World");
 
     // Configure the I2C handle
     I2CHandle::Config i2c1_conf;

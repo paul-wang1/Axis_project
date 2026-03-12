@@ -36,6 +36,7 @@ static void ble_axis_client_connect_if_interesting(const struct ble_gap_disc_des
 
 /* Function Definitions */
 
+uint8_t new_buf[14];
 
 /**
  * The nimble host executes this callback when a GAP event occurs.  The
@@ -132,7 +133,7 @@ static int ble_axis_client_gap_event(struct ble_gap_event *event, void *arg)
     case BLE_GAP_EVENT_NOTIFY_RX:
         /* Peer sent us a notification. In our case that means that 
 		 * we can send this packet to the */
-        i2c_slave_transmit(i2c_slave_handle, (OS_MBUF_DATA(event->notify_rx.om, uint8_t*)), 14, 100);
+        i2c_slave_transmit(i2c_slave_handle, new_buf, 14, 100);
         return 0;
 
     case BLE_GAP_EVENT_MTU:
@@ -410,6 +411,9 @@ void ble_axis_client_on_sync(void)
 void ble_axis_client_host_task(void *param)
 {
     ESP_LOGI(tag, "BLE Host Task Started");
+    for (int i = 0; i < 14; i++) {
+            new_buf[i] = 1;
+        }
     /* This function will return only when nimble_port_stop() is executed */
     nimble_port_run();
 
