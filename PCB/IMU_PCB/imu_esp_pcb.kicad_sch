@@ -557,6 +557,258 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "AluCap:UCS2G100MPD1TD"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.81 3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "UCS2G100MPD1TD"
+				(at 3.81 -3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "U1-T_NCH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "UCS2G100MPD1TD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "UCS2G100MPD1TD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "U1-T_NCH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "UCS2G100MPD1TD_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 3.4798 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.4798 -1.905) (xy 3.4798 1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.1148 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.1148 -1.905) (xy 4.1148 1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "UCS2G100MPD1TD_1_2"
+				(polyline
+					(pts
+						(xy -1.905 -3.4798) (xy 1.905 -3.4798)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -4.1148) (xy 1.905 -4.1148)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.4798)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.1148) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -2557,12 +2809,6 @@
 		(uuid "9a327aa1-3946-470b-952c-6950203127e3")
 	)
 	(junction
-		(at 152.4 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a0e7151a-de03-4143-8bd1-bb001f5857b8")
-	)
-	(junction
 		(at 199.39 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2597,6 +2843,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f41b58a8-775a-4273-99c5-ee3fec868f83")
+	)
+	(junction
+		(at 152.4 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9f5d4ce-81c8-4955-92ce-d2075b8925d5")
 	)
 	(no_connect
 		(at 91.44 44.45)
@@ -2729,6 +2981,16 @@
 			(type default)
 		)
 		(uuid "11239964-249c-4fea-ae9b-3fe480d22f2b")
+	)
+	(wire
+		(pts
+			(xy 152.4 22.86) (xy 152.4 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1449c88d-774c-40fb-97cb-5a107d5b5211")
 	)
 	(wire
 		(pts
@@ -2902,7 +3164,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 22.86) (xy 152.4 30.48)
+			(xy 152.4 19.05) (xy 152.4 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2999,16 +3261,6 @@
 			(type default)
 		)
 		(uuid "77dae05b-880c-4c30-b136-6ba110c23f79")
-	)
-	(wire
-		(pts
-			(xy 152.4 19.05) (xy 152.4 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8641c05c-01af-4fe7-8596-9aade8bbdfc1")
 	)
 	(wire
 		(pts
@@ -4037,73 +4289,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 156.21 22.86 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "330ca1a9-62bb-4597-8726-e526b137e7e5")
-		(property "Reference" "C6"
-			(at 153.924 24.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 159.004 24.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 160.02 21.8948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 156.21 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f55d1e4-1654-46a4-ae70-fb02836ac7f1")
-		)
-		(pin "2"
-			(uuid "f7fc8577-2d1d-4621-9a9c-9ebb468c7169")
-		)
-		(instances
-			(project ""
-				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 152.4 85.09 0)
 		(unit 1)
@@ -5055,6 +5240,76 @@
 			(project ""
 				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AluCap:UCS2G100MPD1TD")
+		(at 152.4 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8171424a-2e17-4119-90ce-4da51a5c0aaa")
+		(property "Reference" "C1"
+			(at 156.21 16.51 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "UCS2G100MPD1TD"
+			(at 156.21 19.05 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "U1-T_NCH"
+			(at 152.4 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "UCS2G100MPD1TD"
+			(at 152.4 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc95aabd-97c2-46d8-9fb5-676e5a6ed3fc")
+		)
+		(pin "2"
+			(uuid "630b9c9b-d1d1-4995-94ef-36fb149438d9")
+		)
+		(instances
+			(project ""
+				(path "/32e5ba35-9648-47f9-9581-dda55d5c3e51"
+					(reference "C1")
 					(unit 1)
 				)
 			)
