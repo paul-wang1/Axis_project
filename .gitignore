@@ -5,4 +5,8 @@
 .vscode/ipch
 .DS_Store
 .*
+.elf
+.hex
+.map
+build
 compile_commands.json
