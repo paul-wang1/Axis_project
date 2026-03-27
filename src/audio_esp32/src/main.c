@@ -4,6 +4,7 @@
  * * * * * * * * * * * * * * * * * */
 
 #include "esp_log.h"
+#include "driver/i2c_master.h"
 #include "i2c.h"
 
 /* BLE */
@@ -23,6 +24,18 @@
 
 static const char *TAG = "app_main";
 i2c_slave_dev_handle_t i2c_slave_handle = NULL;
+i2c_master_bus_handle_t bus_handle;
+i2c_master_dev_handle_t dev_handle;
+
+// Change these to your pins
+#define I2C_MASTER_SCL_IO       9
+#define I2C_MASTER_SDA_IO       8
+#define I2C_MASTER_NUM          I2C_NUM_0
+#define I2C_MASTER_FREQ_HZ      100000
+
+
+// 7-bit address
+#define DEVICE_ADDR             0x10
 
 void app_main(void)
 {
@@ -58,21 +71,29 @@ void app_main(void)
 
     nimble_port_freertos_init(ble_axis_client_host_task);
 
-    /* Configure I2C slave */
-    i2c_slave_config_t i2c_slv_config = {
-        .i2c_port = I2C_SLAVE_NUM,
-        .clk_source = I2C_CLK_SRC_DEFAULT,
-        .scl_io_num = I2C_SLAVE_SCL_IO,
-        .sda_io_num = I2C_SLAVE_SDA_IO,
-        .slave_addr = ESP_SLAVE_ADDR,
-        .send_buf_depth = I2C_SLAVE_RAM_SIZE,
-    };
 
-    esp_err_t err = i2c_new_slave_device(&i2c_slv_config, &i2c_slave_handle);
-    if (err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Failed to create I2C slave device: %s", esp_err_to_name(err));
-        return;
-    }
-    ESP_LOGI(TAG, "I2C slave device created");
+   // Configure I2C bus
+   i2c_master_bus_config_t bus_config = {
+       .i2c_port = I2C_MASTER_NUM,
+       .sda_io_num = I2C_MASTER_SDA_IO,
+       .scl_io_num = I2C_MASTER_SCL_IO,
+       .clk_source = I2C_CLK_SRC_DEFAULT,
+       .glitch_ignore_cnt = 7,
+       .flags.enable_internal_pullup = false,
+   };
+
+
+   ESP_ERROR_CHECK(i2c_new_master_bus(&bus_config, &bus_handle));
+
+
+   // Configure I2C device
+   i2c_device_config_t dev_config = {
+       .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+       .device_address = DEVICE_ADDR,
+       .scl_speed_hz = I2C_MASTER_FREQ_HZ,
+   };
+
+
+   ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_config, &dev_handle));
+
 }

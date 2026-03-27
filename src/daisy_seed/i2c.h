@@ -29,6 +29,8 @@ struct SensorData {
     float pitch;  // Rotation around Y axis
 };
 
+extern I2CHandle i2c1_handle;
+
 SensorData ReadSensorData();
 void InitESP32();
 bool TestESP32();
