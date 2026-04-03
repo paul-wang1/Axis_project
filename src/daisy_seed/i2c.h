@@ -2,6 +2,7 @@
 #define I2C_H
 
 #include <stdint.h>
+#include "per/i2c.h"
 
 // Structure to hold sensor readings
 struct SensorData {
@@ -29,7 +30,7 @@ struct SensorData {
     float pitch;  // Rotation around Y axis
 };
 
-extern I2CHandle i2c1_handle;
+extern daisy::I2CHandle i2c1_handle;
 
 SensorData ReadSensorData();
 void InitESP32();

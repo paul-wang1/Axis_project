@@ -2,7 +2,7 @@
 TARGET = I2C
 
 # Sources
-CPP_SOURCES = main.cpp
+CPP_SOURCES = main.cpp i2c.cpp
 
 # Library Locations
 LIBDAISY_DIR = $(HOME)/Documents/DaisyExamples/libDaisy
